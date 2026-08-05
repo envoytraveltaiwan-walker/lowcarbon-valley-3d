@@ -13,12 +13,14 @@
     --card-bg: #ffffff;
     --text-color: #2c3531;
     --border-color: #d8e2dc;
+    --line-color: #06C755;
   }
 
   body {
     font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans CJK TC", sans-serif;
     margin: 0;
     padding: 20px;
+    padding-bottom: 85px; /* 預留置底浮動列高度 */
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -73,7 +75,7 @@
     padding: 25px 30px;
   }
 
-  /* 出團資訊卡片 (人數規定) */
+  /* 出團資訊卡片 */
   .tour-info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -211,7 +213,7 @@
     font-weight: bold;
   }
 
-  /* QA 常見問題 */
+  /* 常見問題 Q&A */
   .qa-container {
     margin-bottom: 25px;
   }
@@ -239,7 +241,7 @@
     background-color: #fff;
   }
 
-  /* 諮詢聯絡人卡片（莉梅姐） */
+  /* 莉梅姐專屬聯絡卡片 */
   .contact-card {
     background: linear-gradient(to right, #f4f7f4, #eaf0eb);
     border: 1px solid #c8d6cb;
@@ -264,15 +266,48 @@
     color: #555;
   }
 
-  .btn-contact {
-    background-color: var(--accent-color);
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 6px;
-    text-decoration: none;
+  /* LINE 專屬樣式按鈕 */
+  .btn-line {
+    background-color: var(--line-color) !important;
+    color: #ffffff !important;
+    font-size: 11pt !important;
     font-weight: bold;
+    padding: 12px 22px !important;
+    border-radius: 30px !important;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
+    transition: all 0.2s ease;
+  }
+
+  .btn-line:hover {
+    background-color: #05b34c !important;
+    transform: translateY(-2px);
+  }
+
+  /* 置底浮動報名條 */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 12px 24px;
+    box-shadow: 0 -3px 12px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid #e0e8e2;
+  }
+
+  .sticky-cta .text {
     font-size: 10pt;
-    box-shadow: 0 2px 5px rgba(230, 81, 0, 0.3);
+    color: var(--primary-color);
+    font-weight: bold;
   }
 
   /* 低碳永續宣告 */
@@ -456,7 +491,6 @@
           </td>
         </tr>
       </tbody>
-    </tbody>
     </table>
 
     <!-- Q&A 常見問題 -->
@@ -468,7 +502,7 @@
       </div>
       <div class="qa-item">
         <div class="qa-question">Q2：什麼時候會確認是否成團？團體人數上限是多少？</div>
-        <div class="qa-answer">A2：本行程為維持最高服務品質與部落體驗體驗感，<b>上限 20 人滿團</b>。達到 6 人成團門檻後，專員莉梅姐會第一時間通知您並協助開票與後續確認。</div>
+        <div class="qa-answer">A2：本行程為維護最高服務品質與部落體驗質感，<b>上限 20 人滿團</b>。達到 6 人成團門檻後，專員莉梅姐會第一時間通知您並協助開票與後續確認。</div>
       </div>
       <div class="qa-item">
         <div class="qa-question">Q3：鸞山部落的體驗需要很強的體力嗎？穿著有什麼建議？</div>
@@ -485,10 +519,9 @@
     <div class="contact-card">
       <div class="contact-info">
         <h3>專業旅遊顧問：莉梅姐</h3>
-        <p>對行程有任何疑問、想確認成團狀況或報名諮詢，歡迎隨時聯繫莉梅姐！</p>
-        <p style="margin-top: 5px;"><b>服務熱線：</b> 09xx-xxx-xxx ｜ <b>LINE ID：</b> @limay_travel</p>
+        <p>對行程有任何疑問、想確認成團狀況或搶先預約，歡迎點擊按鈕回傳 <b>「低碳山林縱谷雙湯行+1」</b>，莉梅姐將為您優先保留名額！</p>
       </div>
-      <a href="#" class="btn-contact">立即聯繫莉梅姐</a>
+      <a href="https://lin.ee/Z3c7Qam" class="btn-line" target="_blank">💬 加 LINE 輸入「低碳山林縱谷雙湯行+1」</a>
     </div>
 
     <!-- 低碳永續宣告 -->
@@ -502,6 +535,15 @@
     </div>
 
   </div>
+</div>
+
+<!-- 頁尾置底快速報名浮動列 -->
+<div class="sticky-cta">
+  <div class="text">
+    🌱 1人可報名 ✕ 6人即成團 ✕ 20人滿團<br>
+    <small style="color:#666; font-weight:normal;">專屬顧問莉梅姐為您服務</small>
+  </div>
+  <a href="https://lin.ee/Z3c7Qam" class="btn-line" target="_blank">💬 低碳山林縱谷雙湯行+1</a>
 </div>
 
 </body>
