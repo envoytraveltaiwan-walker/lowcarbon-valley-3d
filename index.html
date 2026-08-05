@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊</title>
+<style>
+  :root {
+    --primary-color: #2e4a3b;
+    --secondary-color: #52796f;
+    --accent-color: #e65100;
+    --bg-color: #f7f9f6;
+    --card-bg: #ffffff;
+    --text-color: #2c3531;
+    --border-color: #d8e2dc;
+  }
+
+  body {
+    font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans CJK TC", sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+
+  /* 頂部 Banner */
+  .header-banner {
+    background: linear-gradient(135deg, #2e4a3b 0%, #1b2d24 100%);
+    color: #ffffff;
+    padding: 30px;
+  }
+
+  .header-banner h1 {
+    margin: 0 0 10px 0;
+    font-size: 24pt;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .header-banner .subtitle {
+    font-size: 12pt;
+    color: #d1e0d3;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+
+  .tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tag {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #f0f5f1;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 9pt;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .section-padding {
+    padding: 25px 30px;
+  }
+
+  /* 出團資訊卡片 (人數規定) */
+  .tour-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+    background-color: #f0f5f2;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-color);
+  }
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .info-item .icon {
+    font-size: 18pt;
+  }
+
+  .info-item .text .label {
+    font-size: 8.5pt;
+    color: #666;
+  }
+
+  .info-item .text .value {
+    font-size: 11pt;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  /* 區塊標題 */
+  .section-title {
+    font-size: 14pt;
+    color: var(--primary-color);
+    border-left: 5px solid var(--secondary-color);
+    padding-left: 10px;
+    margin: 25px 0 15px 0;
+    font-weight: bold;
+  }
+
+  /* 四大亮點卡片 */
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .highlight-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 15px;
+  }
+
+  .highlight-card .icon {
+    font-size: 18pt;
+    margin-bottom: 8px;
+  }
+
+  .highlight-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 11pt;
+    color: var(--primary-color);
+  }
+
+  .highlight-card p {
+    margin: 0;
+    font-size: 9pt;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* 行程表格 */
+  .itinerary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+  }
+
+  .itinerary-table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 12px;
+    font-size: 10pt;
+    text-align: left;
+  }
+
+  .itinerary-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eef2f0;
+    font-size: 9.5pt;
+    vertical-align: top;
+  }
+
+  .itinerary-table tr:nth-child(even) {
+    background-color: #fcfdfe;
+  }
+
+  .time-col {
+    font-weight: bold;
+    color: var(--secondary-color);
+    width: 15%;
+    white-space: nowrap;
+  }
+
+  .badge {
+    display: inline-block;
+    font-size: 7.5pt;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+
+  .badge-lowcarbon {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+  }
+
+  .badge-highlight {
+    background-color: #fff3e0;
+    color: #e65100;
+    border: 1px solid #ffe0b2;
+  }
+
+  .hotel-box {
+    background-color: #eef4f0;
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 9pt;
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  /* QA 常見問題 */
+  .qa-container {
+    margin-bottom: 25px;
+  }
+
+  .qa-item {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+
+  .qa-question {
+    background-color: #f9fbf9;
+    padding: 12px 15px;
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 10pt;
+    border-bottom: 1px solid #eef2f0;
+  }
+
+  .qa-answer {
+    padding: 12px 15px;
+    font-size: 9.5pt;
+    color: #4a5568;
+    background-color: #fff;
+  }
+
+  /* 諮詢聯絡人卡片（莉梅姐） */
+  .contact-card {
+    background: linear-gradient(to right, #f4f7f4, #eaf0eb);
+    border: 1px solid #c8d6cb;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .contact-info h3 {
+    margin: 0 0 5px 0;
+    color: var(--primary-color);
+    font-size: 12pt;
+  }
+
+  .contact-info p {
+    margin: 0;
+    font-size: 9.5pt;
+    color: #555;
+  }
+
+  .btn-contact {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10pt;
+    box-shadow: 0 2px 5px rgba(230, 81, 0, 0.3);
+  }
+
+  /* 低碳永續宣告 */
+  .carbon-summary {
+    background-color: #ffffff;
+    border: 1px dashed #8ca381;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 9pt;
+  }
+
+  .carbon-summary h4 {
+    margin: 0 0 8px 0;
+    color: var(--primary-color);
+  }
+
+  .carbon-summary ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- 頂部 Banner -->
+  <div class="header-banner">
+    <h1>【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊</h1>
+    <div class="subtitle">搭乘永續綠色鐵道 ✕ 走進沒有水泥牆的森林博物館 ✕ 五感沉浸部落饗宴</div>
+    <div class="tag-container">
+      <span class="tag">🌱 低碳永續行</span>
+      <span class="tag">🌾 會說故事的彩繪餐桌</span>
+      <span class="tag">🌲 無圍牆的山林講堂</span>
+      <span class="tag">♨️ 縱谷山海雙名湯</span>
+    </div>
+  </div>
+
+  <div class="section-padding">
+
+    <!-- 出團與人數規範 -->
+    <div class="tour-info-grid">
+      <div class="info-item">
+        <span class="icon">👤</span>
+        <div class="text">
+          <div class="label">報名門檻</div>
+          <div class="value">一人即可報名</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="icon">🚌</span>
+        <div class="text">
+          <div class="label">成團條件</div>
+          <div class="value">6 人即刻成團</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <span class="icon">✨</span>
+        <div class="text">
+          <div class="label">精緻小團上限</div>
+          <div class="value">20 人滿團封頂</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 核心四大亮點 -->
+    <div class="section-title">✨ 行程核心四大亮點</div>
+    <div class="highlights-grid">
+      <div class="highlight-card">
+        <div class="icon">🌾</div>
+        <h3>會說故事的彩繪餐桌</h3>
+        <p>在阿美族織羅部落，將在地紅藜與稻糧拼繪成大地畫布，品嚐融入農耕故事與野菜智慧的部落風味餐。</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">🌲</div>
+        <h3>無圍牆的山林講堂</h3>
+        <p>走進鸞山部落「沒有水泥牆的森林博物館」，跟隨布農族獵人敬拜山神、探訪會走路的樹，學習山林智慧。</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">♨️</div>
+        <h3>縱谷山海雙名湯</h3>
+        <p>嚴選百年歷史安通野溪名湯與知本金聯世紀美人湯，在深度文化探索後享受極致溫泉療癒。</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">🚆</div>
+        <h3>低碳足跡鐵道慢旅</h3>
+        <p>全程以台鐵城際列車替代長途拉車，搭配在地永續接駁，降低碳排放，漫旅縱谷山海景致。</p>
+      </div>
+    </div>
+
+    <!-- 詳細行程規劃 -->
+    <div class="section-title">🗓 詳細行程規劃表</div>
+    <table class="itinerary-table">
+      <thead>
+        <tr>
+          <th style="width: 15%;">時段</th>
+          <th style="width: 28%;">Day 1：織羅米繪與百年溫泉</th>
+          <th style="width: 28%;">Day 2：獵人山林與知本名湯</th>
+          <th style="width: 29%;">Day 3：雙湯舒活與綠色歸途</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time-col">上午</td>
+          <td>
+            <b>台北車站東 3 門集合</b><br>
+            搭乘火車前往瑞穗<br>
+            <span class="badge badge-lowcarbon">低碳鐵道</span>
+          </td>
+          <td>
+            早餐後前往<b>鸞山部落</b><br>
+            探訪巨木群、部落巡禮<br>
+            <span class="badge badge-highlight">無圍牆的山林講堂</span>
+          </td>
+          <td>
+            早餐後自由活動<br>
+            <b>飯店溫泉泡湯舒適體驗</b><br>
+            享受知本美人湯
+          </td>
+        </tr>
+        <tr>
+          <td class="time-col">中午</td>
+          <td>
+            <b>車上享用火車便當</b><br>
+            （體驗懷舊鐵道飲食文化）
+          </td>
+          <td>
+            <b>享用原住民風味餐</b><br>
+            柴燒野炊與布農烤肉
+          </td>
+          <td>
+            <b>午餐自理</b><br>
+            （建議體驗知本在地小吃）
+          </td>
+        </tr>
+        <tr>
+          <td class="time-col">下午</td>
+          <td>
+            前往<b>織羅部落</b><br>
+            部落導覽與<b>彩繪米 DIY</b><br>
+            <span class="badge badge-highlight">會說故事的彩繪餐桌</span>
+          </td>
+          <td>
+            進行<b>鸞山部落文化體驗</b><br>
+            （入山祭拜、打糯米、八部合音）
+          </td>
+          <td>
+            下午搭乘火車返回台北車站<br>
+            <span class="badge badge-lowcarbon">低碳鐵道</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="time-col">傍晚 / 晚餐</td>
+          <td>
+            享用<b>織羅部落風味餐</b><br>
+            在地野菜與紅藜主題盛宴
+          </td>
+          <td>
+            前往知本<br>
+            享用知本在地精選晚餐
+          </td>
+          <td>
+            抵達台北車站<br>
+            <b>行程圓滿結束</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="time-col">住宿安排</td>
+          <td>
+            <div class="hotel-box">住宿：安通溫泉</div>
+            <small style="color:#666;">百年弱鹼性名湯</small>
+          </td>
+          <td>
+            <div class="hotel-box">住宿：知本金聯世紀酒店</div>
+            <small style="color:#666;">台東指標性溫泉飯店</small>
+          </td>
+          <td>
+            <div style="color: #999;">—（賦歸）—</div>
+          </td>
+        </tr>
+      </tbody>
+    </tbody>
+    </table>
+
+    <!-- Q&A 常見問題 -->
+    <div class="section-title">❓ 常見問題 Q&A</div>
+    <div class="qa-container">
+      <div class="qa-item">
+        <div class="qa-question">Q1：只有我一個人，可以報名參加嗎？</div>
+        <div class="qa-answer">A1：完全沒問題！我們支持<b>一人即可報名</b>。只要全團總報名人數達到 <b>6 人即可成團</b>。若您單人參加，可選擇補單人房差，或由我們為您協助安排同性別團友配房。</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">Q2：什麼時候會確認是否成團？團體人數上限是多少？</div>
+        <div class="qa-answer">A2：本行程為維持最高服務品質與部落體驗體驗感，<b>上限 20 人滿團</b>。達到 6 人成團門檻後，專員莉梅姐會第一時間通知您並協助開票與後續確認。</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">Q3：鸞山部落的體驗需要很強的體力嗎？穿著有什麼建議？</div>
+        <div class="qa-answer">A3：鸞山部落為原始森林步道，整體難度適中，但部分路段需攀爬樹根，建議穿著<b>輕便防滑的運動鞋/登山鞋</b>與長褲，並隨身攜帶防蚊液與雨具。</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-question">Q4：這趟行程的低碳理念是如何實踐的？</div>
+        <div class="qa-answer">A4：我們選用台鐵城際電車取代台北至花東的長途大巴拉車（減少超過 65% 碳排），且部落餐點全數採用在地「零距離食材（Farm to Table）」，減碳同時支持在地經濟。</div>
+      </div>
+    </div>
+
+    <!-- 專屬諮詢窗口：莉梅姐 -->
+    <div class="section-title">📞 專屬旅遊顧問諮詢</div>
+    <div class="contact-card">
+      <div class="contact-info">
+        <h3>專業旅遊顧問：莉梅姐</h3>
+        <p>對行程有任何疑問、想確認成團狀況或報名諮詢，歡迎隨時聯繫莉梅姐！</p>
+        <p style="margin-top: 5px;"><b>服務熱線：</b> 09xx-xxx-xxx ｜ <b>LINE ID：</b> @limay_travel</p>
+      </div>
+      <a href="#" class="btn-contact">立即聯繫莉梅姐</a>
+    </div>
+
+    <!-- 低碳永續宣告 -->
+    <div class="carbon-summary">
+      <h4>🌱 本行程之「低碳永續與在地共好」承諾：</h4>
+      <ul>
+        <li><b>低碳交通</b>：往返全程採用台鐵電氣化列車，顯著降低長途移動之碳足跡。</li>
+        <li><b>在地食材</b>：部落風味餐皆採用當地自產野菜與米糧，降低食材運輸碳排放。</li>
+        <li><b>文化永續</b>：體驗收益部分回饋部落基金，用於文化傳承與森林環境保育。</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
