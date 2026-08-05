@@ -155,7 +155,7 @@
   .itinerary-table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .itinerary-table th {
@@ -213,6 +213,14 @@
     font-weight: bold;
   }
 
+  /* 表格下方備註小字 */
+  .table-note {
+    font-size: 8.5pt;
+    color: #777;
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+
   /* 常見問題 Q&A */
   .qa-container {
     margin-bottom: 25px;
@@ -243,21 +251,22 @@
 
   /* 莉梅姐專屬聯絡卡片 */
   .contact-card {
-    background: linear-gradient(to right, #f4f7f4, #eaf0eb);
-    border: 1px solid #c8d6cb;
-    border-radius: 8px;
-    padding: 20px;
+    background: linear-gradient(135deg, #f0f5f2 0%, #e8f0eb 100%);
+    border: 1px solid #b8d0c0;
+    border-radius: 12px;
+    padding: 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px;
+    margin-bottom: 25px;
   }
 
   .contact-info h3 {
-    margin: 0 0 5px 0;
+    margin: 0;
     color: var(--primary-color);
-    font-size: 12pt;
+    font-size: 13.5pt;
   }
 
   .contact-info p {
@@ -270,7 +279,7 @@
   .btn-line {
     background-color: var(--line-color) !important;
     color: #ffffff !important;
-    font-size: 11pt !important;
+    font-size: 10.5pt !important;
     font-weight: bold;
     padding: 12px 22px !important;
     border-radius: 30px !important;
@@ -329,6 +338,10 @@
     margin: 0;
     padding-left: 20px;
     color: #555;
+  }
+
+  @media (max-width: 600px) {
+    body { padding-bottom: 90px; }
   }
 </style>
 </head>
@@ -492,6 +505,7 @@
         </tr>
       </tbody>
     </table>
+    <div class="table-note">* 為維護部落文化體驗品質與尊嚴，部分私房導覽路線與特色私廚菜單細節將於成團後提供專屬電子手冊。</div>
 
     <!-- Q&A 常見問題 -->
     <div class="section-title">❓ 常見問題 Q&A</div>
@@ -514,16 +528,46 @@
       </div>
     </div>
 
-    <!-- 專屬諮詢窗口：莉梅姐 -->
-    <div class="section-title">📞 專屬旅遊顧問諮詢</div>
-    <div class="contact-card">
-      <div class="contact-info">
-        <h3>專業旅遊顧問：莉梅姐</h3>
-        <p>對行程有任何疑問、想確認成團狀況或搶先預約，歡迎點擊按鈕回傳 <b>「低碳山林縱谷雙湯行+1」</b>，莉梅姐將為您優先保留名額！</p>
       </div>
-      <a href="https://lin.ee/Z3c7Qam" class="btn-line" target="_blank">💬 加 LINE 輸入「低碳山林縱谷雙湯行+1」</a>
     </div>
+<!-- 專屬諮詢窗口：莉梅姐（融入照片、資歷與個人魅力） -->
+<div class="section-title">📞 您的花東慢旅帶路人</div>
+<div class="contact-card" style="background: linear-gradient(135deg, #f0f5f2 0%, #e8f0eb 100%); border: 1px solid #b8d0c0; border-radius: 12px; padding: 22px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+  
+  <!-- 莉梅姐個人頭像 -->
+  <div style="flex-shrink: 0; text-align: center;">
+    <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" 
+         alt="莉梅姐照片" 
+         style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid #2e4a3b; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+  </div>
 
+  <!-- 莉梅姐簡介與文案 -->
+  <div class="contact-info" style="flex: 1; min-width: 280px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px; flex-wrap: wrap;">
+      <h3 style="margin: 0; color: #2e4a3b; font-size: 13.5pt;">專屬旅遊顧問：莉梅姐（Li-May）</h3>
+      <span style="background-color: #2e4a3b; color: #fff; font-size: 8pt; padding: 3px 10px; border-radius: 12px;">35年資歷 ✕ 精品旅遊專家</span>
+    </div>
+    
+    <blockquote style="margin: 8px 0; padding-left: 10px; border-left: 3px solid #52796f; color: #3b5249; font-style: italic; font-size: 9.5pt;">
+      「最好的旅行，不只是看風景，而是走進在地人的生活，用舌尖與心靈細細品味。」
+    </blockquote>
+
+    <p style="margin: 10px 0; color: #4a5568; font-size: 9pt; line-height: 1.6;">
+      🍷 <b>關於莉梅</b>：深耕旅遊業 <b>35 年</b>，專研質感精品團與客製化慢旅。曾親自居住台東並開過餐廳，對花東的山海秘境、在地食材與原鄉文化瞭如指掌。莉梅姐秉持「照顧家人的心」帶團，從交通、住宿到餐桌上的每一個細節都為您嚴格把關！
+    </p>
+    
+    <p style="margin-top: 10px; font-size: 9.5pt; color: #2e4a3b; font-weight: bold;">
+      👉 想了解成團狀況或搶先預約名額？歡迎點擊按鈕回傳 <b>「低碳山林縱谷雙湯行+1」</b>，莉梅姐將親自為您服務！
+    </p>
+
+    <div style="margin-top: 12px;">
+      <a href="https://lin.ee/Z3c7Qam" class="btn-line" target="_blank">
+        💬 加 LINE 回傳「低碳山林縱谷雙湯行+1」
+      </a>
+    </div>
+  </div>
+
+</div>
     <!-- 低碳永續宣告 -->
     <div class="carbon-summary">
       <h4>🌱 本行程之「低碳永續與在地共好」承諾：</h4>
@@ -541,7 +585,7 @@
 <div class="sticky-cta">
   <div class="text">
     🌱 1人可報名 ✕ 6人即成團 ✕ 20人滿團<br>
-    <small style="color:#666; font-weight:normal;">專屬顧問莉梅姐為您服務</small>
+    <small style="color:#666; font-weight:normal;">35年精品團顧問莉梅姐為您服務</small>
   </div>
   <a href="https://lin.ee/Z3c7Qam" class="btn-line" target="_blank">💬 低碳山林縱谷雙湯行+1</a>
 </div>
