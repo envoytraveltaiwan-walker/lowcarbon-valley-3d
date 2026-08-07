@@ -23,11 +23,11 @@
     padding-bottom: 90px;
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.5;
+    line-height: 1.6;
   }
 
   .container {
-    max-width: 550px; /* 適合手機快速閱讀的黃金寬度 */
+    max-width: 550px; /* 適合手機閱讀的黃金寬度 */
     margin: 0 auto;
     background: var(--card-bg);
     border-radius: 16px;
@@ -39,7 +39,7 @@
   .header-banner {
     background: linear-gradient(135deg, #2e4a3b 0%, #1b2d24 100%);
     color: #ffffff;
-    padding: 24px 20px;
+    padding: 26px 20px;
     text-align: center;
   }
 
@@ -100,11 +100,11 @@
     color: var(--primary-color);
     border-left: 4px solid var(--secondary-color);
     padding-left: 8px;
-    margin: 20px 0 12px 0;
+    margin: 22px 0 12px 0;
     font-weight: bold;
   }
 
-  /* 15秒亮點：可拍、可玩、可體驗 */
+  /* 15秒亮點：描繪樂活體驗與無負擔旅行 */
   .highlights-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -136,6 +136,35 @@
     font-size: 8.5pt;
     color: #555;
     line-height: 1.4;
+  }
+
+  /* 樂活族三大貼心承諾 */
+  .lohas-features {
+    background-color: #fff8f0;
+    border: 1px solid #ffe8d6;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+  }
+
+  .lohas-features h4 {
+    margin: 0 0 8px 0;
+    color: var(--accent-color);
+    font-size: 10.5pt;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .lohas-features ul {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 9pt;
+    color: #4a4a4a;
+  }
+
+  .lohas-features li {
+    margin-bottom: 4px;
   }
 
   /* 莉梅姐與本團特色卡片 */
@@ -199,6 +228,37 @@
     left: 0;
     color: var(--secondary-color);
     font-weight: bold;
+  }
+
+  /* 常見問題 QA 區塊 */
+  .faq-section {
+    margin-bottom: 20px;
+  }
+
+  .faq-item {
+    background: #fbfcfb;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+
+  .faq-q {
+    font-size: 9.5pt;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .faq-a {
+    font-size: 8.5pt;
+    color: #555;
+    margin: 0;
+    padding-left: 22px;
+    line-height: 1.5;
   }
 
   /* 開團通知 & 引導領 $500 區域 */
@@ -266,9 +326,9 @@
     <h1>【低碳縱谷・雙湯慢旅】</h1>
     <div class="subtitle">搭鐵道 ✕ 探神秘森林 ✕ 享雙溫泉名湯</div>
     <div class="tag-container">
-      <span class="tag">🌱 綠色永續</span>
-      <span class="tag">📸 超好拍秘境</span>
-      <span class="tag">♨️ 舒壓雙名湯</span>
+      <span class="tag">🌱 平日舒壓慢遊</span>
+      <span class="tag">♨️ 縱谷雙名湯</span>
+      <span class="tag">🥗 熟齡安心無負擔</span>
     </div>
   </div>
 
@@ -287,51 +347,86 @@
       </div>
     </div>
 
-    <!-- 15秒超快看懂：可拍、可玩、可體驗亮點 -->
-    <div class="section-title">⚡ 15秒掌握行程精華</div>
+    <!-- 15秒超快看懂：樂活質感行程特色 -->
+    <div class="section-title">⚡ 15秒掌握慢旅精華</div>
     <div class="highlights-grid">
       <div class="highlight-card">
-        <div class="icon">📸</div>
-        <h3>【超好拍】會走路的樹</h3>
-        <p>探訪鸞山「沒有水泥牆的森林博物館」，拍出仙氣巨木大片。</p>
-      </div>
-      <div class="highlight-card">
-        <div class="icon">🌾</div>
-        <h3>【可體驗】彩繪米 DIY</h3>
-        <p>在阿美族織羅部落，把在地紅藜與稻糧拼成專屬大地畫布。</p>
+        <div class="icon">🚆</div>
+        <div class="title-wrap">
+          <h3>【免拉車】新自強號直達</h3>
+        </div>
+        <p>告別九彎十八拐，全程火車加舒適小巴，一路輕鬆平穩賞風景。</p>
       </div>
       <div class="highlight-card">
         <div class="icon">♨️</div>
-        <h3>【極放鬆】縱谷雙名湯</h3>
-        <p>入住安通弱鹼性名湯與知本金聯世紀美人湯，完美洗滌身心。</p>
+        <div class="title-wrap">
+          <h3>【雙名湯】安通 ✕ 知本</h3>
+        </div>
+        <p>入住雙溫泉飯店，浸泡弱鹼性美人湯，徹底洗去平日的積累疲憊。</p>
       </div>
       <div class="highlight-card">
-        <div class="icon">🚆</div>
-        <h3>【超低碳】綠色新自強</h3>
-        <p>全程搭乘台鐵城際電聯車，告別長途拉車，減碳65%以上。</p>
+        <div class="icon">🌳</div>
+        <div class="title-wrap">
+          <h3>【慢漫遊】森林巨木散策</h3>
+        </div>
+        <p>步調放慢不趕路，徜徉無牆森林博物館與天然芬多精之中。</p>
+      </div>
+      <div class="highlight-card">
+        <div class="icon">🌾</div>
+        <div class="title-wrap">
+          <h3>【原民藝】部落手作體驗</h3>
+        </div>
+        <p>深入阿美族與布農部落，親手體驗彩繪稻糧與在地文化溫度。</p>
       </div>
     </div>
 
+    <!-- 樂活族平日出遊三大承諾 -->
+    <div class="lohas-features">
+      <h4>☀️ 樂活朋友平日出遊最貼心設計：</h4>
+      <ul>
+        <li><b>平緩好走</b>：嚴選無障礙友善與緩坡步道，不急不趕、走得舒心。</li>
+        <li><b>清爽少油</b>：嚴選在地原民野菜與柴燒產地料理，營養豐富無負擔。</li>
+        <li><b>彈性休息</b>：景點間預留充分漫步與泡湯時間，充分休息不體虛。</li>
+      </ul>
+    </div>
+
     <!-- 說說莉梅姐和這個團的特色 -->
-    <div class="section-title">💡 說說莉梅姐 ✕ 本團特色</div>
+    <div class="section-title">💡 帶路人：莉梅姐 ✕ 本團特色</div>
     <div class="limay-card">
       <div class="limay-header">
         <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" 
              alt="莉梅姐" 
              class="limay-avatar">
         <div class="limay-title">
-          <h3>帶路人：莉梅姐（Li-May）</h3>
+          <h3>莉梅姐（Li-May）</h3>
           <span class="limay-badge">35年旅遊資歷 ✕ 在地老饕帶路</span>
         </div>
       </div>
       <blockquote style="margin: 4px 0 10px 0; color: #3b5249; font-style: italic; font-size: 8.5pt;">
-        「曾在台東開過餐廳的我，比起走馬看花，更想帶大家像在地人一樣細細品味花東。」
+        「曾在台東開過餐廳的我，比起走馬看花，更想帶大家像在地人一樣，慢下來細細品味花東的靜謐與美好。」
       </blockquote>
       <ul class="feature-list">
-        <li><b>饕客級部落美食</b>：不吃公版團體餐，親自挑選柴燒野炊與阿美族野菜宴。</li>
-        <li><b>精品團等級貼心服務</b>：用照顧家人的心把關交通與住宿，一個人來也不尷尬。</li>
-        <li><b>不藏私秘境導覽</b>：成團後提供專屬電子手冊，鎖定私房路線與私廚細節！</li>
+        <li><b>饕客級在地風味</b>：拒絕公版團體桌菜，親自踩點挑選柴燒野炊與阿美族健康野菜宴。</li>
+        <li><b>無微不至照顧</b>：以對待家人的心安排行車與住宿，單人報名也能融入大家庭。</li>
+        <li><b>私房路線手冊</b>：成團後提供專屬數位手冊，鎖定私房打卡點與莉梅姐口袋名單！</li>
       </ul>
+    </div>
+
+    <!-- 常見問題 QA 區塊 -->
+    <div class="section-title">❓ 常見問題 QA</div>
+    <div class="faq-section">
+      <div class="faq-item">
+        <div class="faq-q"><span>Q1.</span> 行程步道會不會很耗體力？樂活長輩適合嗎？</div>
+        <div class="faq-a">完全不用擔心！行程均挑選平緩、設備完善的森林散步道，步調極慢，非常適合平日習慣散步、追求健康的樂活族群。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Q2.</span> 一個人報名方便嗎？住房間怎麼安排？</div>
+        <div class="faq-a">非常歡迎！我們有許多一個人報名的朋友，莉梅姐會親切照顧每位團友。住宿可選擇補單人房差獨享房間，或由我們協助安排同性團友合住。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Q3.</span> 飲食如果少油少鹽或有特殊素食需求可以安排嗎？</div>
+        <div class="faq-a">可以的！本團主打在地天然食材與健康原民風味，若您有素食或特定飲食習慣，請於報名時告知 LINE 客服，皆可為您特別調整安排。</div>
+      </div>
     </div>
 
     <!-- 開團通知 & 引導領 $500 優惠卡片 -->
