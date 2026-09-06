@@ -49,7 +49,7 @@
     padding-bottom: 85px;
   }
 
-  /* 固定頂部導覽列：採用透明高清 Logo */
+  /* 固定頂部導覽列 */
   .fixed-nav {
     position: sticky;
     top: 0;
@@ -112,7 +112,7 @@
     box-shadow: 0 0 25px rgba(0,0,0,0.05);
   }
 
-  /* 頁首主視覺區塊：部行山海間官方 LOGO 置頂 */
+  /* 頁首主視覺區塊：部行山海間 Logo 橫幅置頂 */
   .main-hero {
     position: relative;
     padding: 16px 16px 14px;
@@ -122,9 +122,9 @@
 
   .campaign-hero-img {
     width: 100%;
-    max-height: 240px;
+    max-height: 220px;
     object-fit: contain;
-    border-radius: 12px;
+    border-radius: 10px;
     margin-bottom: 12px;
     display: block;
   }
@@ -176,7 +176,7 @@
     line-height: 1.65;
   }
 
-  /* 三張情境照片展示區：採用最新提供的永康部落實拍 */
+  /* 三張情境照片展示區 */
   .photo-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -196,6 +196,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
   }
 
   .photo-caption {
@@ -347,7 +348,7 @@
     margin-top: 3px;
   }
 
-  /* 莉梅姐帶路人卡片：置入原民會 LOGO 認證 */
+  /* 莉梅姐帶路人卡片：置入原民會官方太陽 LOGO */
   .limay-card {
     background: linear-gradient(135deg, #f0f5f2 0%, #e8f0eb 100%);
     border: 1px solid #b8d0c0;
@@ -362,7 +363,6 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 10px;
-    position: relative;
   }
 
   .limay-avatar {
@@ -395,7 +395,7 @@
   }
 
   .limay-cip-logo {
-    height: 40px;
+    height: 42px;
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
@@ -458,11 +458,32 @@
     padding: 10px;
     font-size: 8.5pt;
     color: #3b4d42;
+    margin-bottom: 12px;
   }
 
   .b2b-subcard ul {
     margin: 4px 0 0;
     padding-left: 18px;
+  }
+
+  .endorsement-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid #e2ebe4;
+  }
+
+  .endorsement-row span {
+    font-size: 8pt;
+    color: #4a5c51;
+    font-weight: bold;
+  }
+
+  .endorsement-img {
+    height: 34px;
+    width: auto;
+    object-fit: contain;
   }
 
   /* 常見問題 FAQ */
@@ -579,7 +600,6 @@
            class="nav-logo-img">
     </a>
 
-    <!-- 語言切換按鈕組 -->
     <div class="lang-switch-box">
       <button class="lang-btn" id="btn-ja" onclick="setLanguage('ja')">
         <span>🌐</span> 日本語
@@ -598,7 +618,6 @@
            alt="部行山海間 主視覺" 
            class="campaign-hero-img">
 
-      <!-- 標籤組 -->
       <div class="badge-row">
         <span class="badge-pill badge-burgundy" id="hero-badge-1">低碳永續行</span>
         <span class="badge-pill badge-dark" id="hero-badge-2">會說故事的彩繪餐桌</span>
@@ -611,10 +630,10 @@
       </p>
     </div>
 
-    <!-- 視覺情境照 3 欄：依序替換為永康部落最新素材 -->
+    <!-- 視覺情境照 3 欄：永康部落真實照片 -->
     <div class="photo-row">
       <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/486518722_1115678570579221_7205287597983157048_n.jpg" alt="永康部落山林巡禮">
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/486518722_1115678570579221_7205287597983157048_n.jpg" alt="永康山林部落巡禮">
         <div class="photo-caption" id="caption-1">永康山林部落巡禮</div>
       </div>
       <div class="photo-card">
@@ -765,7 +784,7 @@
         * 為維護部落文化體驗品質與尊嚴，部分私房導覽路線與特色私廚菜單細節將於成團後提供專屬電子手冊。
       </p>
 
-      <!-- 莉梅姐帶路人卡片：右側置入原民會 LOGO -->
+      <!-- 莉梅姐帶路人卡片：右側置入原民會官方太陽標章 (07.jpg) -->
       <div class="section-title">
         <span>📞</span>
         <span id="limay-sec-title">您的花東慢旅帶路人</span>
@@ -780,6 +799,7 @@
             <h3 id="limay-name">專屬旅遊顧問：莉梅姐（Li-May）</h3>
             <span class="limay-badge" id="limay-exp">35年資歷 ✕ 精品旅遊專家</span>
           </div>
+          <!-- 原民會官方標章 -->
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
                alt="原住民族委員會認證標章" 
                class="limay-cip-logo">
@@ -794,7 +814,7 @@
         </ul>
       </div>
 
-      <!-- 常見問題 FAQ -->
+      <!-- 常見問題 FAQ（完全修復無巨木群） -->
       <div class="section-title">
         <span>❓</span>
         <span id="faq-title">常見問題 Q&A</span>
@@ -827,7 +847,7 @@
             <span id="faq-q3">永康部落的體驗需要很強的體力嗎？穿著有什麼建議？</span>
           </div>
           <p class="faq-a" id="faq-a3">
-            永康部落獵徑巡跡為原始森林步道，整體難度適中，不含攀爬高難度巨木路段。建議穿著輕便防滑的運動鞋/登山鞋與長褲，並隨身攜帶防蚊液與雨具。
+            永康部落獵徑巡跡為原始平緩森林步道，整體難度適中，完全不含攀爬巨木等高耗能活動。建議穿著輕便防滑的運動鞋/登山鞋與長褲，並隨身攜帶防蚊液與雨具。
           </p>
         </div>
 
@@ -852,7 +872,7 @@
         </ul>
       </div>
 
-      <!-- 主辦單位與履約保證卡 -->
+      <!-- 主辦單位與履約保證卡：右下角原民會官方 LOGO (07.jpg) -->
       <div class="operator-box">
         <div class="operator-meta">
           <h4 id="op-title">主辦・執行｜安捷國際旅行社</h4>
@@ -866,6 +886,12 @@
             <li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li>
             <li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>
           </ul>
+        </div>
+        <div class="endorsement-row">
+          <span id="endorse-text">☀️【推薦・公認】原住民族委員會認證合作夥伴</span>
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
+               alt="原住民族委員會認證標章" 
+               class="endorsement-img">
         </div>
       </div>
 
@@ -924,12 +950,13 @@
         faqQ2: "什麼時候會確認是否成團？團體人數上限是多少？",
         faqA2: "本行程為維護最高服務品質與部落體驗質感，上限 20 人滿團。達到 6 人成團門檻後，專屬莉梅姐會第一時間通知您並協助開票與後續確認。",
         faqQ3: "永康部落的體驗需要很強的體力嗎？穿著有什麼建議？",
-        faqA3: "永康部落獵徑巡跡為原始森林步道，整體難度適中，不含攀爬高難度巨木路段。建議穿著輕便防滑的運動鞋/登山鞋與長褲，並隨身攜帶防蚊液與雨具。",
+        faqA3: "永康部落獵徑巡跡為原始平緩森林步道，整體難度適中，完全不含攀爬巨木等高耗能活動。建議穿著輕便防滑的運動鞋/登山鞋與長褲，並隨身攜帶防蚊液與雨具。",
         faqQ4: "這趟行程的低碳理念是如何落實的？",
         faqA4: "我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，部落餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，也以實際行動支持原鄉在地經濟。",
         opTitle: "主辦・執行｜安捷國際旅行社",
         opDesc: "深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。",
         opBullets: "<li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li><li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>",
+        endorseText: "☀️【推薦・公認】原住民族委員會認證合作夥伴",
         ctaB2B: "✉️ B2B 合作洽詢",
         ctaLine: "💬 個人行程諮詢"
       },
@@ -976,6 +1003,7 @@
         opTitle: "主催・運行｜アンジェ国際旅行社（ENVOY TRAVEL）",
         opDesc: "創業35年・台湾の自然と先住民族文化を繋ぐ少人数専門の旅行社です。原住民族委員会の認定パートナーとして、日本の旅行会社様への現地手配（ランドオペレーター）から個人のお客様のプライベート旅まで承ります。",
         opBullets: "<li><b>【B2B 協業相談】</b>：旅程アレンジ・卸値見積もり・視察ツアー手配</li><li><b>【個人・グループ】</b>：6名様以上の貸切チャーター・日本語ガイド対応</li>",
+        endorseText: "☀️【推薦・公認】台湾 原住民族委員会",
         ctaB2B: "✉️ B2B お問い合わせ",
         ctaLine: "💬 個人旅行のご相談"
       }
