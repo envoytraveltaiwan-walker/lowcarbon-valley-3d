@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊 - 安捷國際旅行社 ENVOY TRAVEL</title>
+<title>【低碳縱谷・雙湯慢旅】花東原鄉 3日2夜 - 安捷國際旅行社 ENVOY TRAVEL</title>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP4CT61HC"></script>
@@ -24,28 +24,28 @@
 
 <style>
   :root {
-    --primary-color: #2e4a3b;
-    --secondary-color: #52796f;
+    --primary-color: #243e30;
+    --secondary-color: #4a6b5d;
     --accent-color: #8c261e;
     --accent-gold: #b37d4e;
     --bg-color: #f7f9f6;
     --card-bg: #ffffff;
-    --text-color: #2c3531;
-    --text-light: #5a6460;
+    --text-color: #28302b;
+    --text-light: #58635c;
     --border-color: #dbe4dc;
     --line-color: #274735;
-    --b2b-color: #1e2522;
+    --b2b-color: #1a231e;
   }
 
   * { box-sizing: border-box; }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Serif JP", serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.65;
     padding-bottom: 85px;
   }
 
@@ -76,7 +76,7 @@
   /* 語言切換按鈕組 */
   .lang-switch-box {
     display: flex;
-    background: #eef3ee;
+    background: #edf3ee;
     padding: 3px;
     border-radius: 20px;
     gap: 2px;
@@ -100,7 +100,7 @@
   .lang-btn.active {
     background: var(--primary-color);
     color: #ffffff;
-    box-shadow: 0 2px 6px rgba(46, 74, 59, 0.2);
+    box-shadow: 0 2px 6px rgba(36, 62, 48, 0.25);
   }
 
   /* 主容器 */
@@ -112,7 +112,7 @@
     box-shadow: 0 0 25px rgba(0,0,0,0.05);
   }
 
-  /* 頁首主視覺：部行山海間官方行程 Logo (07.jpg) 置頂 */
+  /* 頂部主視覺：部行山海間官方 LOGO */
   .main-hero {
     position: relative;
     padding: 16px 16px 14px;
@@ -122,10 +122,9 @@
 
   .campaign-hero-img {
     width: 100%;
-    max-height: 120px;
+    max-height: 180px;
     object-fit: contain;
-    border-radius: 8px;
-    margin: 4px auto 12px;
+    margin: 4px auto 14px;
     display: block;
   }
 
@@ -154,8 +153,8 @@
   }
 
   .hero-h1 {
-    font-size: 19px;
-    color: #212c24;
+    font-size: 19.5px;
+    color: #1f2a22;
     margin: 0 0 6px;
     font-weight: 800;
     letter-spacing: 0.5px;
@@ -172,11 +171,11 @@
     font-size: 11px;
     color: var(--text-light);
     margin: 0 auto 12px;
-    max-width: 440px;
+    max-width: 450px;
     line-height: 1.65;
   }
 
-  /* 三張情境照片展示區 */
+  /* 三張情境照片展示區：精細裁切、加強視覺張力 */
   .photo-row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -186,10 +185,11 @@
 
   .photo-card {
     position: relative;
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
-    height: 105px;
+    height: 118px;
     background: #eaeaea;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   }
 
   .photo-card img {
@@ -197,21 +197,28 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
   }
+
+  /* 裁切焦點微調 */
+  .photo-card.card-p1 img { object-position: center 30%; }
+  .photo-card.card-p2 img { object-position: 55% center; }
+  .photo-card.card-p3 img { object-position: center 60%; }
 
   .photo-caption {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.78) 100%);
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.82) 100%);
     color: #fff;
     font-size: 7.5pt;
-    padding: 6px 3px 3px;
+    padding: 8px 4px 4px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 500;
   }
 
   .section-content {
@@ -285,7 +292,7 @@
     line-height: 1.45;
   }
 
-  /* 體驗式情境規劃（無表格、無具體部落名） */
+  /* 體驗式情境行程 */
   .experience-card {
     background: #fbfcfb;
     border: 1px solid var(--border-color);
@@ -320,59 +327,43 @@
     font-size: 8pt;
     color: #555;
     margin: 0;
-    line-height: 1.5;
-  }
-
-  /* 日本旅展專屬：日本旅客安心保證模組（僅在日文時更深度強調） */
-  .japan-trust-card {
-    background: #fffcf8;
-    border: 1px solid #ebd9c3;
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin-bottom: 20px;
-  }
-
-  .japan-trust-card h4 {
-    margin: 0 0 8px;
-    font-size: 9.5pt;
-    color: var(--accent-gold);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .japan-trust-card ul {
-    margin: 0;
-    padding-left: 18px;
-    font-size: 8pt;
-    color: #534b42;
     line-height: 1.55;
   }
 
-  /* 莉梅姐帶路人卡片：右上角配置原民會官方 Logo (02.png) */
-  .limay-card {
-    background: linear-gradient(135deg, #f0f5f1 0%, #e8f0eb 100%);
-    border: 1px solid #b8d0c0;
-    border-radius: 12px;
-    padding: 16px;
+  /* 莉梅姐引路人專題卡片（結合 Special Editorial 質感） */
+  .limay-editorial-card {
+    background: #fdfdfb;
+    border: 1px solid #dcd7cc;
+    border-radius: 14px;
+    padding: 20px 18px;
     margin-bottom: 20px;
     position: relative;
+  }
+
+  .editorial-tag-line {
+    text-align: center;
+    font-size: 8pt;
+    letter-spacing: 2px;
+    color: var(--accent-gold);
+    font-weight: 600;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #ebd9c3;
+    padding-bottom: 6px;
   }
 
   .limay-header {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    position: relative;
+    gap: 12px;
+    margin-bottom: 12px;
   }
 
   .limay-avatar {
-    width: 58px;
-    height: 58px;
+    width: 62px;
+    height: 62px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--accent-gold);
     flex-shrink: 0;
   }
 
@@ -382,48 +373,91 @@
 
   .limay-title h3 {
     margin: 0;
-    font-size: 10.5pt;
+    font-size: 11pt;
     color: var(--primary-color);
+    font-weight: 700;
   }
 
-  .limay-badge {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 7pt;
-    padding: 2px 7px;
-    border-radius: 10px;
+  .limay-title .sub-title {
+    font-size: 8pt;
+    color: #887868;
     margin-top: 2px;
   }
 
-  .limay-cip-logo {
-    height: 44px;
-    width: auto;
-    max-width: 140px;
-    object-fit: contain;
-    flex-shrink: 0;
-  }
-
-  .feature-list {
-    margin: 10px 0 0 0;
-    padding-left: 0;
-    list-style: none;
+  .limay-quote-box {
+    background: #fbf8f3;
+    border-left: 3px solid var(--accent-gold);
+    padding: 10px 12px;
+    margin: 10px 0 14px 0;
     font-size: 8.5pt;
-    color: #4a5568;
+    color: #3b4d42;
+    line-height: 1.6;
+    font-style: italic;
   }
 
-  .feature-list li {
-    margin-bottom: 6px;
-    padding-left: 18px;
-    position: relative;
+  .limay-body-text {
+    font-size: 8pt;
+    color: #4f5853;
+    line-height: 1.65;
+    margin-bottom: 12px;
   }
 
-  .feature-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--secondary-color);
+  /* 日本原住民紋樣展示小區塊（融入文化厚度） */
+  .indigenous-pattern-box {
+    background: #1f2a24;
+    border-radius: 10px;
+    padding: 14px;
+    color: #ffffff;
+    margin-top: 14px;
+  }
+
+  .pattern-title {
+    font-size: 8.5pt;
+    color: #d6b88d;
+    letter-spacing: 1px;
     font-weight: bold;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .pattern-desc {
+    font-size: 7.5pt;
+    color: #d0ded6;
+    line-height: 1.5;
+    margin: 0 0 10px 0;
+  }
+
+  .pattern-badges {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px dashed rgba(255,255,255,0.15);
+    padding-top: 8px;
+    font-size: 7.5pt;
+    color: #e2ede7;
+  }
+
+  /* 給日本旅人/業者的專屬問候信卡片 */
+  .tokyo-expo-letter {
+    background: #faf6f0;
+    border: 1px solid #ebd9c3;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .tokyo-expo-letter h4 {
+    margin: 0 0 8px;
+    font-size: 9.5pt;
+    color: var(--accent-gold);
+  }
+
+  .tokyo-expo-letter p {
+    font-size: 8pt;
+    color: #4a453e;
+    line-height: 1.6;
+    margin: 0;
   }
 
   /* 主辦單位與履約保證卡 */
@@ -437,7 +471,7 @@
 
   .operator-meta h4 {
     margin: 0;
-    font-size: 10.5pt;
+    font-size: 10pt;
     color: var(--primary-color);
   }
 
@@ -448,7 +482,7 @@
   }
 
   .operator-intro {
-    font-size: 8.5pt;
+    font-size: 8pt;
     color: #4c5550;
     line-height: 1.55;
     margin-bottom: 12px;
@@ -459,7 +493,7 @@
     border: 1px dashed #b8c9bd;
     border-radius: 8px;
     padding: 10px;
-    font-size: 8.5pt;
+    font-size: 8pt;
     color: #3b4d42;
     margin-bottom: 12px;
   }
@@ -484,7 +518,7 @@
   }
 
   .endorsement-img {
-    height: 30px;
+    height: 32px;
     width: auto;
     object-fit: contain;
   }
@@ -503,7 +537,7 @@
   }
 
   .faq-q {
-    font-size: 9pt;
+    font-size: 8.5pt;
     font-weight: bold;
     color: var(--primary-color);
     margin-bottom: 6px;
@@ -513,7 +547,7 @@
   }
 
   .faq-a {
-    font-size: 8.5pt;
+    font-size: 8pt;
     color: var(--text-light);
     padding-left: 18px;
     margin: 0;
@@ -615,36 +649,36 @@
 
   <div class="container">
     
-    <!-- 頁首主視覺：部行山海間行程官方 Logo (07.jpg) 置頂 -->
+    <!-- 頁首主視覺：部行山海間官方行程 Logo (07.jpg) 置頂 -->
     <div class="main-hero">
       <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
            alt="部行山海間 官方Logo" 
            class="campaign-hero-img">
 
       <div class="badge-row">
-        <span class="badge-pill badge-burgundy" id="hero-badge-1">低碳永續行</span>
-        <span class="badge-pill badge-dark" id="hero-badge-2">會說故事的彩繪餐桌</span>
+        <span class="badge-pill badge-burgundy" id="hero-badge-1">3天2夜・平日限定慢遊</span>
+        <span class="badge-pill badge-dark" id="hero-badge-2">台鐵城際電聯車直達</span>
       </div>
 
-      <h1 class="hero-h1" id="hero-title">【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊</h1>
-      <div class="hero-sub" id="hero-sub">搭乘永續綠色鐵道 ✕ 走進獵人山林講堂 ✕ 五感沉浸原鄉饗宴</div>
+      <h1 class="hero-h1" id="hero-title">【低碳縱谷・雙湯慢旅】花東原鄉 3日2夜</h1>
+      <div class="hero-sub" id="hero-sub">搭乘永續綠色鐵道 ✕ 走進山林獵人講堂 ✕ 五感沉浸原鄉雙溫泉</div>
       <p class="hero-desc" id="hero-desc">
         搭乘台鐵新自強號城際列車替代長途拉車，深入花東縱谷原鄉淨土。沉浸百年弱鹼溪湯與知名美人名湯，體驗零距離產地野菜與獵人野食盛宴。
       </p>
     </div>
 
-    <!-- 視覺情境照 3 欄 -->
+    <!-- 視覺情境照 3 欄：精準裁切、視角優化 -->
     <div class="photo-row">
-      <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/486518722_1115678570579221_7205287597983157048_n.jpg" alt="山林巡禮">
+      <div class="photo-card card-p1">
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/486518722_1115678570579221_7205287597983157048_n.jpg" alt="山林獵徑巡禮">
         <div class="photo-caption" id="caption-1">山林獵徑巡禮</div>
       </div>
-      <div class="photo-card">
+      <div class="photo-card card-p2">
         <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/486827340_1115675173912894_1920434262453632038_n.jpg" alt="射箭擲矛體驗">
         <div class="photo-caption" id="caption-2">獵人射箭擲矛體驗</div>
       </div>
-      <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/503820476_1170794178400993_2098927017974817089_n.jpg" alt="獵人野食餐桌">
+      <div class="photo-card card-p3">
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/503820476_1170794178400993_2098927017974817089_n.jpg" alt="獵人產地野食餐桌">
         <div class="photo-caption" id="caption-3">獵人產地野食餐桌</div>
       </div>
     </div>
@@ -694,12 +728,12 @@
         </div>
         <div class="highlight-card">
           <div class="icon">🚆</div>
-          <h3 id="hl-t4">低碳足跡鐵道慢旅</h3>
+          <h3 id="hl-t4">低碳足跡鐵道漫旅</h3>
           <p id="hl-d4">全程以台鐵城際電聯車替代長途拉車，搭配在地永續接駁，降低碳排，悠遊縱谷山海。</p>
         </div>
       </div>
 
-      <!-- 描述性行程體驗精華（取代詳細行程表） -->
+      <!-- 描述性行程體驗精華（取代表格） -->
       <div class="section-title">
         <span>🌿</span>
         <span id="exp-head">3 日慢旅體驗精華</span>
@@ -720,44 +754,51 @@
         </div>
       </div>
 
-      <!-- 日本旅展客製模組（日本旅客重視的安心、衛生與文化保證） -->
-      <div class="japan-trust-card" id="japan-trust-box">
-        <h4 id="trust-head">🌸 旅展限定・給日本旅客與旅行社的安心承諾</h4>
-        <ul id="trust-body">
-          <li><b>正規保證</b>：台灣交通部觀光署認可「甲種旅行社」，具備承辦入境團體最高資質。</li>
-          <li><b>語言無礙</b>：全行程可安排專業日本語導遊隨行解說，深刻理解台灣原住民文化。</li>
-          <li><b>衛生安心</b>：嚴選高規格合法溫泉飯店與潔淨餐飲，安心體驗無負擔在地風土美味。</li>
-          <li><b>B2B 快速對應</b>：日本旅行社同業可現場直接商談客製包團、視察專案與批發合約。</li>
-        </ul>
-      </div>
-
-      <!-- 莉梅姐帶路人卡片：右上角配置原民會官方 Logo (02.png) -->
-      <div class="section-title">
-        <span>📞</span>
-        <span id="limay-sec-title">您的花東慢旅帶路人</span>
-      </div>
-
-      <div class="limay-card">
+      <!-- 莉梅姐引路人專題卡片：融合截圖風格與說法 -->
+      <div class="limay-editorial-card">
+        <div class="editorial-tag-line">SPECIAL EDITORIAL・旅の案内人</div>
+        
         <div class="limay-header">
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" 
                alt="莉梅姐" 
                class="limay-avatar">
           <div class="limay-title">
-            <h3 id="limay-name">專屬旅遊顧問：莉梅姐（Li-May）</h3>
-            <span class="limay-badge" id="limay-exp">35年資歷 ✕ 精品旅遊專家</span>
+            <h3 id="limay-name">莉梅姐（メイ姉さん）</h3>
+            <div class="sub-title" id="limay-role">專屬旅遊顧問 ✕ 旅の案内人 35年</div>
           </div>
-          <!-- 原民會官方 Logo (02.png) -->
-          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
-               alt="原民會官方Logo" 
-               class="limay-cip-logo">
         </div>
-        <blockquote style="margin: 4px 0 10px 0; color: #3b5249; font-style: italic; font-size: 8.5pt;" id="limay-quote">
-          「最好的旅行，不只是看風景，而是走進在地人的生活，用舌尖與心靈細細品味。」
-        </blockquote>
-        <ul class="feature-list" id="limay-points">
-          <li><b>關於莉梅</b>：深耕旅遊業 35 年，專研質感精品團與客製化慢旅。曾居住台東並開設餐廳，對花東的山海秘境、在地食材與原鄉文化瞭如指掌。</li>
-          <li><b>無微不至的照顧</b>：秉持「照顧家人的心」帶團，從交通、住宿到餐桌上的每一個細節都為您嚴格把關！</li>
-        </ul>
+
+        <div class="limay-quote-box" id="limay-quote">
+          「風の匂い、古木が語りかける呼吸。35年歩み続けたからこそ出会えた、誰も知らない美しき台湾原郷へご案内します。」
+        </div>
+
+        <div class="limay-body-text" id="limay-desc">
+          在台灣被親切稱為「莉梅姐」的她，35年間走遍台灣的山河與原鄉古道。對她而言，旅行不單是名勝打卡，而是觸摸大地經年累月孕育的生命氣息。以對待家人般的細膩關照，帶領旅人走進大型巴士無法抵達的秘境，品味最地道的山珍與柴燒料理。
+        </div>
+
+        <!-- 台灣原住民族文化紋樣象徵模組 -->
+        <div class="indigenous-pattern-box">
+          <div class="pattern-title">
+            <span>◆</span> INDIGENOUS HERITAGE｜大地と祖霊の紋様
+          </div>
+          <p class="pattern-desc">
+            台灣原住民族將對自然的崇敬與祖靈的智慧化作幾何圖騰。這趟旅程，我們將帶您超越走馬看花，深刻體會編織與山林間的精神世界。
+          </p>
+          <div class="pattern-badges">
+            <span>◇ 阿美族（大地耕織）</span>
+            <span>◇ 布農族（山林獵人）</span>
+            <span>◇ 泰雅族（祖靈之眼）</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 東京旅展專屬・致日本旅人與業者的信 -->
+      <div class="tokyo-expo-letter" id="tokyo-expo-box">
+        <h4 id="letter-title">日本の旅人の皆様へ（東京旅展特別メッセージ）</h4>
+        <p id="letter-content">
+          台湾には、まだガイドブックに載っていない豊かな暮らしと、温かい笑顔があふれています。言葉や文化の壁を越え、家族を迎えるように安心してお任せいただける旅をご用意しております。東京の会場でご縁をいただいた皆様と、いつか台湾の静かな森でお茶を酌み交わせる日を、心より楽しみにしております。<br>
+          <span style="display:block; text-align:right; margin-top:8px; font-weight:bold;">旅の案内人 莉梅姐（メイ姉さん）より</span>
+        </p>
       </div>
 
       <!-- 常見問題 FAQ -->
@@ -792,7 +833,7 @@
             <span>Q3.</span>
             <span id="faq-q3">山林巡禮體驗需要很強的體力嗎？穿著有什麼建議？</span>
           </div>
-          <p class="faq-a" id="faq-a3">
+          <p class="faq-a" id="faq-a4">
             山林體驗皆挑選平緩安全的自然步道，步調放慢不趕路，完全不含攀爬巨木等劇烈運動。建議穿著輕便防滑的運動鞋/健走鞋與長褲，並隨身攜帶防蚊液與雨具。
           </p>
         </div>
@@ -802,7 +843,7 @@
             <span>Q4.</span>
             <span id="faq-q4">這趟行程的低碳理念是如何落實的？</span>
           </div>
-          <p class="faq-a" id="faq-a4">
+          <p class="faq-a" id="faq-a4-ans">
             我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，也以實際行動支持原鄉在地經濟。
           </p>
         </div>
@@ -821,8 +862,8 @@
       <!-- 主辦單位與履約保證卡 -->
       <div class="operator-box">
         <div class="operator-meta">
-          <h4 id="op-title">主辦・執行｜安捷國際旅行社</h4>
-          <p>交通部觀光署認可 甲種旅行業（交觀甲字第5920號）｜統編：16169138</p>
+          <h4 id="op-title">主辦・執行｜安捷國際旅行社有限公司</h4>
+          <p>交通部觀光署 登錄旅行業 甲種 5920 號｜統編：16169138</p>
         </div>
         <div class="operator-intro" id="op-desc">
           深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。
@@ -835,8 +876,8 @@
         </div>
         <div class="endorsement-row">
           <span id="endorse-text">☀️【推薦・公認】原住民族委員會認證合作夥伴</span>
-          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
-               alt="部行山海間 標章" 
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
+               alt="原民會 Logo" 
                class="endorsement-img">
         </div>
       </div>
@@ -860,10 +901,10 @@
   <script>
     const i18n = {
       zh: {
-        heroBadge1: "低碳永續行",
-        heroBadge2: "會說故事的彩繪餐桌",
-        heroTitle: "【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊",
-        heroSub: "搭乘永續綠色鐵道 ✕ 走進獵人山林講堂 ✕ 五感沉浸原鄉饗宴",
+        heroBadge1: "3天2夜・平日限定慢遊",
+        heroBadge2: "台鐵城際電聯車直達",
+        heroTitle: "【低碳縱谷・雙湯慢旅】花東原鄉 3日2夜",
+        heroSub: "搭乘永續綠色鐵道 ✕ 走進山林獵人講堂 ✕ 五感沉浸原鄉雙溫泉",
         heroDesc: "搭乘台鐵新自強號城際列車替代長途拉車，深入花東縱谷原鄉淨土。沉浸百年弱鹼溪湯與知名美人名湯，體驗零距離產地野菜與獵人野食盛宴。",
         cap1: "山林獵徑巡禮",
         cap2: "獵人射箭擲矛體驗",
@@ -890,13 +931,11 @@
         expD2Desc: "走進無圍牆的山林學堂，由獵人引領敬拜山神、循跡探訪獸徑廊道，體驗射箭、擲矛與祈福儀式；中午大啖產地直送柴燒野炊。下午聆聽震撼天際的八部合音，傍晚入住台東指標溫泉名宿。",
         expD3Title: "Day 3：晨間溫泉舒活 ✕ 在地慢食漫步 ✕ 綠色鐵道賦歸",
         expD3Desc: "早晨在晨光中盡情享受溫泉美人湯與飯店豐盛早餐。午後悠閒漫步在地風光、品嚐特色小吃，隨後搭乘台鐵列車平穩北返，帶著充盈的自然靈氣與溫暖回憶圓滿結束旅程。",
-        trustHead: "🌸 旅展限定・給日本旅客與旅行社的安心承諾",
-        trustBody: "<li><b>正規保證</b>：台灣交通部觀光署認可「甲種旅行社」，具備承辦入境團體最高資質。</li><li><b>語言無礙</b>：全行程可安排專業日本語導遊隨行解說，深刻理解台灣原住民文化。</li><li><b>衛生安心</b>：嚴選高規格合法溫泉飯店與潔淨餐飲，安心體驗無負擔在地風土美味。</li><li><b>B2B 快速對應</b>：日本旅行社同業可現場直接商談客製包團、視察專案與批發合約。</li>",
-        limaySecTitle: "您的花東慢旅帶路人",
-        limayName: "專屬旅遊顧問：莉梅姐（Li-May）",
-        limayExp: "35年資歷 ✕ 精品旅遊專家",
-        limayQuote: "「最好的旅行，不只是看風景，而是走進在地人的生活，用舌尖與心靈細細品味。」",
-        limayPoints: "<li><b>關於莉梅</b>：深耕旅遊業 35 年，專研質感精品團與客製化慢旅。曾居住台東並開設餐廳，對花東的山海秘境、在地食材與原鄉文化瞭如指掌。</li><li><b>無微不至的照顧</b>：秉持「照顧家人的心」帶團，從交通、住宿到餐桌上的每一個細節都為您嚴格把關！</li>",
+        limayRole: "專屬旅遊顧問 ✕ 旅の案内人 35年",
+        limayQuote: "「風的氣息、古木低語的呼吸。正因為持續行走了35年，才能帶您遇見誰也不曾知曉的台灣原鄉深邃之美。」",
+        limayDesc: "在台灣被親切稱為「莉梅姐」的她，35年間走遍台灣的山河與原鄉古道。對她而言，旅行不單是名勝打卡，而是觸摸大地經年累月孕育的生命氣息。以對待家人般的細膩關照，帶領旅人走進大型巴士無法抵達的秘境，品味最地道的山珍與柴燒料理。",
+        letterTitle: "致日本旅人的信（東京旅展特別獻禮）",
+        letterContent: "台灣擁有許多旅遊書上未曾記載的豐饒生活與溫暖笑容。跨越語言與文化的藩籬，我們以迎接家人的心情，為您準備了最安心舒適的慢旅。期待與在東京會場結緣的每一位朋友，未來在台灣靜謐的森林中一同沏茶相聚。<br><span style='display:block; text-align:right; margin-top:8px; font-weight:bold;'>旅之引路人 莉梅姐 敬上</span>",
         faqTitle: "常見問題 Q&A",
         faqQ1: "只有我一個人，可以報名參加嗎？",
         faqA1: "完全沒問題！我們支持一人即可報名。只要全團總報名人數達到 6 人即可成團。若您單人參加，可選擇補單人房差，或由我們為您協助安排同性別團友配房。",
@@ -905,8 +944,8 @@
         faqQ3: "山林巡禮體驗需要很強的體力嗎？穿著有什麼建議？",
         faqA3: "山林體驗皆挑選平緩安全的自然步道，步調放慢不趕路，完全不含攀爬巨木等劇烈運動。建議穿著輕便防滑的運動鞋/健走鞋與長褲，並隨身攜帶防蚊液與雨具。",
         faqQ4: "這趟行程的低碳理念是如何落實的？",
-        faqA4: "我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，也以實際行動支持原鄉在地經濟。",
-        opTitle: "主辦・執行｜安捷國際旅行社",
+        faqA4Ans: "我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，也以實際行動支持原鄉在地經濟。",
+        opTitle: "主辦・執行｜安捷國際旅行社有限公司",
         opDesc: "深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。",
         opBullets: "<li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li><li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>",
         endorseText: "☀️【推薦・公認】原住民族委員會認證合作夥伴",
@@ -914,15 +953,15 @@
         ctaLine: "💬 個人行程諮詢"
       },
       ja: {
-        heroBadge1: "低炭素・サステナブルツーリズム",
-        heroBadge2: "物語を紡ぐ伝統食文化",
+        heroBadge1: "2泊3日・平日限定リトリート",
+        heroBadge2: "台湾鉄道・特急直通アクセス",
         heroTitle: "【低炭素な縦谷・二大名湯の旅】花東原郷 3日間",
-        heroSub: "台湾鉄道特急の旅 ✕ 先住民族の森の学び舎 ✕ 五感で味わう本物の台湾",
-        heroDesc: "台北から最新特急「新自強号」で快適に花東縦谷へ。美しい自然と共生する先住民族の里山を訪ね、百年の歴史を誇る名湯と美肌の湯、そして身体に優しい地産ガストロノミーに癒やされる3日間。",
+        heroSub: "環境に優しい鉄道旅 ✕ 森の学び舎 ✕ 五感で味わう原郷饗宴",
+        heroDesc: "最新鋭の特急電車で長距離移動の揺れを解消。花東縦谷の豊かな原郷へ。百年の歴史を誇る弱アルカリ名湯と知本美肌の湯、そして地産ジビエとオーガニック山菜の食卓を愉しむ3日間。",
         cap1: "森の狩人トレイル散策",
         cap2: "伝統の弓矢・槍投げ体験",
         cap3: "薪火でいただく地産野趣食卓",
-        infoT1: "1名様よりエントリー可",
+        infoT1: "1名様より申込可能",
         infoS1: "お一人様歓迎",
         infoT2: "6名様で催行確定",
         infoS2: "少人数上質旅",
@@ -931,10 +970,10 @@
         hlHead: "旅の4大ハイライト（見どころ）",
         hlT1: "大地とつながる食の体験",
         hlD1: "豊かな穀物と赤キヌアを用いて、農耕の祈りを込めたお米アートを体験。旬のオーガニック山菜料理をご堪能いただけます。",
-        hlT2: "壁のない森のオープンキャンパス",
+        hlT2: "壁のない森の学び舎",
         hlD2: "先住民族の狩人とともに山神に祈りを捧げ、森の知恵を学ぶ。世界的にも貴重な多声合唱「八部合音」の響きに包まれます。",
         hlT3: "美肌と癒やしの縦谷二大名湯",
-        hlD3: "日本統治時代より愛される百年の安通温泉（弱アルカリ泉）と知本温泉の重曹泉。異なる泉質を心ゆくまでお愉しみください。",
+        hlD3: "日本統治時代より愛される百年の安通温泉（弱アルカリ泉）と知本温泉の重曹泉。異なる名湯を心ゆくまでお愉しみください。",
         hlT4: "環境に優しい低炭素鉄道旅",
         hlD4: "山道の揺れを解消する最新特急電車を採用。CO2排出を大幅に抑え、快適性と持続可能性を両立したスロートラベルです。",
         expHead: "3日間の体験ストーリー",
@@ -944,13 +983,11 @@
         expD2Desc: "豊かな山林で自然の掟を学び、伝統の弓矢や槍投げ、祈りの儀式に参加。昼食は薪火でじっくり焼き上げる香ばしい郷土料理。心揺さぶる八部合音の響きを聴いた後、東台湾屈指の温泉ホテルへ。",
         expD3Title: "Day 3：朝の温泉リトリート ✕ 土地のスローフード ✕ 快適な帰路",
         expD3Desc: "澄んだ空気の中で朝風呂と朝食をゆったり堪能。チェックアウト後は穏やかな街並みの散策と地元名物を愉しみ、午後特急列車にて台北へ。心洗われる余韻とともに旅を締めくくります。",
-        trustHead: "🇯🇵 日本の旅行会社様・お客様へのお約束（安心・安全）",
-        trustBody: "<li><b>【正規甲種旅行社】</b>：台湾交通部観光署公認。インバウンド手配（ランドオペレーター）の実績多数。</li><li><b>【日本語ガイド対応】</b>：文化の深層までわかりやすく解説するベテラン日本語ガイドを手配可能。</li><li><b>【厳選された衛生環境】</b>：日本のお客様の基準に適合した清潔な客室・厳選レストランのみを使用。</li><li><b>【B2B 卸値見積・視察】</b>：旅行会社様のオリジナル企画、人数別見積（Net Rate）、視察旅行の手配も迅速に承ります。</li>",
-        limaySecTitle: "ツアー専任案内人",
-        limayName: "トラベルアドバイザー：李梅（Li-May）",
-        limayExp: "業界歴35年 ✕ 台湾美食・文化のスペシャリスト",
-        limayQuote: "「一般的な観光地を巡るだけでは出逢えない、土地の人々の温もりと本物の台湾を、心を込めてご案内いたします。」",
-        limayPoints: "<li><b>李梅（リメイ）について</b>：35年間にわたり質の高いカスタムツアーを手掛ける。台東での居住・レストラン経営経験を持ち、現地の食と先住民族文化を熟知。</li><li><b>細やかなおもてなし</b>：移動・宿泊・食事の衛生面に至るまで、家族を迎えるような安心感と気配りをお約束します。</li>",
+        limayRole: "専属トラベルコンサルタント ✕ 旅の案内人 35年",
+        limayQuote: "「風の匂い、古木が語りかける呼吸。35年歩み続けたからこそ出会えた、誰も知らない美しき台湾原郷へご案内します。」",
+        limayDesc: "台湾で親しみを込めて「莉梅姐（メイ姉さん）」と呼ばれる彼女は、35年間にわたり台湾の山河と世界の古道を歩き続けてきた旅のスペシャリスト。大型バスでは立ち入れない秘境の集落や、百年続く巨木の森。暮らす人々と目を合わせ、同じお茶を分け合う、心をかよわせる旅をお届けします。",
+        letterTitle: "日本の旅人の皆様へ（東京旅展特別メッセージ）",
+        letterContent: "台湾には、まだガイドブックに載っていない豊かな暮らしと、温かい笑顔があふれています。言葉や文化の壁を越え、家族を迎えるように安心してお任せいただける旅をご用意しております。東京の会場でご縁をいただいた皆様と、いつか台湾の静かな森でお茶を酌み交わせる日を、心より楽しみにしております。<br><span style='display:block; text-align:right; margin-top:8px; font-weight:bold;'>旅の案内人 莉梅姐（メイ姉さん）より</span>",
         faqTitle: "よくあるご質問（FAQ）",
         faqQ1: "1名での参加は可能ですか？相部屋の希望は？",
         faqA1: "はい、1名様よりエントリーいただけます。全体で6名様に達した時点で催行確定となります。シングルルーム（追加代金）のご利用、または同性のお客様との相部屋調整も承ります。",
@@ -959,8 +996,8 @@
         faqQ3: "森の散策に特別な体力や登山装備は必要ですか？",
         faqA3: "危険な急斜面や木登りは一切ございません。歩きやすく整備された自然小道をゆっくり歩きます。歩きやすいスニーカーまたはウォーキングシューズ、長ズボンでご参加ください。",
         faqQ4: "日本の旅行会社（B2B）向けのランド手配は可能ですか？",
-        faqA4: "はい、可能です。専用車、日本語ガイド、宿泊、集落プログラムを一括して手配いたします。ツアーアレンジや見積もりはお気軽にお問い合わせください。",
-        opTitle: "主催・運行｜アンジェ国際旅行社（ENVOY TRAVEL）",
+        faqA4Ans: "はい、正規甲種旅行社として承ります。専用車、日本語ガイド、宿泊、集落プログラムを一括して手配いたします。ツアーアレンジや卸値見積もり（Net Rate）はお気軽にお問い合わせください。",
+        opTitle: "主催・運行｜アンジェ国際旅行社有限公司",
         opDesc: "創業35年。台湾の豊かな自然と先住民族文化をつなぐ専門旅行社です。台湾原住民族委員会の認定パートナーとして、日本の旅行会社様への現地地上手配（ランド）から個人のお客様のプライベート旅まで、確かな品質でお応えします。",
         opBullets: "<li><b>【旅行会社様向け（B2B）】</b>：卸値見積もり・旅程カスタマイズ・現地視察手配</li><li><b>【個人・グループ旅行】</b>：6名様以上での専用車完全貸切・日本語ガイド対応</li>",
         endorseText: "☀️【推薦・公認】台湾 原住民族委員会（CIP）",
@@ -1011,14 +1048,12 @@
       document.getElementById('exp-d3-title').textContent = data.expD3Title;
       document.getElementById('exp-d3-desc').textContent = data.expD3Desc;
 
-      document.getElementById('trust-head').textContent = data.trustHead;
-      document.getElementById('trust-body').innerHTML = data.trustBody;
-
-      document.getElementById('limay-sec-title').textContent = data.limaySecTitle;
-      document.getElementById('limay-name').textContent = data.limayName;
-      document.getElementById('limay-exp').textContent = data.limayExp;
+      document.getElementById('limay-role').textContent = data.limayRole;
       document.getElementById('limay-quote').textContent = data.limayQuote;
-      document.getElementById('limay-points').innerHTML = data.limayPoints;
+      document.getElementById('limay-desc').textContent = data.limayDesc;
+
+      document.getElementById('letter-title').textContent = data.letterTitle;
+      document.getElementById('letter-content').innerHTML = data.letterContent;
 
       document.getElementById('faq-title').textContent = data.faqTitle;
       document.getElementById('faq-q1').textContent = data.faqQ1;
@@ -1026,9 +1061,9 @@
       document.getElementById('faq-q2').textContent = data.faqQ2;
       document.getElementById('faq-a2').textContent = data.faqA2;
       document.getElementById('faq-q3').textContent = data.faqQ3;
-      document.getElementById('faq-a3').textContent = data.faqA3;
+      document.getElementById('faq-a4').textContent = data.faqA3;
       document.getElementById('faq-q4').textContent = data.faqQ4;
-      document.getElementById('faq-a4').textContent = data.faqA4;
+      document.getElementById('faq-a4-ans').textContent = data.faqA4Ans;
 
       document.getElementById('op-title').textContent = data.opTitle;
       document.getElementById('op-desc').textContent = data.opDesc;
