@@ -284,7 +284,7 @@
     margin: 18px 0 12px;
   }
 
-  /* 核心四大亮點：使用 06, 05, 04, 03 素材 */
+  /* 核心四大亮點 */
   .highlights-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -332,7 +332,7 @@
     line-height: 1.45;
   }
 
-  /* 體驗式情境規劃：整合原民會四大守護元素作為章節視覺引導 */
+  /* 體驗式情境規劃：俐落純文字卡片排版 */
   .experience-card {
     background: #fbfcfb;
     border: 1px solid var(--border-color);
@@ -342,41 +342,15 @@
   }
 
   .experience-item {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 14px;
-    padding-bottom: 14px;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
     border-bottom: 1px dashed #dbe4dc;
-    align-items: flex-start;
   }
 
   .experience-item:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
-  }
-
-  .experience-element-badge {
-    width: 44px;
-    height: 44px;
-    flex-shrink: 0;
-    background: #ffffff;
-    border: 1px solid #ebd9c3;
-    border-radius: 10px;
-    padding: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-  }
-
-  .experience-element-badge svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .experience-detail {
-    flex: 1;
   }
 
   .experience-day {
@@ -386,7 +360,7 @@
     margin-bottom: 4px;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
   }
 
   .experience-text {
@@ -788,7 +762,7 @@
         </div>
       </div>
 
-      <!-- 行程核心四大亮點：換入原民會 06, 05, 04, 03 官方元素圖檔 -->
+      <!-- 行程核心四大亮點 -->
       <div class="section-title">
         <span>✨</span>
         <span id="hl-head">行程核心四大亮點</span>
@@ -832,81 +806,24 @@
         </div>
       </div>
 
-      <!-- 描述性行程體驗精華：以原民會四大太陽守護元素自然引領每日亮點 -->
+      <!-- 描述性行程體驗精華：純文字簡潔版面 -->
       <div class="section-title">
         <span>🌿</span>
         <span id="exp-head">3 日慢旅體驗精華</span>
       </div>
 
       <div class="experience-card">
-        <!-- Day 1：搭配阿粨/食藝寶寶 -->
         <div class="experience-item">
-          <div class="experience-element-badge">
-            <svg viewBox="0 0 160 170" fill="none">
-              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
-              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-              <circle cx="68" cy="60" r="4" fill="#2c2523"/>
-              <circle cx="92" cy="60" r="4" fill="#2c2523"/>
-              <path d="M74 74 Q80 80 86 74" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-              <rect x="58" y="102" width="44" height="42" rx="6" fill="#8c261e"/>
-              <rect x="66" y="102" width="28" height="38" fill="#ffffff"/>
-              <ellipse cx="118" cy="118" rx="14" ry="20" fill="#2d6a4f" transform="rotate(30 118 118)"/>
-              <line x1="108" y1="112" x2="128" y2="124" stroke="#d8f3dc" stroke-width="2"/>
-            </svg>
-          </div>
-          <div class="experience-detail">
-            <div class="experience-day" id="exp-d1-title">Day 1：綠色鐵道啟程 ✕ 彩繪米手作 ✕ 百年弱鹼溪湯</div>
-            <p class="experience-text" id="exp-d1-desc">台北搭乘舒適新自強號南下，在車上回味經典懷舊便當。下午抵達縱谷，手作體驗傳統彩繪米與農耕美學，品嚐時令野菜盛宴，晚間下榻百年歷史弱鹼性名湯，徹底舒緩身心。</p>
-          </div>
+          <div class="experience-day" id="exp-d1-title">Day 1：綠色鐵道啟程 ✕ 彩繪米手作 ✕ 百年弱鹼溪湯</div>
+          <p class="experience-text" id="exp-d1-desc">台北搭乘舒適新自強號南下，在車上回味經典懷舊便當。下午抵達縱谷，手作體驗傳統彩繪米與農耕美學，品嚐時令野菜盛宴，晚間下榻百年歷史弱鹼性名湯，徹底舒緩身心。</p>
         </div>
-
-        <!-- Day 2：搭配傳統獵人盛裝寶寶 -->
         <div class="experience-item">
-          <div class="experience-element-badge">
-            <svg viewBox="0 0 160 170" fill="none">
-              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#d9481f"/>
-              <polygon points="75,10 85,10 80,0" fill="#1a1a1a"/>
-              <polygon points="105,18 115,22 112,12" fill="#8c261e"/>
-              <polygon points="125,36 132,45 134,35" fill="#2d6a4f"/>
-              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-              <ellipse cx="69" cy="60" rx="4" ry="5" fill="#2c2523"/>
-              <ellipse cx="91" cy="60" rx="4" ry="5" fill="#2c2523"/>
-              <path d="M74 74 Q80 80 86 74" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-              <rect x="52" y="104" width="56" height="42" rx="6" fill="#ffffff" stroke="#8c261e" stroke-width="3"/>
-              <line x1="52" y1="116" x2="108" y2="116" stroke="#8c261e" stroke-width="4"/>
-              <line x1="52" y1="126" x2="108" y2="126" stroke="#1a1a1a" stroke-width="3"/>
-            </svg>
-          </div>
-          <div class="experience-detail">
-            <div class="experience-day" id="exp-d2-title">Day 2：山林獵人講堂 ✕ 柴燒野炊饗宴 ✕ 知名美人名湯</div>
-            <p class="experience-text" id="exp-d2-desc">走進無圍牆的山林學堂，由獵人引領敬拜山神、循跡探訪獸徑廊道，體驗射箭、擲矛與祈福儀式；中午大啖產地直送柴燒野炊。下午聆聽震撼天際的八部合音，傍晚入住台東指標溫泉名宿。</p>
-          </div>
+          <div class="experience-day" id="exp-d2-title">Day 2：山林獵人講堂 ✕ 柴燒野炊饗宴 ✕ 知名美人名湯</div>
+          <p class="experience-text" id="exp-d2-desc">走進無圍牆的山林學堂，由獵人引領敬拜山神、循跡探訪獸徑廊道，體驗射箭、擲矛與祈福儀式；中午大啖產地直送柴燒野炊。下午聆聽震撼天際的八部合音，傍晚入住台東指標溫泉名宿。</p>
         </div>
-
-        <!-- Day 3：搭配溫泉舒活寶寶 -->
         <div class="experience-item">
-          <div class="experience-element-badge">
-            <svg viewBox="0 0 160 170" fill="none">
-              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
-              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-              <ellipse cx="69" cy="60" rx="3.5" ry="5" fill="#2c2523"/>
-              <ellipse cx="91" cy="60" rx="3.5" ry="5" fill="#2c2523"/>
-              <path d="M74 72 Q80 77 86 72" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-              <rect x="54" y="94" width="52" height="42" rx="14" fill="#a8dadc" stroke="#457b9d" stroke-width="3"/>
-              <path d="M64 108 Q70 102 76 108 T88 108" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-              <path d="M66 120 Q72 114 78 120 T90 120" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-            </svg>
-          </div>
-          <div class="experience-detail">
-            <div class="experience-day" id="exp-d3-title">Day 3：晨間溫泉舒活 ✕ 在地慢食漫步 ✕ 綠色鐵道賦歸</div>
-            <p class="experience-text" id="exp-d3-desc">早晨在晨光中盡情享受溫泉美人湯與飯店豐盛早餐。午後悠閒漫步在地風光、品嚐特色小吃，隨後搭乘台鐵列車平穩北返，帶著充盈的自然靈氣與溫暖回憶圓滿結束旅程。</p>
-          </div>
+          <div class="experience-day" id="exp-d3-title">Day 3：晨間溫泉舒活 ✕ 在地慢食漫步 ✕ 綠色鐵道賦歸</div>
+          <p class="experience-text" id="exp-d3-desc">早晨在晨光中盡情享受溫泉美人湯與飯店豐盛早餐。午後悠閒漫步在地風光、品嚐特色小吃，隨後搭乘台鐵列車平穩北返，帶著充盈的自然靈氣與溫暖回憶圓滿結束旅程。</p>
         </div>
       </div>
 
@@ -924,7 +841,6 @@
               <div class="sub-title" id="limay-role">專屬旅遊顧問 ✕ 慢旅引路人 35年</div>
             </div>
           </div>
-          <!-- 右上角配置 原民會官方 Logo (-07.jpg) -->
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
                alt="原民會官方標章" 
                class="limay-cip-logo">
@@ -1038,7 +954,6 @@
         </div>
         <div class="endorsement-row">
           <span id="endorse-text">☀️【推薦・公認】原住民族委員會認證合作夥伴</span>
-          <!-- 底部配置官方「部行山海間」標章 (-02.png) -->
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
                alt="部行山海間 官方標章" 
                class="endorsement-img">
@@ -1085,7 +1000,7 @@
         hlD2: "跟隨在地獵人敬拜山神、走讀獵徑，親身感受震撼人心的傳統八部合音與原鄉射箭射矛體驗。",
         hlT3: "縱谷山海雙名湯",
         hlD3: "嚴選百年歷史弱鹼性野溪溫泉與台東指標美人湯，在深度的文化探索後享受極致溫泉療癒。",
-        hlT4: "低碳足跡鐵道漫旅",
+        hlT4: "低碳足跡鐵道慢旅",
         hlD4: "全程以台鐵城際電聯車替代長途拉車，搭配在地永續接駁，降低碳排，悠遊縱谷山海。",
         expHead: "3 日慢旅體驗精華",
         expD1Title: "Day 1：綠色鐵道啟程 ✕ 彩繪米手作 ✕ 百年弱鹼溪湯",
