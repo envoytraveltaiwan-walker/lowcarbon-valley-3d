@@ -49,7 +49,7 @@
     padding-bottom: 85px;
   }
 
-  /* 頂部原民風格飾條 */
+  /* 頂部原民編織飾條 */
   .top-tribal-stripe {
     height: 6px;
     background: repeating-linear-gradient(
@@ -129,7 +129,7 @@
     box-shadow: 0 0 25px rgba(0,0,0,0.05);
   }
 
-  /* 頁首主視覺：部行山海間 Logo 置頂 */
+  /* 頁首主視覺：部行山海間 Logo 橫幅置頂 */
   .main-hero {
     position: relative;
     padding: 16px 16px 14px;
@@ -139,12 +139,14 @@
 
   .campaign-hero-img {
     width: 100%;
-    max-width: 480px;
+    max-width: 500px;
     height: auto;
     aspect-ratio: 16 / 8.8;
     object-fit: contain;
+    border-radius: 14px;
     margin: 4px auto 14px;
     display: block;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
   }
 
   .badge-row {
@@ -261,7 +263,7 @@
   .info-box-item .title { font-size: 8.5pt; font-weight: bold; color: var(--primary-color); }
   .info-box-item .sub { font-size: 7pt; color: #6b7770; }
 
-  /* 核心四大亮點：融入原民會四大太陽寶寶吉祥物元素 */
+  /* 核心四大亮點 */
   .section-title {
     font-size: 11.5pt;
     color: var(--primary-color);
@@ -285,26 +287,24 @@
     border-radius: 12px;
     padding: 14px 10px 12px;
     text-align: center;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  /* 原民會吉祥物太陽寶寶尺寸 */
-  .mascot-img-wrap {
-    width: 65px;
-    height: 65px;
+  .mascot-box {
+    width: 78px;
+    height: 78px;
     margin-bottom: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .mascot-img-wrap img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  .mascot-box svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.12));
   }
 
   .highlight-card h3 {
@@ -416,10 +416,18 @@
   }
 
   .limay-cip-logo {
-    height: 40px;
+    height: 38px;
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
+  }
+
+  .limay-banner-img {
+    width: 100%;
+    max-height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
   }
 
   .limay-quote-box {
@@ -476,7 +484,7 @@
     color: #e2ede7;
   }
 
-  /* 旅展特別問候卡片 */
+  /* 旅展特別信函卡片 */
   .tokyo-expo-letter {
     background: #faf6f0;
     border: 1px solid #ebd9c3;
@@ -701,14 +709,14 @@
         <span class="badge-pill badge-dark" id="hero-badge-2">台鐵城際電聯車直達</span>
       </div>
 
-      <h1 class="hero-h1" id="hero-title">【低碳縱谷・雙湯慢旅】花東原鄉 3日2夜</h1>
+      <h1 class="hero-h1" id="hero-title">【低碳縱谷・雙湯慢旅】花東原鄉 3天2夜</h1>
       <div class="hero-sub" id="hero-sub">搭乘永續綠色鐵道 ✕ 走進山林獵人講堂 ✕ 五感沉浸原鄉雙溫泉</div>
       <p class="hero-desc" id="hero-desc">
         搭乘台鐵新自強號城際列車替代長途拉車，深入花東縱谷原鄉淨土。沉浸百年弱鹼溪湯與知名美人名湯，體驗零距離產地野菜與獵人野食盛宴。
       </p>
     </div>
 
-    <!-- 視覺情境照 3 欄 -->
+    <!-- 視覺情境照 3 欄：替換為素材 03, 04, 05 -->
     <div class="photo-row">
       <div class="photo-card">
         <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-03.png" alt="原民工藝祈福手作">
@@ -745,7 +753,7 @@
         </div>
       </div>
 
-      <!-- 行程核心四大亮點：原民會四大太陽寶寶吉祥物元素 -->
+      <!-- 行程核心四大亮點 -->
       <div class="section-title">
         <span>✨</span>
         <span id="hl-head">行程核心四大亮點</span>
@@ -754,14 +762,19 @@
       <div class="highlights-grid">
         <div class="highlight-card">
           <!-- 太陽寶寶：手拿阿粨美食 -->
-          <div class="mascot-img-wrap">
-            <svg viewBox="0 0 100 100" fill="none" style="width: 100%; height: 100%;">
-              <circle cx="50" cy="45" r="26" fill="#fdb813"/>
-              <path d="M50 8 L54 19 L66 12 L62 24 L76 22 L68 33 L82 37 L70 47 L82 55 L68 59 L76 70 L62 67 L66 79 L54 72 L50 83 L46 72 L34 79 L38 67 L24 70 L32 59 L18 55 L30 47 L18 37 L32 33 L24 22 L38 24 L34 12 L46 19 Z" fill="#f37023"/>
-              <circle cx="43" cy="42" r="3" fill="#2c2523"/>
-              <circle cx="57" cy="42" r="3" fill="#2c2523"/>
-              <path d="M46 51 Q50 55 54 51" stroke="#2c2523" stroke-width="2" stroke-linecap="round"/>
-              <ellipse cx="68" cy="72" rx="7" ry="11" fill="#386641" transform="rotate(25 68 72)"/>
+          <div class="mascot-box">
+            <svg viewBox="0 0 160 170" fill="none">
+              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
+              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
+              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
+              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
+              <circle cx="68" cy="60" r="4" fill="#2c2523"/>
+              <circle cx="92" cy="60" r="4" fill="#2c2523"/>
+              <path d="M74 74 Q80 80 86 74" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
+              <rect x="58" y="102" width="44" height="42" rx="6" fill="#8c261e"/>
+              <rect x="66" y="102" width="28" height="38" fill="#ffffff"/>
+              <ellipse cx="118" cy="118" rx="14" ry="20" fill="#2d6a4f" transform="rotate(30 118 118)"/>
+              <line x1="108" y1="112" x2="128" y2="124" stroke="#d8f3dc" stroke-width="2"/>
             </svg>
           </div>
           <h3 id="hl-t1">會說故事的彩繪餐桌</h3>
@@ -770,15 +783,21 @@
 
         <div class="highlight-card">
           <!-- 太陽寶寶：身穿傳統服飾 -->
-          <div class="mascot-img-wrap">
-            <svg viewBox="0 0 100 100" fill="none" style="width: 100%; height: 100%;">
-              <circle cx="50" cy="45" r="26" fill="#fdb813"/>
-              <path d="M50 8 L54 19 L66 12 L62 24 L76 22 L68 33 L82 37 L70 47 L82 55 L68 59 L76 70 L62 67 L66 79 L54 72 L50 83 L46 72 L34 79 L38 67 L24 70 L32 59 L18 55 L30 47 L18 37 L32 33 L24 22 L38 24 L34 12 L46 19 Z" fill="#e65100"/>
-              <circle cx="43" cy="42" r="3" fill="#2c2523"/>
-              <circle cx="57" cy="42" r="3" fill="#2c2523"/>
-              <path d="M46 51 Q50 55 54 51" stroke="#2c2523" stroke-width="2" stroke-linecap="round"/>
-              <rect x="35" y="65" width="30" height="23" rx="4" fill="#ffffff" stroke="#8c261e" stroke-width="2"/>
-              <line x1="35" y1="73" x2="65" y2="73" stroke="#8c261e" stroke-width="3"/>
+          <div class="mascot-box">
+            <svg viewBox="0 0 160 170" fill="none">
+              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
+              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#d9481f"/>
+              <polygon points="75,10 85,10 80,0" fill="#1a1a1a"/>
+              <polygon points="105,18 115,22 112,12" fill="#8c261e"/>
+              <polygon points="125,36 132,45 134,35" fill="#2d6a4f"/>
+              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
+              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
+              <ellipse cx="69" cy="60" rx="4" ry="5" fill="#2c2523"/>
+              <ellipse cx="91" cy="60" rx="4" ry="5" fill="#2c2523"/>
+              <path d="M74 74 Q80 80 86 74" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
+              <rect x="52" y="104" width="56" height="42" rx="6" fill="#ffffff" stroke="#8c261e" stroke-width="3"/>
+              <line x1="52" y1="116" x2="108" y2="116" stroke="#8c261e" stroke-width="4"/>
+              <line x1="52" y1="126" x2="108" y2="126" stroke="#1a1a1a" stroke-width="3"/>
             </svg>
           </div>
           <h3 id="hl-t2">無圍牆的山林講堂</h3>
@@ -787,14 +806,18 @@
 
         <div class="highlight-card">
           <!-- 太陽寶寶：抱溫泉枕頭 -->
-          <div class="mascot-img-wrap">
-            <svg viewBox="0 0 100 100" fill="none" style="width: 100%; height: 100%;">
-              <circle cx="50" cy="45" r="26" fill="#fdb813"/>
-              <path d="M50 8 L54 19 L66 12 L62 24 L76 22 L68 33 L82 37 L70 47 L82 55 L68 59 L76 70 L62 67 L66 79 L54 72 L50 83 L46 72 L34 79 L38 67 L24 70 L32 59 L18 55 L30 47 L18 37 L32 33 L24 22 L38 24 L34 12 L46 19 Z" fill="#f37023"/>
-              <ellipse cx="43" cy="42" rx="2.5" ry="3.5" fill="#2c2523"/>
-              <ellipse cx="57" cy="42" rx="2.5" ry="3.5" fill="#2c2523"/>
-              <path d="M46 50 Q50 53 54 50" stroke="#2c2523" stroke-width="2"/>
-              <rect x="36" y="62" width="28" height="22" rx="7" fill="#a8dadc" stroke="#457b9d" stroke-width="2"/>
+          <div class="mascot-box">
+            <svg viewBox="0 0 160 170" fill="none">
+              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
+              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
+              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
+              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
+              <ellipse cx="69" cy="60" rx="3.5" ry="5" fill="#2c2523"/>
+              <ellipse cx="91" cy="60" rx="3.5" ry="5" fill="#2c2523"/>
+              <path d="M74 72 Q80 77 86 72" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
+              <rect x="54" y="94" width="52" height="42" rx="14" fill="#a8dadc" stroke="#457b9d" stroke-width="3"/>
+              <path d="M64 108 Q70 102 76 108 T88 108" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+              <path d="M66 120 Q72 114 78 120 T90 120" stroke="#ffffff" stroke-width="2.5" fill="none"/>
             </svg>
           </div>
           <h3 id="hl-t3">縱谷山海雙名湯</h3>
@@ -802,15 +825,22 @@
         </div>
 
         <div class="highlight-card">
-          <!-- 太陽寶寶：手拿地圖與行李箱 -->
-          <div class="mascot-img-wrap">
-            <svg viewBox="0 0 100 100" fill="none" style="width: 100%; height: 100%;">
-              <circle cx="50" cy="45" r="26" fill="#fdb813"/>
-              <path d="M50 8 L54 19 L66 12 L62 24 L76 22 L68 33 L82 37 L70 47 L82 55 L68 59 L76 70 L62 67 L66 79 L54 72 L50 83 L46 72 L34 79 L38 67 L24 70 L32 59 L18 55 L30 47 L18 37 L32 33 L24 22 L38 24 L34 12 L46 19 Z" fill="#f37023"/>
-              <circle cx="43" cy="42" r="3" fill="#2c2523"/>
-              <circle cx="57" cy="42" r="3" fill="#2c2523"/>
-              <path d="M46 51 Q50 55 54 51" stroke="#2c2523" stroke-width="2" stroke-linecap="round"/>
-              <rect x="62" y="58" width="16" height="25" rx="3" fill="#457b9d"/>
+          <!-- 太陽寶寶：拿著地圖與行李箱 -->
+          <div class="mascot-box">
+            <svg viewBox="0 0 160 170" fill="none">
+              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
+              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
+              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
+              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
+              <circle cx="68" cy="60" r="4" fill="#2c2523"/>
+              <circle cx="92" cy="60" r="4" fill="#2c2523"/>
+              <path d="M74 73 Q80 78 86 73" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
+              <rect x="42" y="92" width="46" height="38" rx="2" fill="#faedcd" stroke="#b08968" stroke-width="2"/>
+              <circle cx="56" cy="106" r="3" fill="#e63946"/>
+              <circle cx="74" cy="116" r="3" fill="#e63946"/>
+              <line x1="56" y1="106" x2="74" y2="116" stroke="#e63946" stroke-width="2" stroke-dasharray="2 2"/>
+              <rect x="100" y="98" width="34" height="46" rx="5" fill="#457b9d"/>
+              <line x1="100" y1="116" x2="134" y2="116" stroke="#e63946" stroke-width="3"/>
             </svg>
           </div>
           <h3 id="hl-t4">低碳足跡鐵道漫旅</h3>
@@ -839,7 +869,7 @@
         </div>
       </div>
 
-      <!-- 莉梅姐引路人專題卡片 -->
+      <!-- 莉梅姐引路人專題卡片：融合 06 里山情境圖與官方 07 標章 -->
       <div class="limay-editorial-card">
         <div class="editorial-tag-line" id="editorial-tag">SPECIAL EDITORIAL・慢旅引路人</div>
         
@@ -859,6 +889,11 @@
                class="limay-cip-logo">
         </div>
 
+        <!-- 原民會 06 里山情境插圖 -->
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-06.png" 
+             alt="花東原鄉里山風土" 
+             class="limay-banner-img">
+
         <div class="limay-quote-box" id="limay-quote">
           「風的氣息、古木低語的呼吸。正因為持續行走了35年，才能帶您遇見誰也不曾知曉的台灣原鄉深邃之美。」
         </div>
@@ -867,7 +902,7 @@
           在台灣被親切稱為「莉梅姐」的她，35年間走遍台灣的山河與原鄉古道。對她而言，旅行不單是名勝打卡，而是觸摸大地經年累月孕育的生命氣息。以對待家人般的細膩關照，帶領旅人走進大型巴士無法抵達的秘境，品味最地道的山珍與柴燒料理。
         </div>
 
-        <!-- 台灣原住民族文化紋樣象徵模組 -->
+        <!-- 台灣原住民族文化紋樣展示 -->
         <div class="indigenous-pattern-box">
           <div class="pattern-title" id="pattern-title">
             <span>◆</span> INDIGENOUS HERITAGE｜大地與祖靈的幾何圖騰
@@ -954,15 +989,15 @@
       <div class="operator-box">
         <div class="operator-meta">
           <h4 id="op-title">主辦・執行｜安捷國際旅行社有限公司</h4>
-          <p>交通部觀光署 登錄旅行業 甲種 5920 號｜統編：16169138</p>
+          <p id="op-license">交通部觀光署 登錄旅行業 甲種 5920 號｜統編：16169138</p>
         </div>
         <div class="operator-intro" id="op-desc">
           深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。
         </div>
         <div class="b2b-subcard">
           <ul id="op-bullets">
-            <li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li>
-            <li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>
+            <li><b>【企業團體／B2B 客製】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li>
+            <li><b>【家庭好友／個人包團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>
           </ul>
         </div>
         <div class="endorsement-row">
@@ -988,13 +1023,13 @@
     </div>
   </div>
 
-  <!-- 雙語切換 Script（純粹繁中與純粹日語完全切分） -->
+  <!-- 雙語切換 Script（純繁中與純日語 100% 切分無交雜） -->
   <script>
     const i18n = {
       zh: {
         heroBadge1: "3天2夜・平日限定慢遊",
         heroBadge2: "台鐵城際電聯車直達",
-        heroTitle: "【低碳縱谷・雙湯慢旅】花東原鄉 3日2夜",
+        heroTitle: "【低碳縱谷・雙湯慢旅】花東原鄉 3天2夜",
         heroSub: "搭乘永續綠色鐵道 ✕ 走進山林獵人講堂 ✕ 五感沉浸原鄉雙溫泉",
         heroDesc: "搭乘台鐵新自強號城際列車替代長途拉車，深入花東縱谷原鄉淨土。沉浸百年弱鹼溪湯與知名美人名湯，體驗零距離產地野菜與獵人野食盛宴。",
         cap1: "傳統工藝祈福手作",
@@ -1044,8 +1079,9 @@
         sustainTitle: "🌱 本行程之「低碳永續與在地共好」承諾：",
         sustainBullets: "<li><b>低碳交通</b>：往返全程採用台鐵電氣化列車，顯著降低長途移動之碳足跡。</li><li><b>在地食材</b>：特色餐點皆採用當地自產野菜與米糧，降低食材運輸碳排放。</li><li><b>文化永續</b>：體驗收益部分回饋原鄉發展基金，用於文化傳承與山林環境保育。</li>",
         opTitle: "主辦・執行｜安捷國際旅行社有限公司",
+        opLicense: "交通部觀光署 登錄旅行業 甲種 5920 號｜統編：16169138",
         opDesc: "深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。",
-        opBullets: "<li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li><li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>",
+        opBullets: "<li><b>【企業團體／B2B 客製】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li><li><b>【家庭好友／個人包團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>",
         endorseText: "☀️【推薦・公認】原住民族委員會認證合作夥伴",
         ctaB2B: "✉️ B2B 合作洽詢",
         ctaLine: "💬 個人行程諮詢"
@@ -1103,6 +1139,7 @@
         sustainTitle: "🌱 本ツアーの「低炭素・サステナブルツーリズム」の約束：",
         sustainBullets: "<li><b>環境配慮の鉄道移動</b>：長距離移動に台湾鉄道の特急を利用し、CO2排出を大幅に削減。</li><li><b>地産地消の食文化</b>：集落周辺で採れる新鮮なオーガニック山菜と米穀類を使用。</li><li><b>地域文化への還元</b>：ツアー収益の一部は、先住民族の伝統文化保護と森林保全基金へ還元されます。</li>",
         opTitle: "主催・運行｜アンジェ国際旅行社有限公司",
+        opLicense: "台湾交通部観光署 登録旅行業 甲種 5920 号｜統一番号：16169138",
         opDesc: "創業35年。台湾の豊かな自然と先住民族文化をつなぐ専門旅行社です。台湾原住民族委員会の認定パートナーとして、日本の旅行会社様への現地地上手配（ランド）から個人のお客様のプライベート旅まで、確かな品質でお応えします。",
         opBullets: "<li><b>【旅行会社様向け（B2B）】</b>：卸値見積もり・旅程カスタマイズ・現地視察手配</li><li><b>【個人・グループ旅行】</b>：6名様以上での専用車完全貸切・日本語ガイド対応</li>",
         endorseText: "☀️【推薦・公認】台湾 原住民族委員会（CIP）",
@@ -1180,6 +1217,7 @@
       document.getElementById('sustain-bullets').innerHTML = data.sustainBullets;
 
       document.getElementById('op-title').textContent = data.opTitle;
+      document.getElementById('op-license').textContent = data.opLicense;
       document.getElementById('op-desc').textContent = data.opDesc;
       document.getElementById('op-bullets').innerHTML = data.opBullets;
       document.getElementById('endorse-text').textContent = data.endorseText;
