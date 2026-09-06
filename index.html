@@ -1,713 +1,855 @@
 <!DOCTYPE html>
-
 <html lang="zh-TW">
-
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>部行山海間｜泰雅原鄉里山慢旅 2日遊 - 安捷國際旅行社 ENVOY TRAVEL</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP4CT61HC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-<title>【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊</title>
+  gtag('config', 'G-PPP4CT61HC');
+
+  // 自訂轉換追蹤事件
+  function trackEvent(action, category, label) {
+    gtag('event', action, {
+      'event_category': category,
+      'event_label': label
+    });
+  }
+</script>
 
 <style>
-
   :root {
-
     --primary-color: #2e4a3b;
-
     --secondary-color: #52796f;
-
-    --accent-color: #e65100;
-
+    --accent-color: #9c4125;
+    --accent-gold: #b37d4e;
     --bg-color: #f7f9f6;
-
     --card-bg: #ffffff;
-
     --text-color: #2c3531;
-
-    --border-color: #d8e2dc;
-
+    --text-light: #5a6460;
+    --border-color: #dbe4dc;
     --line-color: #06C755;
-
+    --b2b-color: #1e2522;
   }
 
-
+  * { box-sizing: border-box; }
 
   body {
-
-    font-family: "PingFang TC", "Microsoft JhengHei", "Noto Sans CJK TC", sans-serif;
-
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
     margin: 0;
-
-    padding: 15px;
-
-    padding-bottom: 90px;
-
+    padding: 0;
     background-color: var(--bg-color);
-
     color: var(--text-color);
-
-    line-height: 1.5;
-
+    line-height: 1.6;
+    padding-bottom: 85px; /* 避開底部懸浮按鈕 */
   }
 
-
-
-  .container {
-
-    max-width: 550px; /* 適合手機快速閱讀的黃金寬度 */
-
-    margin: 0 auto;
-
-    background: var(--card-bg);
-
-    border-radius: 16px;
-
-    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-
-    overflow: hidden;
-
-  }
-
-
-
-  /* 頂部 Banner */
-
-  .header-banner {
-
-    background: linear-gradient(135deg, #2e4a3b 0%, #1b2d24 100%);
-
-    color: #ffffff;
-
-    padding: 24px 20px;
-
-    text-align: center;
-
-  }
-
-
-
-  .header-banner h1 {
-
-    margin: 0 0 8px 0;
-
-    font-size: 20pt;
-
-    font-weight: 800;
-
-    letter-spacing: 0.5px;
-
-  }
-
-
-
-  .header-banner .subtitle {
-
-    font-size: 10.5pt;
-
-    color: #d1e0d3;
-
-    margin-bottom: 12px;
-
-  }
-
-
-
-  .tag-container {
-
-    display: flex;
-
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    gap: 6px;
-
-  }
-
-
-
-  .tag {
-
-    background-color: rgba(255, 255, 255, 0.18);
-
-    color: #ffffff;
-
-    padding: 3px 10px;
-
-    border-radius: 15px;
-
-    font-size: 8.5pt;
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-  }
-
-
-
-  .section-padding {
-
-    padding: 20px;
-
-  }
-
-
-
-  /* 人數簡章 */
-
-  .tour-info-grid {
-
-    display: flex;
-
-    justify-content: space-around;
-
-    align-items: center;
-
-    background-color: #f0f5f2;
-
-    padding: 12px;
-
-    border-radius: 10px;
-
-    margin-bottom: 20px;
-
-    text-align: center;
-
-    border: 1px solid #e0eae2;
-
-  }
-
-
-
-  .info-item .value {
-
-    font-size: 9.5pt;
-
-    font-weight: bold;
-
-    color: var(--primary-color);
-
-  }
-
-
-
-  .section-title {
-
-    font-size: 13pt;
-
-    color: var(--primary-color);
-
-    border-left: 4px solid var(--secondary-color);
-
-    padding-left: 8px;
-
-    margin: 20px 0 12px 0;
-
-    font-weight: bold;
-
-  }
-
-
-
-  /* 15秒亮點：可拍、可玩、可體驗 */
-
-  .highlights-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 10px;
-
-    margin-bottom: 20px;
-
-  }
-
-
-
-  .highlight-card {
-
-    background-color: #fcfdfe;
-
-    border: 1px solid var(--border-color);
-
-    border-radius: 10px;
-
-    padding: 12px;
-
-    text-align: center;
-
-  }
-
-
-
-  .highlight-card .icon {
-
-    font-size: 22pt;
-
-    margin-bottom: 4px;
-
-  }
-
-
-
-  .highlight-card h3 {
-
-    margin: 0 0 4px 0;
-
-    font-size: 10.5pt;
-
-    color: var(--primary-color);
-
-  }
-
-
-
-  .highlight-card p {
-
-    margin: 0;
-
-    font-size: 8.5pt;
-
-    color: #555;
-
-    line-height: 1.4;
-
-  }
-
-
-
-  /* 莉梅姐與本團特色卡片 */
-
-  .limay-card {
-
-    background: linear-gradient(135deg, #f0f5f2 0%, #e8f0eb 100%);
-
-    border: 1px solid #b8d0c0;
-
-    border-radius: 12px;
-
-    padding: 16px;
-
-    margin-bottom: 20px;
-
-  }
-
-
-
-  .limay-header {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    margin-bottom: 10px;
-
-  }
-
-
-
-  .limay-avatar {
-
-    width: 65px;
-
-    height: 65px;
-
-    border-radius: 50%;
-
-    object-fit: cover;
-
-    border: 2px solid var(--primary-color);
-
-    flex-shrink: 0;
-
-  }
-
-
-
-  .limay-title h3 {
-
-    margin: 0;
-
-    font-size: 11.5pt;
-
-    color: var(--primary-color);
-
-  }
-
-
-
-  .limay-badge {
-
-    display: inline-block;
-
-    background-color: var(--primary-color);
-
-    color: #fff;
-
-    font-size: 7.5pt;
-
-    padding: 2px 8px;
-
-    border-radius: 10px;
-
-    margin-top: 2px;
-
-  }
-
-
-
-  .feature-list {
-
-    margin: 10px 0 0 0;
-
-    padding-left: 0;
-
-    list-style: none;
-
-    font-size: 9pt;
-
-    color: #4a5568;
-
-  }
-
-
-
-  .feature-list li {
-
-    margin-bottom: 6px;
-
-    padding-left: 18px;
-
-    position: relative;
-
-  }
-
-
-
-  .feature-list li::before {
-
-    content: "✓";
-
-    position: absolute;
-
+  /* 固定頂部導覽列 */
+  .fixed-nav {
+    position: sticky;
+    top: 0;
     left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 18px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 550px;
+    margin: 0 auto;
+  }
 
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .nav-logo svg {
+    height: 28px;
+    width: auto;
+  }
+
+  .nav-logo-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-logo-text .en {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    line-height: 1.1;
+  }
+
+  .nav-logo-text .tw {
+    font-size: 8.5px;
+    letter-spacing: 0.5px;
     color: var(--secondary-color);
+    font-weight: 600;
+  }
 
+  /* 語言切換按鈕組 */
+  .lang-switch-box {
+    display: flex;
+    background: #eef3ee;
+    padding: 3px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+
+  .lang-btn {
+    border: none;
+    background: transparent;
+    padding: 4px 10px;
+    font-size: 10.5px;
     font-weight: bold;
-
+    color: var(--text-light);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 3px;
   }
 
+  .lang-btn.active {
+    background: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(46, 74, 59, 0.2);
+  }
 
+  /* 主容器 */
+  .container {
+    max-width: 550px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    min-height: 100vh;
+    box-shadow: 0 0 25px rgba(0,0,0,0.05);
+  }
 
-  /* 開團通知 & 引導領 $500 區域 */
-
-  .cta-box {
-
-    background-color: #fff;
-
-    border: 2px dashed #06C755;
-
-    border-radius: 12px;
-
-    padding: 16px;
-
+  /* 主視覺區塊 */
+  .main-hero {
+    position: relative;
+    padding: 16px 16px 14px;
     text-align: center;
-
-    margin-bottom: 10px;
-
+    background: linear-gradient(180deg, #f0f5f1 0%, #ffffff 100%);
   }
 
-
-
-  .cta-box h3 {
-
-    margin: 0 0 6px 0;
-
-    color: #2e4a3b;
-
-    font-size: 12pt;
-
+  .campaign-hero-img {
+    width: 100%;
+    max-height: 240px;
+    object-fit: contain;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: block;
   }
 
+  .badge-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
 
-
-  .cta-box p {
-
-    margin: 0 0 12px 0;
-
+  .badge-pill {
     font-size: 9pt;
-
-    color: #555;
-
-    line-height: 1.5;
-
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
   }
 
+  .badge-burgundy {
+    background-color: #8c261e;
+    color: #fff;
+  }
 
+  .badge-dark {
+    background-color: #2b332c;
+    color: #fff;
+  }
 
-  /* LINE 專屬按鈕 */
+  .hero-h1 {
+    font-size: 20px;
+    color: #212c24;
+    margin: 0 0 6px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+  }
+
+  .hero-sub {
+    font-size: 13px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .hero-desc {
+    font-size: 11px;
+    color: var(--text-light);
+    margin: 0 auto 12px;
+    max-width: 440px;
+    line-height: 1.65;
+  }
+
+  /* 三張情境照片展示區 */
+  .photo-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 0 16px 16px;
+  }
+
+  .photo-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 105px;
+    background: #eaeaea;
+  }
+
+  .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.78) 100%);
+    color: #fff;
+    font-size: 7.5pt;
+    padding: 6px 3px 3px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .section-content {
+    padding: 0 16px 20px;
+  }
+
+  /* 出團規約卡 */
+  .info-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: #fbfdfb;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 12px 6px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .info-box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .info-box-item .icon { font-size: 15px; }
+  .info-box-item .title { font-size: 8.5pt; font-weight: bold; color: var(--primary-color); }
+  .info-box-item .sub { font-size: 7pt; color: #6b7770; }
+
+  /* 傳統文化與圖騰故事卡片 */
+  .culture-card {
+    background: #fdfbf7;
+    border: 1px solid #ebd9c3;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 18px;
+  }
+
+  .culture-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-size: 11pt;
+  }
+
+  .culture-banner-img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 8px 0 10px;
+    max-height: 140px;
+    object-fit: cover;
+  }
+
+  .culture-body {
+    font-size: 9.5pt;
+    color: #4a453e;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .culture-highlight-tag {
+    background: #f3ede2;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 8.5pt;
+    color: #63523f;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  /* 地方風土食材料理 (4格) */
+  .section-title {
+    font-size: 11.5pt;
+    color: var(--primary-color);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 16px 0 10px;
+  }
+
+  .gastronomy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .gastro-item {
+    background: #fafbfa;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 12px 10px;
+  }
+
+  .gastro-title {
+    font-size: 9pt;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 3px;
+  }
+
+  .gastro-desc {
+    font-size: 8pt;
+    color: var(--text-light);
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  /* 主辦單位／品質保證卡 */
+  .operator-box {
+    background: #f8faf8;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .operator-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .operator-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-color);
+    flex-shrink: 0;
+  }
+
+  .operator-meta h4 {
+    margin: 0;
+    font-size: 10.5pt;
+    color: var(--primary-color);
+  }
+
+  .operator-meta p {
+    margin: 2px 0 0;
+    font-size: 7.5pt;
+    color: #6a7770;
+  }
+
+  .operator-intro {
+    font-size: 8.5pt;
+    color: #4c5550;
+    line-height: 1.55;
+    margin-bottom: 12px;
+  }
+
+  .b2b-subcard {
+    background: #ffffff;
+    border: 1px dashed #b8c9bd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 8.5pt;
+    color: #3b4d42;
+    margin-bottom: 12px;
+  }
+
+  .b2b-subcard ul {
+    margin: 4px 0 0;
+    padding-left: 18px;
+  }
+
+  .endorsement-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    border-top: 1px solid #e2ebe4;
+  }
+
+  .endorsement-row span {
+    font-size: 8pt;
+    color: #68756d;
+    font-weight: 600;
+  }
+
+  .endorsement-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* 常見問題 QA */
+  .faq-card {
+    margin-bottom: 16px;
+  }
+
+  .faq-q {
+    font-size: 9.5pt;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 4px;
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .faq-a {
+    font-size: 8.5pt;
+    color: var(--text-light);
+    padding-left: 20px;
+    margin: 0 0 12px;
+    line-height: 1.5;
+  }
+
+  /* 底部固定雙按鈕導購列 */
+  .sticky-action-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--border-color);
+    padding: 10px 16px;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bar-inner {
+    width: 100%;
+    max-width: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 10px;
+  }
+
+  .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 9.5pt;
+    font-weight: bold;
+    transition: transform 0.1s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  }
+
+  .btn-action:active {
+    transform: scale(0.98);
+  }
+
+  .btn-b2b {
+    background-color: var(--b2b-color);
+    color: #ffffff;
+  }
 
   .btn-line {
-
-    background-color: var(--line-color) !important;
-
-    color: #ffffff !important;
-
-    font-size: 10.5pt !important;
-
-    font-weight: bold;
-
-    padding: 12px 20px !important;
-
-    border-radius: 30px !important;
-
-    text-decoration: none;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 6px;
-
-    width: 100%;
-
-    box-shadow: 0 4px 12px rgba(6, 199, 85, 0.3);
-
-    box-sizing: border-box;
-
+    background-color: #2c4434;
+    color: #ffffff;
   }
-
-
-
-  /* 置底浮動列 */
-
-  .sticky-cta {
-
-    position: fixed;
-
-    bottom: 0;
-
-    left: 0;
-
-    right: 0;
-
-    background: rgba(255, 255, 255, 0.96);
-
-    padding: 10px 16px;
-
-    box-shadow: 0 -3px 12px rgba(0,0,0,0.08);
-
-    z-index: 999;
-
-    backdrop-filter: blur(8px);
-
-    border-top: 1px solid #e0e8e2;
-
-  }
-
 </style>
-
 </head>
-
 <body>
 
-
-
-<div class="container">
-
-
-
-  <!-- 頂部 Banner -->
-
-  <div class="header-banner">
-
-    <h1>【低碳縱谷・雙湯慢旅】</h1>
-
-    <div class="subtitle">搭鐵道 ✕ 探神秘森林 ✕ 享雙溫泉名湯</div>
-
-    <div class="tag-container">
-
-      <span class="tag">🌱 綠色永續</span>
-
-      <span class="tag">📸 超好拍秘境</span>
-
-      <span class="tag">♨️ 舒壓雙名湯</span>
-
+  <!-- 固定上方 Logo 與語言切換 -->
+  <header class="fixed-nav">
+    <div class="nav-logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#2e4a3b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2L12 22"/>
+        <path d="M5 9l7-7 7 7"/>
+        <path d="M19 15l-7 7-7-7"/>
+      </svg>
+      <div class="nav-logo-text">
+        <span class="en">ENVOY</span>
+        <span class="tw">安捷國際旅行社</span>
+      </div>
     </div>
 
-  </div>
+    <!-- 語言切換按鈕組 -->
+    <div class="lang-switch-box">
+      <button class="lang-btn" id="btn-ja" onclick="setLanguage('ja')">
+        <span>🌐</span> 日本語
+      </button>
+      <button class="lang-btn active" id="btn-zh" onclick="setLanguage('zh')">
+        <span>🇹🇼</span> 繁體中文
+      </button>
+    </div>
+  </header>
 
+  <div class="container">
+    
+    <!-- Hero 頂部主視覺：替換為素材 02 -->
+    <div class="main-hero">
+      <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
+           alt="部行山海間 主視覺" 
+           class="campaign-hero-img">
 
-
-  <div class="section-padding">
-
-
-
-    <!-- 人數規定簡章 -->
-
-    <div class="tour-info-grid">
-
-      <div class="info-item">
-
-        <div class="value">👤 1人即可報名</div>
-
+      <!-- 標籤組 -->
+      <div class="badge-row">
+        <span class="badge-pill badge-burgundy" id="hero-badge-1">2天1夜・平日悠緩慢行</span>
+        <span class="badge-pill badge-dark" id="hero-badge-2">台北市區 專車直送迎送</span>
       </div>
 
-      <div class="info-item">
-
-        <div class="value">🚌 6人即刻成團</div>
-
-      </div>
-
-      <div class="info-item">
-
-        <div class="value">✨ 20人精緻滿團</div>
-
-      </div>
-
+      <h1 class="hero-h1" id="hero-title">泰雅原鄉・里山森林避世慢旅</h1>
+      <div class="hero-sub" id="hero-sub">傳統手藝祈福串珠 ✕ 沁涼溪畔水漾宿 2日</div>
+      <p class="hero-desc" id="hero-desc">
+        距離台北僅1.5小時車程，踏入尚未被過度觀光打擾的清幽秘境。在泰雅祖靈守護的古老智慧中，漫步森林、手作祈福，找回心靈的寧靜與純粹。
+      </p>
     </div>
 
-
-
-    <!-- 15秒超快看懂：可拍、可玩、可體驗亮點 -->
-
-    <div class="section-title">⚡ 15秒掌握行程精華</div>
-
-    <div class="highlights-grid">
-
-      <div class="highlight-card">
-
-        <div class="icon">📸</div>
-
-        <h3>【超好拍】會走路的樹</h3>
-
-        <p>探訪鸞山「沒有水泥牆的森林博物館」，拍出仙氣巨木大片。</p>
-
+    <!-- 視覺情境照 3 欄：替換為素材 03, 04, 05 -->
+    <div class="photo-row">
+      <div class="photo-card">
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-03.png" alt="幸運傳統護身手作">
+        <div class="photo-caption" id="caption-1">幸運傳統護身手作</div>
       </div>
-
-      <div class="highlight-card">
-
-        <div class="icon">🌾</div>
-
-        <h3>【可體驗】彩繪米 DIY</h3>
-
-        <p>在阿美族織羅部落，把在地紅藜與稻糧拼成專屬大地畫布。</p>
-
+      <div class="photo-card">
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-04.png" alt="節慶迎賓傳統舂米">
+        <div class="photo-caption" id="caption-2">節慶迎賓傳統舂米</div>
       </div>
-
-      <div class="highlight-card">
-
-        <div class="icon">♨️</div>
-
-        <h3>【極放鬆】縱谷雙名湯</h3>
-
-        <p>入住安通弱鹼性名湯與知本金聯世紀美人湯，完美洗滌身心。</p>
-
+      <div class="photo-card">
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-05.png" alt="山水環抱靜謐旅宿">
+        <div class="photo-caption" id="caption-3">山水環抱靜謐旅宿</div>
       </div>
-
-      <div class="highlight-card">
-
-        <div class="icon">🚆</div>
-
-        <h3>【超低碳】綠色新自強</h3>
-
-        <p>全程搭乘台鐵城際電聯車，告別長途拉車，減碳65%以上。</p>
-
-      </div>
-
     </div>
 
-
-
-    <!-- 說說莉梅姐和這個團的特色 -->
-
-    <div class="section-title">💡 說說莉梅姐 ✕ 本團特色</div>
-
-    <div class="limay-card">
-
-      <div class="limay-header">
-
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" 
-
-             alt="莉梅姐" 
-
-             class="limay-avatar">
-
-        <div class="limay-title">
-
-          <h3>帶路人：莉梅姐（Li-May）</h3>
-
-          <span class="limay-badge">35年旅遊資歷 ✕ 在地老饕帶路</span>
-
+    <div class="section-content">
+      
+      <!-- 出團規範卡 -->
+      <div class="info-bar">
+        <div class="info-box-item">
+          <span class="icon">📅</span>
+          <span class="title" id="info-t1">2天1夜 平日出發</span>
+          <span class="sub" id="info-s1">避開假日人潮 悠閒慢活</span>
         </div>
-
+        <div class="info-box-item">
+          <span class="icon">👥</span>
+          <span class="title" id="info-t2">精緻小團成行</span>
+          <span class="sub" id="info-s2">6位即可自組專屬團</span>
+        </div>
+        <div class="info-box-item">
+          <span class="icon">🚐</span>
+          <span class="title" id="info-t3">專車直達接送</span>
+          <span class="sub" id="info-s3">台北指定地點直達部落</span>
+        </div>
       </div>
 
-      <blockquote style="margin: 4px 0 10px 0; color: #3b5249; font-style: italic; font-size: 8.5pt;">
+      <!-- 泰雅文化 & 祖靈之眼 圖騰介紹：導入素材 06 -->
+      <div class="culture-card">
+        <div class="culture-header">
+          <span>◆</span>
+          <span id="culture-title">祖靈守護的里山智慧與「祖靈之眼」</span>
+        </div>
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-06.png" 
+             alt="部落里山景觀與文化" 
+             class="culture-banner-img">
+        <div class="culture-body" id="culture-body">
+          泰雅族人依循祖訓「Gaga」與大自然和諧共存，世世代代守護這片山林。在傳統織布與工藝中隨處可見的菱形圖紋，被尊稱為象徵守護與庇佑的「祖靈之眼」，蘊含著驅邪、平安歸來與家族傳承的深厚祝福。
+        </div>
+        <div class="culture-highlight-tag" id="culture-foot">
+          <span>✨</span>
+          <span><b>身心沉澱的慢活體驗：</b>白天感受部落長老溫暖的迎賓祝福與工藝手作，夜晚下榻於清幽水岸民宿，洗去都市塵囂。</span>
+        </div>
+      </div>
 
-        「曾在台東開過餐廳的我，比起走馬看花，更想帶大家像在地人一樣細細品味花東。」
+      <!-- 風土食材與部落美饌 -->
+      <div class="section-title">
+        <span>🍃</span>
+        <span id="gastro-head">品味大地恩賜的「風土野趣饗宴」</span>
+      </div>
 
-      </blockquote>
+      <div class="gastronomy-grid">
+        <div class="gastro-item">
+          <div class="gastro-title" id="gastro-t1">祖靈之眼 珠飾祈福 DIY</div>
+          <p class="gastro-desc" id="gastro-d1">一針一線編織帶有祖靈平安守護的傳統珠飾，帶回專屬於你的旅行印記。</p>
+        </div>
+        <div class="gastro-item">
+          <div class="gastro-title" id="gastro-t2">台灣原生香草「刺蔥」料理</div>
+          <p class="gastro-desc" id="gastro-d2">自山野現採的新鮮刺蔥，帶有迷人柑橘清香，融入地道佳餚爽口不膩。</p>
+        </div>
+        <div class="gastro-item">
+          <div class="gastro-title" id="gastro-t3">炭火直烤與馬告風味</div>
+          <p class="gastro-desc" id="gastro-d3">加入帶有檸檬香茅氣息的野生馬告醃製，炭火慢烤出酥香原味的產地珍饌。</p>
+        </div>
+        <div class="gastro-item">
+          <div class="gastro-title" id="gastro-t4">慶典麻糬（Tpqan）體驗</div>
+          <p class="gastro-desc" id="gastro-d4">手持木臼木杵體驗舂米樂趣，親嚐剛出爐熱騰騰、裹上花生的溫暖祝祭滋味。</p>
+        </div>
+      </div>
 
-      <ul class="feature-list">
+      <!-- 主辦單位與履約保證：導入素材 07 原民會圖示 -->
+      <div class="operator-box">
+        <div class="operator-header">
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" alt="莉梅姐" class="operator-avatar">
+          <div class="operator-meta">
+            <h4 id="op-title">主辦・執行｜安捷國際旅行社</h4>
+            <p>交通部觀光署認可 甲種旅行業（交觀甲字第5920號）｜統編：16169138</p>
+          </div>
+        </div>
+        <div class="operator-intro" id="op-desc">
+          創業35年來，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地對應（Land Operator）。
+        </div>
+        <div class="b2b-subcard">
+          <ul id="op-bullets">
+            <li><b>【企業團體／B2B 客製】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li>
+            <li><b>【家庭好友／個人包團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>
+          </ul>
+        </div>
+        <div class="endorsement-row">
+          <span id="endorse-text">☀️【推薦・公認】原住民族委員會認證合作夥伴</span>
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
+               alt="原住民族委員會認證標章" 
+               class="endorsement-img">
+        </div>
+      </div>
 
-        <li><b>饕客級部落美食</b>：不吃公版團體餐，親自挑選柴燒野炊與阿美族野菜宴。</li>
+      <!-- 常見問題 FAQ -->
+      <div class="section-title">
+        <span>❓</span>
+        <span id="faq-title">常見問答 FAQ</span>
+      </div>
 
-        <li><b>精品團等級貼心服務</b>：用照顧家人的心把關交通與住宿，一個人來也不尷尬。</li>
+      <div class="faq-card">
+        <div class="faq-q">
+          <span>Q1.</span>
+          <span id="faq-q1">平日出發的成團規定為何？1~2人也可以報名嗎？</span>
+        </div>
+        <p class="faq-a" id="faq-a1">
+          本行程採 2天1夜 平日出發（週日～週四出發限定），藉由避開週末人潮享受寧靜高品質體驗。1~2位朋友可報名拼團，滿6位即刻成行；亦非常歡迎 6位以上直接包車獨立出團！
+        </p>
 
-        <li><b>不藏私秘境導覽</b>：成團後提供專屬電子手冊，鎖定私房路線與私廚細節！</li>
+        <div class="faq-q">
+          <span>Q2.</span>
+          <span id="faq-q2">住宿地點是住在部落的簡樸民宅嗎？</span>
+        </div>
+        <p class="faq-a" id="faq-a2">
+          並非通鋪或簡樸民房。我們安排在部落進行深度的手作與文化體驗，夜晚則入住鄰近溪畔、設施完善潔淨的水岸渡假旅宿或溫馨特色休閒莊園，讓您舒適舒眠。
+        </p>
 
-      </ul>
+        <div class="faq-q">
+          <span>Q3.</span>
+          <span id="faq-q3">飲食方面是否提供少油、低負擔或蛋奶素等特殊安排？</span>
+        </div>
+        <p class="faq-a" id="faq-a3">
+          可以的。部落料理以純天然野菜、無負擔調味為主，若有茹素、不吃特定肉品或少油低鹽等飲食習慣，敬請於報名時事先告知，我們將提前為您妥善準備。
+        </p>
+      </div>
 
     </div>
-
-
-
-    <!-- 開團通知 & 引導領 $500 優惠卡片 -->
-
-    <div class="cta-box">
-
-      <h3>🎁 鎖定開團通知 ✕ 領取 $500 旅遊金</h3>
-
-      <p>點擊下方按鈕加入 LINE 官方帳號，留下您想參加的團：<br>輸入傳送<b>「低碳山林縱谷雙湯行+1」</b>，即可領取 <b>$500 低碳旅遊金</b>，開團第一時間通知您！</p>
-
-      <a href="https://lin.ee/Z3c7Qam" class="btn-line" target="_blank">
-
-        💬 加 LINE 回傳「低碳山林縱谷雙湯行+1」領 $500
-
-      </a>
-
-    </div>
-
-
-
   </div>
 
-</div>
+  <!-- 底部固定按鈕導購列 -->
+  <div class="sticky-action-bar">
+    <div class="bar-inner">
+      <a href="mailto:service@envoytravel.com.tw?subject=【B2B洽詢】泰雅原鄉里山慢旅" class="btn-action btn-b2b" id="cta-b2b" onclick="trackEvent('click_b2b', 'CTA', 'B2B_Inquiry')">
+        ✉️ B2B 合作諮詢
+      </a>
+      <a href="https://lin.ee/Z3c7Qam" target="_blank" class="btn-action btn-line" id="cta-line" onclick="trackEvent('click_line', 'CTA', 'Line_Consult')">
+        💬 個人行程諮詢
+      </a>
+    </div>
+  </div>
 
+  <!-- 雙語內容切換 Script -->
+  <script>
+    const i18n = {
+      zh: {
+        heroBadge1: "2天1夜・平日悠緩慢行",
+        heroBadge2: "台北市區 專車直送迎送",
+        heroTitle: "泰雅原鄉・里山森林避世慢旅",
+        heroSub: "傳統手藝祈福串珠 ✕ 沁涼溪畔水漾宿 2日",
+        heroDesc: "距離台北僅1.5小時車程，踏入尚未被過度觀光打擾的清幽秘境。在泰雅祖靈守護的古老智慧中，漫步森林、手作祈福，找回心靈的寧靜與純粹。",
+        cap1: "幸運傳統護身手作",
+        cap2: "節慶迎賓傳統舂米",
+        cap3: "山水環抱靜謐旅宿",
+        infoT1: "2天1夜 平日出發",
+        infoS1: "避開假日人潮 悠閒慢活",
+        infoT2: "精緻小團成行",
+        infoS2: "6位即可自組專屬團",
+        infoT3: "專車直達接送",
+        infoS3: "台北指定地點直達部落",
+        cultureTitle: "祖靈守護的里山智慧與「祖靈之眼」",
+        cultureBody: "泰雅族人依循祖訓「Gaga」與大自然和諧共存，世世代代守護這片山林。在傳統織布與工藝中隨處可見的菱形圖紋，被尊稱為象徵守護與庇佑的「祖靈之眼」，蘊含著驅邪、平安歸來與家族傳承的深厚祝福。",
+        cultureFoot: "<span>✨</span><span><b>身心沉澱的慢活體驗：</b>白天感受部落長老溫暖的迎賓祝福與工藝手作，夜晚下榻於清幽水岸民宿，洗去都市塵囂。</span>",
+        gastroHead: "品味大地恩賜的「風土野趣饗宴」",
+        gastroT1: "祖靈之眼 珠飾祈福 DIY",
+        gastroD1: "一針一線編織帶有祖靈平安守護的傳統珠飾，帶回專屬於你的旅行印記。",
+        gastroT2: "台灣原生香草「刺蔥」料理",
+        gastroD2: "自山野現採的新鮮刺蔥，帶有迷人柑橘清香，融入地道佳餚爽口不膩。",
+        gastroT3: "炭火直烤與馬告風味",
+        gastroD3: "加入帶有檸檬香茅氣息的野生馬告醃製，炭火慢烤出酥香原味的產地珍饌。",
+        gastroT4: "慶典麻糬（Tpqan）體驗",
+        gastroD4: "手持木臼木杵體驗舂米樂趣，親嚐剛出爐熱騰騰、裹上花生的溫暖祝祭滋味。",
+        opTitle: "主辦・執行｜安捷國際旅行社",
+        opDesc: "創業35年來，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地對應（Land Operator）。",
+        opBullets: "<li><b>【企業團體／B2B 客製】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li><li><b>【家庭好友／個人包團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>",
+        endorseText: "☀️【推薦・公認】原住民族委員會認證合作夥伴",
+        faqTitle: "常見問答 FAQ",
+        faqQ1: "平日出發的成團規定為何？1~2人也可以報名嗎？",
+        faqA1: "本行程採 2天1夜 平日出發（週日～週四出發限定），藉由避開週末人潮享受寧靜高品質體驗。1~2位朋友可報名拼團，滿6位即刻成行；亦非常歡迎 6位以上直接包車獨立出團！",
+        faqQ2: "住宿地點是住在部落的簡樸民宅嗎？",
+        faqA2: "並非通鋪或簡樸民房。我們安排在部落進行深度的手作與文化體驗，夜晚則入住鄰近溪畔、設施完善潔淨的水岸渡假旅宿或溫馨特色休閒莊園，讓您舒適舒眠。",
+        faqQ3: "飲食方面是否提供少油、低負擔或蛋奶素等特殊安排？",
+        faqA3: "可以的。部落料理以純天然野菜、無負擔調味為主，若有茹素、不吃特定肉品或少油低鹽等飲食習慣，敬請於報名時事先告知，我們將提前為您妥善準備。",
+        ctaB2B: "✉️ B2B 合作諮詢",
+        ctaLine: "💬 個人行程諮詢"
+      },
+      ja: {
+        heroBadge1: "1泊2日・平日限定（日〜木曜出発）",
+        heroBadge2: "台北発 専用車直行送迎",
+        heroTitle: "タイヤル原郷の里山リトリート",
+        heroSub: "伝統の手仕事・お守り作り ✕ 水辺の静寂な宿 2日間",
+        heroDesc: "台北からわずか1.5時間、観光地化されていない穏やかな里山へ。祖霊が見守る温かな知恵に触れ、心ほどける本物の台湾に出逢う旅。",
+        cap1: "幸運の伝統お守り",
+        cap2: "祝祭の餅つき体験",
+        cap3: "水辺のリゾート宿",
+        infoT1: "1泊2日・平日催行",
+        infoS1: "日〜木曜日出発限定",
+        infoT2: "少人数催行",
+        infoS2: "6名様より貸切可能",
+        infoT3: "専用車往復送迎",
+        infoS3: "台北市内指定地直行",
+        cultureTitle: "祖霊が見守る里山の知恵と「祖霊の瞳」",
+        cultureBody: "タイヤル族は自然を敬い、祖霊の掟「Gaga」に従いながら山林と里山を守り継いできました。彼らの伝統織物に刻まれる美しい菱形文様は「祖霊の瞳」と呼ばれ、旅人の安全を見守り、災いを払う神聖なお守りとされています。",
+        cultureFoot: "<span>✨</span><span><b>心身を解きほぐす里山滞在：</b>昼は族人の温かな歓迎の中で伝統工芸を紡ぎ、夜は水辺の静寂な宿で日々の忙しさを忘れる、豊かな時間をお過ごしいただけます。</span>",
+        gastroHead: "大地の恵みを味わう「風土ガストロノミー」",
+        gastroT1: "祖霊の瞳 ビーズお守り作り",
+        gastroD1: "旅の安全と幸運を紡ぐ伝統工芸を体験。ご自身の手で作る大切なお守り。",
+        gastroT2: "台湾原生ハーブ「刺葱」料理",
+        gastroD2: "柑橘のような爽やかな香りの山の恵み。身体に優しい旬の味覚を堪能。",
+        gastroT3: "直火焼きジビエ・馬告風味",
+        gastroD3: "レモングラス香る山姜子（馬告）風味の炭火焼き。大地の生命力をいただく一皿。",
+        gastroT4: "伝統餅つき「トピアク」",
+        gastroD4: "木臼でつくる温かな祝祭の味。できたてのお餅をピーナッツ粉とともに。",
+        opTitle: "主催・運行｜アンジェ国際旅行社（ENVOY TRAVEL）",
+        opDesc: "創業35年・台湾の自然と先住民族文化を繋ぐ少人数専門の旅行社です。原住民族委員会の認定パートナーとして、日本の旅行会社様への現地手配（ランドオペレーター）から個人のお客様のプライベート旅まで、質の高い文化体験をご提供します。",
+        opBullets: "<li><b>【B2B 協業相談】</b>：旅程アレンジ・卸値見積もり・視察ツアー手配</li><li><b>【個人・グループ】</b>：6名様以上の貸切チャーター・日本語ガイド対応</li>",
+        endorseText: "☀️【推薦・公認】台湾 原住民族委員会",
+        faqTitle: "よくあるご質問（FAQ）",
+        faqQ1: "催行日数と平日出発の定義について（1〜2名でも参加できますか？）",
+        faqA1: "本ツアーは1泊2日・平日催行（日曜日〜木曜日出発限定）となります。週末の混雑を避け、静かで上質な里山体験をお届けします。1〜2名様でのご参加も大歓迎です！他のお客様との混載ツアーをご案内しております（6名様以上で専用車完全貸切も可能）。",
+        faqQ2: "宿泊先は集落内の民泊ですか？",
+        faqA2: "いいえ。日中に集落を訪れて文化や手仕事の体験を行い、ご宿泊は快適な設備を備えた近隣の水辺のリゾートホテル／ペンションを手配しております。",
+        faqQ3: "日本の旅行会社向けの現地地上手配（ランド）は対応可能ですか？",
+        faqA3: "はい。正規の甲種旅行社として、専用車・日本語ガイド・集落体験プログラム・宿泊・食事を一括して承ります。卸値条件はお気軽にお問い合わせください。",
+        ctaB2B: "✉️ B2B お問い合わせ",
+        ctaLine: "💬 個人旅行のご相談"
+      }
+    };
 
+    function setLanguage(lang) {
+      const data = i18n[lang];
+      if (!data) return;
 
-<!-- 頁尾置底快速報名浮動列 -->
+      // 切換按鈕狀態
+      document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+      document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
 
-<div class="sticky-cta">
+      // 更新主要文案
+      document.getElementById('hero-badge-1').textContent = data.heroBadge1;
+      document.getElementById('hero-badge-2').textContent = data.heroBadge2;
+      document.getElementById('hero-title').textContent = data.heroTitle;
+      document.getElementById('hero-sub').textContent = data.heroSub;
+      document.getElementById('hero-desc').textContent = data.heroDesc;
 
-  <a href="https://lin.ee/Z3c7Qam" class="btn-line" target="_blank">
+      document.getElementById('caption-1').textContent = data.cap1;
+      document.getElementById('caption-2').textContent = data.cap2;
+      document.getElementById('caption-3').textContent = data.cap3;
 
-    💬 加 LINE 留「低碳山林縱谷雙湯行+1」領 $500 搶先開團通知
+      document.getElementById('info-t1').textContent = data.infoT1;
+      document.getElementById('info-s1').textContent = data.infoS1;
+      document.getElementById('info-t2').textContent = data.infoT2;
+      document.getElementById('info-s2').textContent = data.infoS2;
+      document.getElementById('info-t3').textContent = data.infoT3;
+      document.getElementById('info-s3').textContent = data.infoS3;
 
-  </a>
+      document.getElementById('culture-title').textContent = data.cultureTitle;
+      document.getElementById('culture-body').textContent = data.cultureBody;
+      document.getElementById('culture-foot').innerHTML = data.cultureFoot;
 
-</div>
+      document.getElementById('gastro-head').textContent = data.gastroHead;
+      document.getElementById('gastro-t1').textContent = data.gastroT1;
+      document.getElementById('gastro-d1').textContent = data.gastroD1;
+      document.getElementById('gastro-t2').textContent = data.gastroT2;
+      document.getElementById('gastro-d2').textContent = data.gastroD2;
+      document.getElementById('gastro-t3').textContent = data.gastroT3;
+      document.getElementById('gastro-d3').textContent = data.gastroD3;
+      document.getElementById('gastro-t4').textContent = data.gastroT4;
+      document.getElementById('gastro-d4').textContent = data.gastroD4;
 
+      document.getElementById('op-title').textContent = data.opTitle;
+      document.getElementById('op-desc').textContent = data.opDesc;
+      document.getElementById('op-bullets').innerHTML = data.opBullets;
+      document.getElementById('endorse-text').textContent = data.endorseText;
 
+      document.getElementById('faq-title').textContent = data.faqTitle;
+      document.getElementById('faq-q1').textContent = data.faqQ1;
+      document.getElementById('faq-a1').textContent = data.faqA1;
+      document.getElementById('faq-q2').textContent = data.faqQ2;
+      document.getElementById('faq-a2').textContent = data.faqA2;
+      document.getElementById('faq-q3').textContent = data.faqQ3;
+      document.getElementById('faq-a3').textContent = data.faqA3;
 
+      document.getElementById('cta-b2b').textContent = data.ctaB2B;
+      document.getElementById('cta-line').textContent = data.ctaLine;
+
+      // 發送 GA4 語言切換事件
+      trackEvent('switch_language', 'Language', lang);
+    }
+  </script>
 </body>
-
 </html>
