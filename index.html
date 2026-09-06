@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>部行山海間｜泰雅原鄉里山慢旅 2日遊 - 安捷國際旅行社 ENVOY TRAVEL</title>
+<title>部行山海間｜低碳縱谷・雙湯慢旅 3日遊 - 安捷國際旅行社 ENVOY TRAVEL</title>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP4CT61HC"></script>
@@ -14,7 +14,6 @@
 
   gtag('config', 'G-PPP4CT61HC');
 
-  // 自訂轉換追蹤事件
   function trackEvent(action, category, label) {
     gtag('event', action, {
       'event_category': category,
@@ -27,14 +26,14 @@
   :root {
     --primary-color: #2e4a3b;
     --secondary-color: #52796f;
-    --accent-color: #9c4125;
+    --accent-color: #8c261e;
     --accent-gold: #b37d4e;
     --bg-color: #f7f9f6;
     --card-bg: #ffffff;
     --text-color: #2c3531;
     --text-light: #5a6460;
     --border-color: #dbe4dc;
-    --line-color: #06C755;
+    --line-color: #274735;
     --b2b-color: #1e2522;
   }
 
@@ -47,7 +46,7 @@
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    padding-bottom: 85px; /* 避開底部懸浮按鈕 */
+    padding-bottom: 85px;
   }
 
   /* 固定頂部導覽列 */
@@ -56,7 +55,7 @@
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     padding: 10px 18px;
@@ -170,7 +169,7 @@
   }
 
   .badge-burgundy {
-    background-color: #8c261e;
+    background-color: var(--accent-color);
     color: #fff;
   }
 
@@ -266,23 +265,86 @@
   .info-box-item .title { font-size: 8.5pt; font-weight: bold; color: var(--primary-color); }
   .info-box-item .sub { font-size: 7pt; color: #6b7770; }
 
-  /* 傳統文化與圖騰故事卡片 */
+  /* 15秒亮點：可拍、可玩、可體驗 */
+  .section-title {
+    font-size: 11.5pt;
+    color: var(--primary-color);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0 10px;
+  }
+
+  .section-title-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .highlight-card {
+    background-color: #fcfdfe;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 12px 10px;
+    text-align: center;
+  }
+
+  .highlight-card .icon {
+    font-size: 20pt;
+    margin-bottom: 4px;
+  }
+
+  .highlight-card h3 {
+    margin: 0 0 4px 0;
+    font-size: 9.5pt;
+    color: var(--primary-color);
+  }
+
+  .highlight-card p {
+    margin: 0;
+    font-size: 8pt;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* 部落文化與地理背景卡片 */
   .culture-card {
     background: #fdfbf7;
     border: 1px solid #ebd9c3;
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 18px;
+    position: relative;
+  }
+
+  .culture-header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
   }
 
   .culture-header {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 8px;
+    gap: 6px;
     color: var(--accent-gold);
     font-weight: bold;
     font-size: 11pt;
+  }
+
+  .cip-emblem {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
   }
 
   .culture-banner-img {
@@ -311,68 +373,76 @@
     gap: 6px;
   }
 
-  /* 地方風土食材料理 (4格) */
-  .section-title {
-    font-size: 11.5pt;
-    color: var(--primary-color);
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin: 16px 0 10px;
-  }
-
-  .gastronomy-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .gastro-item {
-    background: #fafbfa;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 12px 10px;
-  }
-
-  .gastro-title {
-    font-size: 9pt;
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 3px;
-  }
-
-  .gastro-desc {
-    font-size: 8pt;
-    color: var(--text-light);
-    line-height: 1.4;
-    margin: 0;
-  }
-
-  /* 主辦單位／品質保證卡 */
-  .operator-box {
-    background: #f8faf8;
-    border: 1px solid var(--border-color);
+  /* 莉梅姐帶路卡片 */
+  .limay-card {
+    background: linear-gradient(135deg, #f0f5f2 0%, #e8f0eb 100%);
+    border: 1px solid #b8d0c0;
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 20px;
   }
 
-  .operator-header {
+  .limay-header {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 10px;
   }
 
-  .operator-avatar {
-    width: 52px;
-    height: 52px;
+  .limay-avatar {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--primary-color);
     flex-shrink: 0;
+  }
+
+  .limay-title h3 {
+    margin: 0;
+    font-size: 11pt;
+    color: var(--primary-color);
+  }
+
+  .limay-badge {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 7.5pt;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-top: 2px;
+  }
+
+  .feature-list {
+    margin: 10px 0 0 0;
+    padding-left: 0;
+    list-style: none;
+    font-size: 8.5pt;
+    color: #4a5568;
+  }
+
+  .feature-list li {
+    margin-bottom: 6px;
+    padding-left: 18px;
+    position: relative;
+  }
+
+  .feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+
+  /* 主辦單位／原民會認證 */
+  .operator-box {
+    background: #f8faf8;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
   }
 
   .operator-meta h4 {
@@ -382,7 +452,7 @@
   }
 
   .operator-meta p {
-    margin: 2px 0 0;
+    margin: 2px 0 8px;
     font-size: 7.5pt;
     color: #6a7770;
   }
@@ -413,18 +483,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 8px;
+    padding-top: 10px;
     border-top: 1px solid #e2ebe4;
   }
 
   .endorsement-row span {
     font-size: 8pt;
-    color: #68756d;
-    font-weight: 600;
+    color: #4a5c51;
+    font-weight: bold;
   }
 
   .endorsement-img {
-    height: 32px;
+    height: 34px;
     width: auto;
     object-fit: contain;
   }
@@ -434,11 +504,19 @@
     margin-bottom: 16px;
   }
 
+  .faq-item {
+    background: #fcfdfc;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
   .faq-q {
-    font-size: 9.5pt;
+    font-size: 9pt;
     font-weight: bold;
     color: var(--primary-color);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     display: flex;
     align-items: flex-start;
     gap: 6px;
@@ -447,8 +525,8 @@
   .faq-a {
     font-size: 8.5pt;
     color: var(--text-light);
-    padding-left: 20px;
-    margin: 0 0 12px;
+    padding-left: 18px;
+    margin: 0;
     line-height: 1.5;
   }
 
@@ -498,7 +576,7 @@
   }
 
   .btn-line {
-    background-color: #2c4434;
+    background-color: var(--line-color);
     color: #ffffff;
   }
 </style>
@@ -532,7 +610,7 @@
 
   <div class="container">
     
-    <!-- Hero 頂部主視覺：替換為素材 02 -->
+    <!-- Hero 頂部主視覺 -->
     <div class="main-hero">
       <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
            alt="部行山海間 主視覺" 
@@ -540,30 +618,30 @@
 
       <!-- 標籤組 -->
       <div class="badge-row">
-        <span class="badge-pill badge-burgundy" id="hero-badge-1">2天1夜・平日悠緩慢行</span>
-        <span class="badge-pill badge-dark" id="hero-badge-2">台北市區 專車直送迎送</span>
+        <span class="badge-pill badge-burgundy" id="hero-badge-1">3天2夜・平日低碳慢遊</span>
+        <span class="badge-pill badge-dark" id="hero-badge-2">台鐵新自強號城際直送</span>
       </div>
 
-      <h1 class="hero-h1" id="hero-title">泰雅原鄉・里山森林避世慢旅</h1>
-      <div class="hero-sub" id="hero-sub">傳統手藝祈福串珠 ✕ 沁涼溪畔水漾宿 2日</div>
+      <h1 class="hero-h1" id="hero-title">【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊</h1>
+      <div class="hero-sub" id="hero-sub">搭鐵道 ✕ 探神秘森林 ✕ 享雙溫泉名湯</div>
       <p class="hero-desc" id="hero-desc">
-        距離台北僅1.5小時車程，踏入尚未被過度觀光打擾的清幽秘境。在泰雅祖靈守護的古老智慧中，漫步森林、手作祈福，找回心靈的寧靜與純粹。
+        搭乘新自強號揮別舟車勞頓，深入花東縱谷阿美族與布農原鄉。在無水泥牆的森林巨木群大口深呼吸，浸潤雙名湯弱鹼泉質，品味原味柴燒與野菜盛宴。
       </p>
     </div>
 
-    <!-- 視覺情境照 3 欄：替換為素材 03, 04, 05 -->
+    <!-- 視覺情境照 3 欄 -->
     <div class="photo-row">
       <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-03.png" alt="幸運傳統護身手作">
-        <div class="photo-caption" id="caption-1">幸運傳統護身手作</div>
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-03.png" alt="部落體驗手作">
+        <div class="photo-caption" id="caption-1">織羅部落彩繪米體驗</div>
       </div>
       <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-04.png" alt="節慶迎賓傳統舂米">
-        <div class="photo-caption" id="caption-2">節慶迎賓傳統舂米</div>
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-04.png" alt="部落柴燒料理">
+        <div class="photo-caption" id="caption-2">柴燒野炊產地風味</div>
       </div>
       <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-05.png" alt="山水環抱靜謐旅宿">
-        <div class="photo-caption" id="caption-3">山水環抱靜謐旅宿</div>
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-05.png" alt="雙名湯溫泉名宿">
+        <div class="photo-caption" id="caption-3">縱谷安通✕知本雙名湯</div>
       </div>
     </div>
 
@@ -572,81 +650,117 @@
       <!-- 出團規範卡 -->
       <div class="info-bar">
         <div class="info-box-item">
-          <span class="icon">📅</span>
-          <span class="title" id="info-t1">2天1夜 平日出發</span>
-          <span class="sub" id="info-s1">避開假日人潮 悠閒慢活</span>
+          <span class="icon">👤</span>
+          <span class="title" id="info-t1">1人即可報名</span>
+          <span class="sub" id="info-s1">享受自在獨處慢旅</span>
         </div>
         <div class="info-box-item">
-          <span class="icon">👥</span>
-          <span class="title" id="info-t2">精緻小團成行</span>
-          <span class="sub" id="info-s2">6位即可自組專屬團</span>
+          <span class="icon">🚌</span>
+          <span class="title" id="info-t2">6人即刻成團</span>
+          <span class="sub" id="info-s2">平日成行高質感同行</span>
         </div>
         <div class="info-box-item">
-          <span class="icon">🚐</span>
-          <span class="title" id="info-t3">專車直達接送</span>
-          <span class="sub" id="info-s3">台北指定地點直達部落</span>
+          <span class="icon">✨</span>
+          <span class="title" id="info-t3">20人精緻滿團</span>
+          <span class="sub" id="info-s3">保留舒適空間不擁擠</span>
         </div>
       </div>
 
-      <!-- 泰雅文化 & 祖靈之眼 圖騰介紹：導入素材 06 -->
+      <!-- 15秒超快看懂：原本的行程亮點 -->
+      <div class="section-title">
+        <div class="section-title-left">
+          <span>⚡</span>
+          <span id="hl-head">15秒掌握行程精華</span>
+        </div>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="icon">📸</div>
+          <h3 id="hl-t1">【超好拍】會走路的樹</h3>
+          <p id="hl-d1">探訪鸞山「沒有水泥牆的森林博物館」，漫步布農聖地，拍出仙氣巨木大片。</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">🌾</div>
+          <h3 id="hl-t2">【可體驗】彩繪米 DIY</h3>
+          <p id="hl-d2">在阿美族織羅部落，把在地紅藜與飽滿稻糧親手拼成專屬大地畫布。</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">♨️</div>
+          <h3 id="hl-t3">【極放鬆】縱谷雙名湯</h3>
+          <p id="hl-d3">入住安通弱鹼性名湯與知本金聯世紀美人湯，以療癒泉水洗滌日常身心疲憊。</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon">🚆</div>
+          <h3 id="hl-t4">【超低碳】綠色新自強</h3>
+          <p id="hl-d4">搭乘台鐵城際電聯車直達縱谷，告別山路顛簸拉車，減碳65%以上的永續慢活。</p>
+        </div>
+      </div>
+
+      <!-- 部落文化與地理背景卡片 -->
       <div class="culture-card">
-        <div class="culture-header">
-          <span>◆</span>
-          <span id="culture-title">祖靈守護的里山智慧與「祖靈之眼」</span>
+        <div class="culture-header-wrap">
+          <div class="culture-header">
+            <span>◆</span>
+            <span id="culture-title">花東縱谷的原鄉風土：織羅阿美 ✕ 鸞山布農</span>
+          </div>
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
+               alt="原民會圖騰" 
+               class="cip-emblem">
         </div>
         <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-06.png" 
-             alt="部落里山景觀與文化" 
+             alt="花東縱谷山林" 
              class="culture-banner-img">
         <div class="culture-body" id="culture-body">
-          泰雅族人依循祖訓「Gaga」與大自然和諧共存，世世代代守護這片山林。在傳統織布與工藝中隨處可見的菱形圖紋，被尊稱為象徵守護與庇佑的「祖靈之眼」，蘊含著驅邪、平安歸來與家族傳承的深厚祝福。
+          座落在中央山脈與海岸山脈之間的縱谷平原，是阿美族與布農族人世代深耕的純淨之境。織羅部落展現阿美族對稻米、葛鬱金與紅藜作物的崇敬與土地彩繪美學；而鸞山部落則守護著布農族尊重大自然的里山信念，高聳的白榕巨木宛若有靈魂般蔓延成林，是旅人重新與大地對話的沉靜場域。
         </div>
         <div class="culture-highlight-tag" id="culture-foot">
           <span>✨</span>
-          <span><b>身心沉澱的慢活體驗：</b>白天感受部落長老溫暖的迎賓祝福與工藝手作，夜晚下榻於清幽水岸民宿，洗去都市塵囂。</span>
+          <span id="culture-foot-text"><b>友善樂活節奏：</b>全段挑選平緩林蔭步道、少油減鹽在地時令野菜，留足泉湯休歇時刻，舒活無負擔。</span>
         </div>
       </div>
 
-      <!-- 風土食材與部落美饌 -->
+      <!-- 莉梅姐帶路人卡片 -->
       <div class="section-title">
-        <span>🍃</span>
-        <span id="gastro-head">品味大地恩賜的「風土野趣饗宴」</span>
-      </div>
-
-      <div class="gastronomy-grid">
-        <div class="gastro-item">
-          <div class="gastro-title" id="gastro-t1">祖靈之眼 珠飾祈福 DIY</div>
-          <p class="gastro-desc" id="gastro-d1">一針一線編織帶有祖靈平安守護的傳統珠飾，帶回專屬於你的旅行印記。</p>
-        </div>
-        <div class="gastro-item">
-          <div class="gastro-title" id="gastro-t2">台灣原生香草「刺蔥」料理</div>
-          <p class="gastro-desc" id="gastro-d2">自山野現採的新鮮刺蔥，帶有迷人柑橘清香，融入地道佳餚爽口不膩。</p>
-        </div>
-        <div class="gastro-item">
-          <div class="gastro-title" id="gastro-t3">炭火直烤與馬告風味</div>
-          <p class="gastro-desc" id="gastro-d3">加入帶有檸檬香茅氣息的野生馬告醃製，炭火慢烤出酥香原味的產地珍饌。</p>
-        </div>
-        <div class="gastro-item">
-          <div class="gastro-title" id="gastro-t4">慶典麻糬（Tpqan）體驗</div>
-          <p class="gastro-desc" id="gastro-d4">手持木臼木杵體驗舂米樂趣，親嚐剛出爐熱騰騰、裹上花生的溫暖祝祭滋味。</p>
+        <div class="section-title-left">
+          <span>💡</span>
+          <span id="limay-sec-title">帶路人：莉梅姐 ✕ 本團特色</span>
         </div>
       </div>
 
-      <!-- 主辦單位與履約保證：導入素材 07 原民會圖示 -->
-      <div class="operator-box">
-        <div class="operator-header">
-          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" alt="莉梅姐" class="operator-avatar">
-          <div class="operator-meta">
-            <h4 id="op-title">主辦・執行｜安捷國際旅行社</h4>
-            <p>交通部觀光署認可 甲種旅行業（交觀甲字第5920號）｜統編：16169138</p>
+      <div class="limay-card">
+        <div class="limay-header">
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" 
+               alt="莉梅姐" 
+               class="limay-avatar">
+          <div class="limay-title">
+            <h3 id="limay-name">帶路人：莉梅姐（Li-May）</h3>
+            <span class="limay-badge" id="limay-exp">35年旅遊資歷 ✕ 在地老饕帶路</span>
           </div>
+        </div>
+        <blockquote style="margin: 4px 0 10px 0; color: #3b5249; font-style: italic; font-size: 8.5pt;" id="limay-quote">
+          「曾在台東開過餐廳的我，比起走馬看花，更想帶大家像在地人一樣細細品味花東的靜謐與美好。」
+        </blockquote>
+        <ul class="feature-list" id="limay-points">
+          <li><b>饕客級在地風味</b>：不吃公版團體餐，親自挑選柴燒野炊與阿美族健康野菜宴。</li>
+          <li><b>如家人般的照料</b>：精品團貼心規格，無論夫妻結伴或一個人來都能溫暖自在。</li>
+          <li><b>專屬私房手冊</b>：成團後提供專屬電子手冊，鎖定私房慢活路線與莉梅姐口袋名單！</li>
+        </ul>
+      </div>
+
+      <!-- 主辦單位與履約保證（含原民會標章） -->
+      <div class="operator-box">
+        <div class="operator-meta">
+          <h4 id="op-title">主辦・執行｜安捷國際旅行社</h4>
+          <p>交通部觀光署認可 甲種旅行業（交觀甲字第5920號）｜統編：16169138</p>
         </div>
         <div class="operator-intro" id="op-desc">
           創業35年來，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地對應（Land Operator）。
         </div>
         <div class="b2b-subcard">
           <ul id="op-bullets">
-            <li><b>【企業團體／B2B 客製】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li>
-            <li><b>【家庭好友／個人包團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>
+            <li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li>
+            <li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>
           </ul>
         </div>
         <div class="endorsement-row">
@@ -659,44 +773,52 @@
 
       <!-- 常見問題 FAQ -->
       <div class="section-title">
-        <span>❓</span>
-        <span id="faq-title">常見問答 FAQ</span>
+        <div class="section-title-left">
+          <span>❓</span>
+          <span id="faq-title">常見問答 FAQ</span>
+        </div>
       </div>
 
       <div class="faq-card">
-        <div class="faq-q">
-          <span>Q1.</span>
-          <span id="faq-q1">平日出發的成團規定為何？1~2人也可以報名嗎？</span>
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Q1.</span>
+            <span id="faq-q1">步道行程會不會很消耗體力？樂活熟齡族適合參加嗎？</span>
+          </div>
+          <p class="faq-a" id="faq-a1">
+            請完全放心！鸞山巨木與部落散策均安排平緩安全的林蔭路線，步調放慢不趕路，並預留充分的休息與溫泉享受時間，非常適合熱愛大自然、追求健康的樂活族群。
+          </p>
         </div>
-        <p class="faq-a" id="faq-a1">
-          本行程採 2天1夜 平日出發（週日～週四出發限定），藉由避開週末人潮享受寧靜高品質體驗。1~2位朋友可報名拼團，滿6位即刻成行；亦非常歡迎 6位以上直接包車獨立出團！
-        </p>
 
-        <div class="faq-q">
-          <span>Q2.</span>
-          <span id="faq-q2">住宿地點是住在部落的簡樸民宅嗎？</span>
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Q2.</span>
+            <span id="faq-q2">一個人報名方便嗎？房間如何安排？</span>
+          </div>
+          <p class="faq-a" id="faq-a2">
+            非常歡迎！本團具備「1人即可報名」機制，莉梅姐與隨團團隊會細心照料每位團員。住宿可選擇補單人房差獨享寬敞名湯房型，或由我們協助安排同性團友合住。
+          </p>
         </div>
-        <p class="faq-a" id="faq-a2">
-          並非通鋪或簡樸民房。我們安排在部落進行深度的手作與文化體驗，夜晚則入住鄰近溪畔、設施完善潔淨的水岸渡假旅宿或溫馨特色休閒莊園，讓您舒適舒眠。
-        </p>
 
-        <div class="faq-q">
-          <span>Q3.</span>
-          <span id="faq-q3">飲食方面是否提供少油、低負擔或蛋奶素等特殊安排？</span>
+        <div class="faq-item">
+          <div class="faq-q">
+            <span>Q3.</span>
+            <span id="faq-q3">飲食方面是否能配合少油、低鹽或素食習慣？</span>
+          </div>
+          <p class="faq-a" id="faq-a3">
+            可以的。行程精選阿美族時令野菜與原民天然食材，低負擔少油膩。若您有素食或特殊過敏飲食需求，請於報名時事先註明，我們將全力為您客製安排。
+          </p>
         </div>
-        <p class="faq-a" id="faq-a3">
-          可以的。部落料理以純天然野菜、無負擔調味為主，若有茹素、不吃特定肉品或少油低鹽等飲食習慣，敬請於報名時事先告知，我們將提前為您妥善準備。
-        </p>
       </div>
 
     </div>
   </div>
 
-  <!-- 底部固定按鈕導購列 -->
+  <!-- 底部固定雙按鈕導購列 -->
   <div class="sticky-action-bar">
     <div class="bar-inner">
-      <a href="mailto:service@envoytravel.com.tw?subject=【B2B洽詢】泰雅原鄉里山慢旅" class="btn-action btn-b2b" id="cta-b2b" onclick="trackEvent('click_b2b', 'CTA', 'B2B_Inquiry')">
-        ✉️ B2B 合作諮詢
+      <a href="mailto:service@envoytravel.com.tw?subject=【B2B洽詢】花東低碳縱谷雙湯3日遊" class="btn-action btn-b2b" id="cta-b2b" onclick="trackEvent('click_b2b', 'CTA', 'B2B_Inquiry')">
+        ✉️ B2B 合作洽詢
       </a>
       <a href="https://lin.ee/Z3c7Qam" target="_blank" class="btn-action btn-line" id="cta-line" onclick="trackEvent('click_line', 'CTA', 'Line_Consult')">
         💬 個人行程諮詢
@@ -704,88 +826,98 @@
     </div>
   </div>
 
-  <!-- 雙語內容切換 Script -->
+  <!-- 雙語切換 Script -->
   <script>
     const i18n = {
       zh: {
-        heroBadge1: "2天1夜・平日悠緩慢行",
-        heroBadge2: "台北市區 專車直送迎送",
-        heroTitle: "泰雅原鄉・里山森林避世慢旅",
-        heroSub: "傳統手藝祈福串珠 ✕ 沁涼溪畔水漾宿 2日",
-        heroDesc: "距離台北僅1.5小時車程，踏入尚未被過度觀光打擾的清幽秘境。在泰雅祖靈守護的古老智慧中，漫步森林、手作祈福，找回心靈的寧靜與純粹。",
-        cap1: "幸運傳統護身手作",
-        cap2: "節慶迎賓傳統舂米",
-        cap3: "山水環抱靜謐旅宿",
-        infoT1: "2天1夜 平日出發",
-        infoS1: "避開假日人潮 悠閒慢活",
-        infoT2: "精緻小團成行",
-        infoS2: "6位即可自組專屬團",
-        infoT3: "專車直達接送",
-        infoS3: "台北指定地點直達部落",
-        cultureTitle: "祖靈守護的里山智慧與「祖靈之眼」",
-        cultureBody: "泰雅族人依循祖訓「Gaga」與大自然和諧共存，世世代代守護這片山林。在傳統織布與工藝中隨處可見的菱形圖紋，被尊稱為象徵守護與庇佑的「祖靈之眼」，蘊含著驅邪、平安歸來與家族傳承的深厚祝福。",
-        cultureFoot: "<span>✨</span><span><b>身心沉澱的慢活體驗：</b>白天感受部落長老溫暖的迎賓祝福與工藝手作，夜晚下榻於清幽水岸民宿，洗去都市塵囂。</span>",
-        gastroHead: "品味大地恩賜的「風土野趣饗宴」",
-        gastroT1: "祖靈之眼 珠飾祈福 DIY",
-        gastroD1: "一針一線編織帶有祖靈平安守護的傳統珠飾，帶回專屬於你的旅行印記。",
-        gastroT2: "台灣原生香草「刺蔥」料理",
-        gastroD2: "自山野現採的新鮮刺蔥，帶有迷人柑橘清香，融入地道佳餚爽口不膩。",
-        gastroT3: "炭火直烤與馬告風味",
-        gastroD3: "加入帶有檸檬香茅氣息的野生馬告醃製，炭火慢烤出酥香原味的產地珍饌。",
-        gastroT4: "慶典麻糬（Tpqan）體驗",
-        gastroD4: "手持木臼木杵體驗舂米樂趣，親嚐剛出爐熱騰騰、裹上花生的溫暖祝祭滋味。",
+        heroBadge1: "3天2夜・平日低碳慢遊",
+        heroBadge2: "台鐵新自強號城際直送",
+        heroTitle: "【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊",
+        heroSub: "搭鐵道 ✕ 探神秘森林 ✕ 享雙溫泉名湯",
+        heroDesc: "搭乘新自強號揮別舟車勞頓，深入花東縱谷阿美族與布農原鄉。在無水泥牆的森林巨木群大口深呼吸，浸潤雙名湯弱鹼泉質，品味原味柴燒與野菜盛宴。",
+        cap1: "織羅部落彩繪米體驗",
+        cap2: "柴燒野炊產地風味",
+        cap3: "縱谷安通✕知本雙名湯",
+        infoT1: "1人即可報名",
+        infoS1: "享受自在獨處慢旅",
+        infoT2: "6人即刻成團",
+        infoS2: "平日成行高質感同行",
+        infoT3: "20人精緻滿團",
+        infoS3: "保留舒適空間不擁擠",
+        hlHead: "15秒掌握行程精華",
+        hlT1: "【超好拍】會走路的樹",
+        hlD1: "探訪鸞山「沒有水泥牆的森林博物館」，漫步布農聖地，拍出仙氣巨木大片。",
+        hlT2: "【可體驗】彩繪米 DIY",
+        hlD2: "在阿美族織羅部落，把在地紅藜與飽滿稻糧親手拼成專屬大地畫布。",
+        hlT3: "【極放鬆】縱谷雙名湯",
+        hlD3: "入住安通弱鹼性名湯與知本金聯世紀美人湯，以療癒泉水洗滌日常身心疲憊。",
+        hlT4: "【超低碳】綠色新自強",
+        hlD4: "搭乘台鐵城際電聯車直達縱谷，告別山路顛簸拉車，減碳65%以上的永續慢活。",
+        cultureTitle: "花東縱谷的原鄉風土：織羅阿美 ✕ 鸞山布農",
+        cultureBody: "座落在中央山脈與海岸山脈之間的縱谷平原，是阿美族與布農族人世代深耕的純淨之境。織羅部落展現阿美族對稻米、葛鬱金與紅藜作物的崇敬與土地彩繪美學；而鸞山部落則守護著布農族尊重大自然的里山信念，高聳的白榕巨木宛若有靈魂般蔓延成林，是旅人重新與大地對話的沉靜場域。",
+        cultureFootText: "<b>友善樂活節奏：</b>全段挑選平緩林蔭步道、少油減鹽在地時令野菜，留足泉湯休歇時刻，舒活無負擔。",
+        limaySecTitle: "帶路人：莉梅姐 ✕ 本團特色",
+        limayName: "帶路人：莉梅姐（Li-May）",
+        limayExp: "35年旅遊資歷 ✕ 在地老饕帶路",
+        limayQuote: "「曾在台東開過餐廳的我，比起走馬看花，更想帶大家像在地人一樣細細品味花東的靜謐與美好。」",
+        limayPoints: "<li><b>饕客級在地風味</b>：不吃公版團體餐，親自挑選柴燒野炊與阿美族健康野菜宴。</li><li><b>如家人般的照料</b>：精品團貼心規格，無論夫妻結伴或一個人來都能溫暖自在。</li><li><b>專屬私房手冊</b>：成團後提供專屬電子手冊，鎖定私房慢活路線與莉梅姐口袋名單！</li>",
         opTitle: "主辦・執行｜安捷國際旅行社",
         opDesc: "創業35年來，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地對應（Land Operator）。",
-        opBullets: "<li><b>【企業團體／B2B 客製】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li><li><b>【家庭好友／個人包團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>",
+        opBullets: "<li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li><li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>",
         endorseText: "☀️【推薦・公認】原住民族委員會認證合作夥伴",
         faqTitle: "常見問答 FAQ",
-        faqQ1: "平日出發的成團規定為何？1~2人也可以報名嗎？",
-        faqA1: "本行程採 2天1夜 平日出發（週日～週四出發限定），藉由避開週末人潮享受寧靜高品質體驗。1~2位朋友可報名拼團，滿6位即刻成行；亦非常歡迎 6位以上直接包車獨立出團！",
-        faqQ2: "住宿地點是住在部落的簡樸民宅嗎？",
-        faqA2: "並非通鋪或簡樸民房。我們安排在部落進行深度的手作與文化體驗，夜晚則入住鄰近溪畔、設施完善潔淨的水岸渡假旅宿或溫馨特色休閒莊園，讓您舒適舒眠。",
-        faqQ3: "飲食方面是否提供少油、低負擔或蛋奶素等特殊安排？",
-        faqA3: "可以的。部落料理以純天然野菜、無負擔調味為主，若有茹素、不吃特定肉品或少油低鹽等飲食習慣，敬請於報名時事先告知，我們將提前為您妥善準備。",
-        ctaB2B: "✉️ B2B 合作諮詢",
+        faqQ1: "步道行程會不會很消耗體力？樂活熟齡族適合參加嗎？",
+        faqA1: "請完全放心！鸞山巨木與部落散策均安排平緩安全的林蔭路線，步調放慢不趕路，並預留充分的休息與溫泉享受時間，非常適合熱愛大自然、追求健康的樂活族群。",
+        faqQ2: "一個人報名方便嗎？房間如何安排？",
+        faqA2: "非常歡迎！本團具備「1人即可報名」機制，莉梅姐與隨團團隊會細心照料每位團員。住宿可選擇補單人房差獨享寬敞名湯房型，或由我們協助安排同性團友合住。",
+        faqQ3: "飲食方面是否能配合少油、低鹽或素食習慣？",
+        faqA3: "可以的。行程精選阿美族時令野菜與原民天然食材，低負擔少油膩。若您有素食或特殊過敏飲食需求，請於報名時事先註明，我們將全力為您客製安排。",
+        ctaB2B: "✉️ B2B 合作洽詢",
         ctaLine: "💬 個人行程諮詢"
       },
       ja: {
-        heroBadge1: "1泊2日・平日限定（日〜木曜出発）",
-        heroBadge2: "台北発 専用車直行送迎",
-        heroTitle: "タイヤル原郷の里山リトリート",
-        heroSub: "伝統の手仕事・お守り作り ✕ 水辺の静寂な宿 2日間",
-        heroDesc: "台北からわずか1.5時間、観光地化されていない穏やかな里山へ。祖霊が見守る温かな知恵に触れ、心ほどける本物の台湾に出逢う旅。",
-        cap1: "幸運の伝統お守り",
-        cap2: "祝祭の餅つき体験",
-        cap3: "水辺のリゾート宿",
-        infoT1: "1泊2日・平日催行",
-        infoS1: "日〜木曜日出発限定",
-        infoT2: "少人数催行",
-        infoS2: "6名様より貸切可能",
-        infoT3: "専用車往復送迎",
-        infoS3: "台北市内指定地直行",
-        cultureTitle: "祖霊が見守る里山の知恵と「祖霊の瞳」",
-        cultureBody: "タイヤル族は自然を敬い、祖霊の掟「Gaga」に従いながら山林と里山を守り継いできました。彼らの伝統織物に刻まれる美しい菱形文様は「祖霊の瞳」と呼ばれ、旅人の安全を見守り、災いを払う神聖なお守りとされています。",
-        cultureFoot: "<span>✨</span><span><b>心身を解きほぐす里山滞在：</b>昼は族人の温かな歓迎の中で伝統工芸を紡ぎ、夜は水辺の静寂な宿で日々の忙しさを忘れる、豊かな時間をお過ごしいただけます。</span>",
-        gastroHead: "大地の恵みを味わう「風土ガストロノミー」",
-        gastroT1: "祖霊の瞳 ビーズお守り作り",
-        gastroD1: "旅の安全と幸運を紡ぐ伝統工芸を体験。ご自身の手で作る大切なお守り。",
-        gastroT2: "台湾原生ハーブ「刺葱」料理",
-        gastroD2: "柑橘のような爽やかな香りの山の恵み。身体に優しい旬の味覚を堪能。",
-        gastroT3: "直火焼きジビエ・馬告風味",
-        gastroD3: "レモングラス香る山姜子（馬告）風味の炭火焼き。大地の生命力をいただく一皿。",
-        gastroT4: "伝統餅つき「トピアク」",
-        gastroD4: "木臼でつくる温かな祝祭の味。できたてのお餅をピーナッツ粉とともに。",
+        heroBadge1: "2泊3日・平日限定低炭素リトリート",
+        heroBadge2: "台湾鉄道・最新特急直通送迎",
+        heroTitle: "【低炭素な縦谷・二名湯の旅】花東原郷 3日間",
+        heroSub: "鉄道の旅 ✕ 神秘の森の巨木 ✕ 二大名湯を愉しむ",
+        heroDesc: "最新の都市間特急「新自強号」で快適に花東縦谷へ。アミ族・ブヌン族の原郷を訪れ、壁のない森で深呼吸。弱アルカリ性の名湯と土地の薪火料理に癒される3日間。",
+        cap1: "織羅集落のお米アート体験",
+        cap2: "薪火で焼き上げる郷土の味",
+        cap3: "安通✕知本の名湯ホテル",
+        infoT1: "1名様より申込可能",
+        infoS1: "気ままな一人旅も大歓迎",
+        infoT2: "6名様で催行確定",
+        infoS2: "平日催行の上質な少人数旅",
+        infoT3: "最大20名様の限定枠",
+        infoS3: "ゆとりのある快適な旅路",
+        hlHead: "15秒でわかる旅のハイライト",
+        hlT1: "【絶景】歩くガジュマルの巨木",
+        hlD1: "ブヌン族の聖地「壁のない森林博物館」へ。太古の息吹を感じるガジュマルの森を散策。",
+        hlT2: "【体験】彩り米アートDIY",
+        hlD2: "アミ族・織羅集落にて、無農薬の赤キヌアとお米を使って自分だけのキャンバスを制作。",
+        hlT3: "【極上】縦谷の二大名湯",
+        hlD3: "安通温泉の弱アルカリ泉と知本金聯世紀ホテルの美肌湯を堪能。日々の疲れを心地よく解きほぐします。",
+        hlT4: "【低炭素】最新特急で快適移動",
+        hlD4: "台湾鉄道の最新鋭特急で長距離山道の揺れを解消。CO2を65%以上削減するサステナブルな旅路路程。",
+        cultureTitle: "花東縦谷の風土：織羅のアミ族 ✕ 鸞山のブヌン族",
+        cultureBody: "中央山脈と海岸山脈に抱かれた花東縦谷は、先住民族が自然と共生してきた肥沃な大地です。アミ族の織羅集落はお米や伝統作物を慈しむ豊かな文化を伝え、ブヌン族の鸞山集落は原生林を守り継いできました。生命力あふれる巨大なガジュマルと澄んだ名湯が、都会の喧騒を忘れさせてくれます。",
+        cultureFootText: "<b>身体に優しいスロートラベル：</b>歩きやすい木陰の小道、旬の山菜をふんだんに使ったヘルシーな郷土料理、そして名湯での癒しの時間をゆったり確保。",
+        limaySecTitle: "案内人：李梅（リメイ）✕ ツアーのこだわり",
+        limayName: "案内人：李梅（Li-May）",
+        limayExp: "観光業35年の実績 ✕ 地元を愛する美食の達人",
+        limayQuote: "「かつて台東で飲食店を営んでいた私だからこそ、一般的な観光地巡りではなく、土地の真の豊かさを皆さまにお届けしたいと願っています。」",
+        limayPoints: "<li><b>厳選された地元料理</b>：画一的な団体料理ではなく、薪火野外料理や新鮮な山菜料理を厳選。</li><li><b>細やかな心配り</b>：少人数ならではの温かなおもてなし。お一人様のご参加も安心して寛げます。</li><li><b>特製デジタルしおり</b>：ご参加の方には、李梅おすすめの隠れ家スポットが詰まった電子手帳を進呈。</li>",
         opTitle: "主催・運行｜アンジェ国際旅行社（ENVOY TRAVEL）",
-        opDesc: "創業35年・台湾の自然と先住民族文化を繋ぐ少人数専門の旅行社です。原住民族委員会の認定パートナーとして、日本の旅行会社様への現地手配（ランドオペレーター）から個人のお客様のプライベート旅まで、質の高い文化体験をご提供します。",
+        opDesc: "創業35年・台湾の自然と先住民族文化を繋ぐ少人数専門の旅行社です。原住民族委員会の認定パートナーとして、日本の旅行会社様への現地手配（ランドオペレーター）から個人のお客様のプライベート旅まで承ります。",
         opBullets: "<li><b>【B2B 協業相談】</b>：旅程アレンジ・卸値見積もり・視察ツアー手配</li><li><b>【個人・グループ】</b>：6名様以上の貸切チャーター・日本語ガイド対応</li>",
         endorseText: "☀️【推薦・公認】台湾 原住民族委員会",
         faqTitle: "よくあるご質問（FAQ）",
-        faqQ1: "催行日数と平日出発の定義について（1〜2名でも参加できますか？）",
-        faqA1: "本ツアーは1泊2日・平日催行（日曜日〜木曜日出発限定）となります。週末の混雑を避け、静かで上質な里山体験をお届けします。1〜2名様でのご参加も大歓迎です！他のお客様との混載ツアーをご案内しております（6名様以上で専用車完全貸切も可能）。",
-        faqQ2: "宿泊先は集落内の民泊ですか？",
-        faqA2: "いいえ。日中に集落を訪れて文化や手仕事の体験を行い、ご宿泊は快適な設備を備えた近隣の水辺のリゾートホテル／ペンションを手配しております。",
-        faqQ3: "日本の旅行会社向けの現地地上手配（ランド）は対応可能ですか？",
-        faqA3: "はい。正規の甲種旅行社として、専用車・日本語ガイド・集落体験プログラム・宿泊・食事を一括して承ります。卸値条件はお気軽にお問い合わせください。",
+        faqQ1: "散策コースの体力面が心配ですが、シニア世代でも楽しめますか？",
+        faqA1: "ご安心ください。鸞山の散策道や集落散歩はすべて平坦で整備された木陰の道を選定しております。歩行ペースも非常に穏やかで、無理のない行程です。",
+        faqQ2: "1名での参加は可能ですか？宿泊部屋はどうなりますか？",
+        faqA2: "はい、大歓迎です！1名様よりエントリーいただけます。お一人部屋（追加代金）でのんびり名湯を独占いただくか、同性のお客様との相部屋調整も可能です。",
+        faqQ3: "ベジタリアンや減塩・薄味への食事対応はできますか？",
+        faqA3: "対応可能です。本ツアーは旬のオーガニック野菜と自然の恵みを活かした料理が中心です。特別な食事制限やベジタリアン対応は事前にお知らせいただければ手配いたします。",
         ctaB2B: "✉️ B2B お問い合わせ",
         ctaLine: "💬 個人旅行のご相談"
       }
@@ -795,11 +927,9 @@
       const data = i18n[lang];
       if (!data) return;
 
-      // 切換按鈕狀態
       document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
       document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
 
-      // 更新主要文案
       document.getElementById('hero-badge-1').textContent = data.heroBadge1;
       document.getElementById('hero-badge-2').textContent = data.heroBadge2;
       document.getElementById('hero-title').textContent = data.heroTitle;
@@ -817,19 +947,25 @@
       document.getElementById('info-t3').textContent = data.infoT3;
       document.getElementById('info-s3').textContent = data.infoS3;
 
+      document.getElementById('hl-head').textContent = data.hlHead;
+      document.getElementById('hl-t1').textContent = data.hlT1;
+      document.getElementById('hl-d1').textContent = data.hlD1;
+      document.getElementById('hl-t2').textContent = data.hlT2;
+      document.getElementById('hl-d2').textContent = data.hlD2;
+      document.getElementById('hl-t3').textContent = data.hlT3;
+      document.getElementById('hl-d3').textContent = data.hlD3;
+      document.getElementById('hl-t4').textContent = data.hlT4;
+      document.getElementById('hl-d4').textContent = data.hlD4;
+
       document.getElementById('culture-title').textContent = data.cultureTitle;
       document.getElementById('culture-body').textContent = data.cultureBody;
-      document.getElementById('culture-foot').innerHTML = data.cultureFoot;
+      document.getElementById('culture-foot-text').innerHTML = data.cultureFootText;
 
-      document.getElementById('gastro-head').textContent = data.gastroHead;
-      document.getElementById('gastro-t1').textContent = data.gastroT1;
-      document.getElementById('gastro-d1').textContent = data.gastroD1;
-      document.getElementById('gastro-t2').textContent = data.gastroT2;
-      document.getElementById('gastro-d2').textContent = data.gastroD2;
-      document.getElementById('gastro-t3').textContent = data.gastroT3;
-      document.getElementById('gastro-d3').textContent = data.gastroD3;
-      document.getElementById('gastro-t4').textContent = data.gastroT4;
-      document.getElementById('gastro-d4').textContent = data.gastroD4;
+      document.getElementById('limay-sec-title').textContent = data.limaySecTitle;
+      document.getElementById('limay-name').textContent = data.limayName;
+      document.getElementById('limay-exp').textContent = data.limayExp;
+      document.getElementById('limay-quote').textContent = data.limayQuote;
+      document.getElementById('limay-points').innerHTML = data.limayPoints;
 
       document.getElementById('op-title').textContent = data.opTitle;
       document.getElementById('op-desc').textContent = data.opDesc;
@@ -847,7 +983,6 @@
       document.getElementById('cta-b2b').textContent = data.ctaB2B;
       document.getElementById('cta-line').textContent = data.ctaLine;
 
-      // 發送 GA4 語言切換事件
       trackEvent('switch_language', 'Language', lang);
     }
   </script>
