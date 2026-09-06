@@ -129,7 +129,7 @@
     box-shadow: 0 0 25px rgba(0,0,0,0.05);
   }
 
-  /* 頁首主視覺區塊：最上方原民會 Logo 橫幅 */
+  /* 頁首主視覺：部行山海間 行程 Logo 橫幅置頂 */
   .main-hero {
     position: relative;
     padding: 16px 16px 14px;
@@ -139,16 +139,15 @@
 
   .campaign-hero-img {
     width: 100%;
-    max-width: 500px;
+    max-width: 480px;
     height: auto;
-    aspect-ratio: 16 / 8.5;
+    aspect-ratio: 16 / 8.8;
     object-fit: contain;
-    border-radius: 16px;
+    border-radius: 14px;
     margin: 4px auto 14px;
     display: block;
     background: #ffffff;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
-    padding: 8px 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
   }
 
   .badge-row {
@@ -294,19 +293,16 @@
     align-items: center;
   }
 
-  .mascot-box {
-    width: 82px;
-    height: 82px;
-    margin-bottom: 6px;
+  .highlight-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #eef4f0;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .mascot-box svg {
-    width: 100%;
-    height: 100%;
-    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.12));
+    font-size: 24px;
+    margin-bottom: 8px;
   }
 
   .highlight-card h3 {
@@ -360,7 +356,7 @@
     line-height: 1.55;
   }
 
-  /* 莉梅姐引路人專題卡片 */
+  /* 莉梅姐引路人專題卡片：徹底修復破損插圖 */
   .limay-editorial-card {
     background: #fdfdfb;
     border: 1px solid #dcd7cc;
@@ -417,19 +413,13 @@
     margin-top: 2px;
   }
 
+  /* 引路人右上角：正式原住民族委員會官方標章 */
   .limay-cip-logo {
-    height: 38px;
+    height: 40px;
     width: auto;
+    max-width: 140px;
     object-fit: contain;
     flex-shrink: 0;
-  }
-
-  .limay-banner-img {
-    width: 100%;
-    max-height: 130px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin: 10px 0;
   }
 
   .limay-quote-box {
@@ -700,10 +690,10 @@
 
   <div class="container">
     
-    <!-- 頁首主視覺：置頂為官方原民會 Logo (07.jpg) 橫幅 -->
+    <!-- 頁首主視覺：部行山海間 行程 Logo 橫幅置頂 -->
     <div class="main-hero">
-      <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
-           alt="原住民族委員會 官方Logo" 
+      <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
+           alt="部行山海間 官方Logo" 
            class="campaign-hero-img">
 
       <div class="badge-row">
@@ -755,7 +745,7 @@
         </div>
       </div>
 
-      <!-- 行程核心四大亮點：原民會四大太陽寶寶吉祥物元素 -->
+      <!-- 行程核心四大亮點：嚴格遵守官方規範之精緻文化 Icon -->
       <div class="section-title">
         <span>✨</span>
         <span id="hl-head">行程核心四大亮點</span>
@@ -763,88 +753,25 @@
 
       <div class="highlights-grid">
         <div class="highlight-card">
-          <!-- 太陽寶寶 1：手拿阿粨美食 (image_f6ca41) -->
-          <div class="mascot-box">
-            <svg viewBox="0 0 160 170" fill="none">
-              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
-              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-              <circle cx="68" cy="60" r="4" fill="#2c2523"/>
-              <circle cx="92" cy="60" r="4" fill="#2c2523"/>
-              <path d="M74 74 Q80 80 86 74" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-              <rect x="58" y="102" width="44" height="42" rx="6" fill="#8c261e"/>
-              <rect x="66" y="102" width="28" height="38" fill="#ffffff"/>
-              <ellipse cx="118" cy="118" rx="14" ry="20" fill="#2d6a4f" transform="rotate(30 118 118)"/>
-              <line x1="108" y1="112" x2="128" y2="124" stroke="#d8f3dc" stroke-width="2"/>
-            </svg>
-          </div>
+          <div class="highlight-icon-box">🌾</div>
           <h3 id="hl-t1">會說故事的彩繪餐桌</h3>
           <p id="hl-d1">將在地紅藜與稻糧拼繪成專屬大地畫布，品嚐融入農耕故事與野菜智慧的產地風味宴。</p>
         </div>
 
         <div class="highlight-card">
-          <!-- 太陽寶寶 2：身穿傳統服飾 (image_f6cd04) -->
-          <div class="mascot-box">
-            <svg viewBox="0 0 160 170" fill="none">
-              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#d9481f"/>
-              <polygon points="75,10 85,10 80,0" fill="#1a1a1a"/>
-              <polygon points="105,18 115,22 112,12" fill="#8c261e"/>
-              <polygon points="125,36 132,45 134,35" fill="#2d6a4f"/>
-              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-              <ellipse cx="69" cy="60" rx="4" ry="5" fill="#2c2523"/>
-              <ellipse cx="91" cy="60" rx="4" ry="5" fill="#2c2523"/>
-              <path d="M74 74 Q80 80 86 74" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-              <rect x="52" y="104" width="56" height="42" rx="6" fill="#ffffff" stroke="#8c261e" stroke-width="3"/>
-              <line x1="52" y1="116" x2="108" y2="116" stroke="#8c261e" stroke-width="4"/>
-              <line x1="52" y1="126" x2="108" y2="126" stroke="#1a1a1a" stroke-width="3"/>
-            </svg>
-          </div>
+          <div class="highlight-icon-box">🏹</div>
           <h3 id="hl-t2">無圍牆的山林講堂</h3>
           <p id="hl-d2">跟隨在地獵人敬拜山神、走讀獵徑，親身感受震撼人心的傳統八部合音與原鄉射箭射矛體驗。[cite: 1, 2, 3]</p>
         </div>
 
         <div class="highlight-card">
-          <!-- 太陽寶寶 3：抱溫泉枕頭 (image_f6cd27) -->
-          <div class="mascot-box">
-            <svg viewBox="0 0 160 170" fill="none">
-              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
-              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-              <ellipse cx="69" cy="60" rx="3.5" ry="5" fill="#2c2523"/>
-              <ellipse cx="91" cy="60" rx="3.5" ry="5" fill="#2c2523"/>
-              <path d="M74 72 Q80 77 86 72" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-              <rect x="54" y="94" width="52" height="42" rx="14" fill="#a8dadc" stroke="#457b9d" stroke-width="3"/>
-              <path d="M64 108 Q70 102 76 108 T88 108" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-              <path d="M66 120 Q72 114 78 120 T90 120" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-            </svg>
-          </div>
+          <div class="highlight-icon-box">♨️</div>
           <h3 id="hl-t3">縱谷山海雙名湯</h3>
           <p id="hl-d3">嚴選百年歷史弱鹼性野溪溫泉與台東指標美人湯，在深度的文化探索後享受極致溫泉療癒。</p>
         </div>
 
         <div class="highlight-card">
-          <!-- 太陽寶寶 4：拿著地圖與行李箱 (image_f6cd84) -->
-          <div class="mascot-box">
-            <svg viewBox="0 0 160 170" fill="none">
-              <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-              <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
-              <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-              <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-              <circle cx="68" cy="60" r="4" fill="#2c2523"/>
-              <circle cx="92" cy="60" r="4" fill="#2c2523"/>
-              <path d="M74 73 Q80 78 86 73" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-              <rect x="42" y="92" width="46" height="38" rx="2" fill="#faedcd" stroke="#b08968" stroke-width="2"/>
-              <circle cx="56" cy="106" r="3" fill="#e63946"/>
-              <circle cx="74" cy="116" r="3" fill="#e63946"/>
-              <line x1="56" y1="106" x2="74" y2="116" stroke="#e63946" stroke-width="2" stroke-dasharray="2 2"/>
-              <rect x="100" y="98" width="34" height="46" rx="5" fill="#457b9d"/>
-              <line x1="100" y1="116" x2="134" y2="116" stroke="#e63946" stroke-width="3"/>
-            </svg>
-          </div>
+          <div class="highlight-icon-box">🚆</div>
           <h3 id="hl-t4">低碳足跡鐵道漫旅</h3>
           <p id="hl-d4">全程以台鐵城際電聯車替代長途拉車，搭配在地永續接駁，降低碳排，悠遊縱谷山海。</p>
         </div>
@@ -871,7 +798,7 @@
         </div>
       </div>
 
-      <!-- 莉梅姐引路人專題卡片 -->
+      <!-- 莉梅姐引路人專題卡片：徹底移除破損插圖 -->
       <div class="limay-editorial-card">
         <div class="editorial-tag-line" id="editorial-tag">SPECIAL EDITORIAL・慢旅引路人</div>
         
@@ -885,15 +812,11 @@
               <div class="sub-title" id="limay-role">專屬旅遊顧問 ✕ 慢旅引路人 35年</div>
             </div>
           </div>
-          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
+          <!-- 右上角配置官方 原住民族委員會 07.jpg -->
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
                alt="原民會官方標章" 
                class="limay-cip-logo">
         </div>
-
-        <!-- 原民會 06 里山情境插圖 -->
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-06.png" 
-             alt="花東原鄉里山風土" 
-             class="limay-banner-img">
 
         <div class="limay-quote-box" id="limay-quote">
           「風的氣息、古木低語的呼吸。正因為持續行走了35年，才能帶您遇見誰也不曾知曉的台灣原鄉深邃之美。」
@@ -1003,7 +926,7 @@
         </div>
         <div class="endorsement-row">
           <span id="endorse-text">☀️【推薦・公認】原住民族委員會認證合作夥伴</span>
-          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
                alt="原民會標章" 
                class="endorsement-img">
         </div>
