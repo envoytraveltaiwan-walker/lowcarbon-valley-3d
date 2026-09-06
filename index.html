@@ -273,7 +273,7 @@
   .info-box-item .title { font-size: 8.5pt; font-weight: bold; color: var(--primary-color); }
   .info-box-item .sub { font-size: 7pt; color: #6b7770; }
 
-  /* 區塊標題 */
+  /* 核心四大亮點 */
   .section-title {
     font-size: 11.5pt;
     color: var(--primary-color);
@@ -284,7 +284,6 @@
     margin: 18px 0 12px;
   }
 
-  /* 核心四大亮點 */
   .highlights-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -332,18 +331,18 @@
     line-height: 1.45;
   }
 
-  /* 體驗式情境規劃：俐落純文字卡片排版 */
+  /* 體驗式情境規劃：無 Icon 簡約純文字清單 */
   .experience-card {
     background: #fbfcfb;
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 14px 16px;
+    padding: 16px 18px;
     margin-bottom: 20px;
   }
 
   .experience-item {
-    margin-bottom: 12px;
-    padding-bottom: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
     border-bottom: 1px dashed #dbe4dc;
   }
 
@@ -358,9 +357,6 @@
     font-weight: bold;
     color: var(--primary-color);
     margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
   }
 
   .experience-text {
@@ -648,7 +644,7 @@
     width: 100%;
     max-width: 550px;
     display: grid;
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
   }
 
@@ -669,7 +665,7 @@
     transform: scale(0.98);
   }
 
-  .btn-b2b {
+  .btn-email {
     background-color: var(--b2b-color);
     color: #ffffff;
   }
@@ -806,7 +802,7 @@
         </div>
       </div>
 
-      <!-- 描述性行程體驗精華：純文字簡潔版面 -->
+      <!-- 描述性行程體驗精華：俐落純文字無任何圖示 -->
       <div class="section-title">
         <span>🌿</span>
         <span id="exp-head">3 日慢旅體驗精華</span>
@@ -842,7 +838,7 @@
             </div>
           </div>
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
-               alt="原民會官方標章" 
+               alt="原住民族委員會官方標章" 
                class="limay-cip-logo">
         </div>
 
@@ -948,11 +944,12 @@
         </div>
         <div class="b2b-subcard">
           <ul id="op-bullets">
-            <li><b>【企業團體／B2B 客製】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li>
-            <li><b>【家庭好友／個人包團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>
+            <li><b>【客製包團／深度遊程】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li>
+            <li><b>【家庭好友／精緻小團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>
           </ul>
         </div>
         <div class="endorsement-row">
+          <!-- 移除 ( CIP ) 字樣 -->
           <span id="endorse-text">☀️【推薦・公認】原住民族委員會認證合作夥伴</span>
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
                alt="部行山海間 官方標章" 
@@ -963,14 +960,14 @@
     </div>
   </div>
 
-  <!-- 底部固定雙按鈕導購列 -->
+  <!-- 底部固定雙按鈕導購列：直接標示 Email 與 LINE 洽詢 -->
   <div class="sticky-action-bar">
     <div class="bar-inner">
-      <a href="mailto:service@envoytravel.com.tw?subject=【B2B洽詢】花東低碳縱谷雙湯3日遊" class="btn-action btn-b2b" id="cta-b2b" onclick="trackEvent('click_b2b', 'CTA', 'B2B_Inquiry')">
-        ✉️ B2B 合作洽詢
+      <a href="mailto:service@envoytravel.com.tw?subject=【行程洽詢】花東低碳縱谷雙湯3日遊" class="btn-action btn-email" id="cta-email" onclick="trackEvent('click_email', 'CTA', 'Email_Inquiry')">
+        ✉️ Email 洽詢
       </a>
       <a href="https://lin.ee/Z3c7Qam" target="_blank" class="btn-action btn-line" id="cta-line" onclick="trackEvent('click_line', 'CTA', 'Line_Consult')">
-        💬 個人行程諮詢
+        💬 LINE 諮詢
       </a>
     </div>
   </div>
@@ -1000,7 +997,7 @@
         hlD2: "跟隨在地獵人敬拜山神、走讀獵徑，親身感受震撼人心的傳統八部合音與原鄉射箭射矛體驗。",
         hlT3: "縱谷山海雙名湯",
         hlD3: "嚴選百年歷史弱鹼性野溪溫泉與台東指標美人湯，在深度的文化探索後享受極致溫泉療癒。",
-        hlT4: "低碳足跡鐵道慢旅",
+        hlT4: "低碳足跡鐵道漫旅",
         hlD4: "全程以台鐵城際電聯車替代長途拉車，搭配在地永續接駁，降低碳排，悠遊縱谷山海。",
         expHead: "3 日慢旅體驗精華",
         expD1Title: "Day 1：綠色鐵道啟程 ✕ 彩繪米手作 ✕ 百年弱鹼溪湯",
@@ -1031,10 +1028,10 @@
         opTitle: "主辦・執行｜安捷國際旅行社有限公司",
         opLicense: "交通部觀光署 登錄旅行業 甲種 5920 號｜統編：16169138",
         opDesc: "深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。",
-        opBullets: "<li><b>【企業團體／B2B 客製】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li><li><b>【家庭好友／個人包團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>",
+        opBullets: "<li><b>【客製包團／深度遊程】</b>：客製化深度策劃、同業躉售、專業文化踩線團考察</li><li><b>【家庭好友／精緻小團】</b>：6位起即可獨立成行，配備專屬舒適座車與雙語導覽</li>",
         endorseText: "☀️【推薦・公認】原住民族委員會認證合作夥伴",
-        ctaB2B: "✉️ B2B 合作洽詢",
-        ctaLine: "💬 個人行程諮詢"
+        ctaEmail: "✉️ Email 洽詢",
+        ctaLine: "💬 LINE 諮詢"
       },
       ja: {
         heroBadge1: "2泊3日・平日限定リトリート",
@@ -1082,17 +1079,17 @@
         faqA2: "上質なツアー体験を維持するため、最大20名様限定としております。催行基準の6名様に達し次第、専任担当より迅速に確定のご案内を差し上げます。",
         faqQ3: "森の散策に特別な体力や登山装備は必要ですか？",
         faqA3: "危険な急斜面や木登りは一切ございません。歩きやすく整備された自然小道をゆっくり歩きます。歩きやすいスニーカーまたはウォーキングシューズ、長ズボンでご参加ください。",
-        faqQ4: "日本の旅行会社（B2B）向けのランド手配は可能ですか？",
-        faqA4Ans: "はい、正規甲種旅行社として承ります。専用車、日本語ガイド、宿泊、集落プログラムを一括して手配いたします。ツアーアレンジや卸値見積もり（Net Rate）はお気軽にお問い合わせください。",
+        faqQ4: "ツアーの相談やランド手配の問い合わせは可能ですか？",
+        faqA4Ans: "はい、承ります。専用車の手配、日本語ガイド、宿泊、集落プログラムのご相談など、個人・グループ・旅行会社様問わず柔軟に対応いたします。お気軽にお問い合わせください。",
         sustainTitle: "🌱 本ツアーの「低炭素・サステナブルツーリズム」の約束：",
         sustainBullets: "<li><b>環境配慮の鉄道移動</b>：長距離移動に台湾鉄道の特急を利用し、CO2排出を大幅に削減。</li><li><b>地産地消の食文化</b>：集落周辺で採れる新鮮なオーガニック山菜と米穀類を使用。</li><li><b>地域文化への還元</b>：ツアー収益の一部は、先住民族の伝統文化保護と森林保全基金へ還元されます。</li>",
         opTitle: "主催・運行｜アンジェ国際旅行社有限公司",
         opLicense: "台湾交通部観光署 登録旅行業 甲種 5920 号｜統一番号：16169138",
-        opDesc: "創業35年。台湾の豊かな自然と先住民族文化をつなぐ専門旅行社です。台湾原住民族委員会の認定パートナーとして、日本の旅行会社様への現地地上手配（ランド）から個人のお客様のプライベート旅まで、確かな品質でお応えします。",
-        opBullets: "<li><b>【旅行会社様向け（B2B）】</b>：卸値見積もり・旅程カスタマイズ・現地視察手配</li><li><b>【個人・グループ旅行】</b>：6名様以上での専用車完全貸切・日本語ガイド対応</li>",
-        endorseText: "☀️【推薦・公認】台湾 原住民族委員会（CIP）",
-        ctaB2B: "✉️ B2B お問い合わせ（法人）",
-        ctaLine: "💬 個人旅行のご相談（LINE）"
+        opDesc: "創業35年。台湾の豊かな自然と先住民族文化をつなぐ専門旅行社です。台湾原住民族委員会の認定パートナーとして、現地地上手配（ランド）からプライベート旅まで確かな品質でお応えします。",
+        opBullets: "<li><b>【オーダーメイド旅・視察】</b>：旅程カスタマイズ・現地視察・文化体験手配</li><li><b>【個人・グループ旅行】</b>：6名様以上での専用車貸切・日本語ガイド対応</li>",
+        endorseText: "☀️【推薦・公認】台湾 原住民族委員会",
+        ctaEmail: "✉️ Email お問い合わせ",
+        ctaLine: "💬 LINE お問い合わせ"
       }
     };
 
@@ -1172,7 +1169,7 @@
       document.getElementById('op-bullets').innerHTML = data.opBullets;
       document.getElementById('endorse-text').textContent = data.endorseText;
 
-      document.getElementById('cta-b2b').textContent = data.ctaB2B;
+      document.getElementById('cta-email').textContent = data.ctaEmail;
       document.getElementById('cta-line').textContent = data.ctaLine;
 
       trackEvent('switch_language', 'Language', lang);
