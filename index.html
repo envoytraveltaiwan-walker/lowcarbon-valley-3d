@@ -129,7 +129,7 @@
     box-shadow: 0 0 25px rgba(0,0,0,0.05);
   }
 
-  /* 頁首主視覺：頂部改為 原民會 Logo (-07.jpg) */
+  /* 頁首主視覺 */
   .main-hero {
     position: relative;
     padding: 16px 16px 14px;
@@ -273,7 +273,7 @@
   .info-box-item .title { font-size: 8.5pt; font-weight: bold; color: var(--primary-color); }
   .info-box-item .sub { font-size: 7pt; color: #6b7770; }
 
-  /* 區塊標題 */
+  /* 核心四大亮點 */
   .section-title {
     font-size: 11.5pt;
     color: var(--primary-color);
@@ -284,7 +284,6 @@
     margin: 18px 0 12px;
   }
 
-  /* 四大亮點卡片：使用精美主題 Icon，不修改原民會元素 */
   .highlights-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -296,33 +295,27 @@
     background-color: #fcfdfe;
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 16px 12px 14px;
+    padding: 14px 10px 12px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .hl-icon-wrap {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background: #eef4f0;
-    color: var(--primary-color);
+  .mascot-box {
+    width: 78px;
+    height: 78px;
     margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .hl-icon-wrap svg {
-    width: 26px;
-    height: 26px;
-    stroke: var(--primary-color);
-    fill: none;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+  .mascot-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.08));
   }
 
   .highlight-card h3 {
@@ -336,67 +329,6 @@
     font-size: 8pt;
     color: #555;
     line-height: 1.45;
-  }
-
-  /* 原民會四大元素吉祥物獨立展示區 */
-  .mascot-showcase-box {
-    background: #fbf9f5;
-    border: 1px solid #ebd9c3;
-    border-radius: 12px;
-    padding: 14px 12px;
-    margin-bottom: 20px;
-  }
-
-  .mascot-header {
-    text-align: center;
-    margin-bottom: 12px;
-  }
-
-  .mascot-header h4 {
-    margin: 0;
-    font-size: 9.5pt;
-    color: var(--accent-gold);
-    letter-spacing: 0.5px;
-  }
-
-  .mascot-header p {
-    margin: 2px 0 0;
-    font-size: 7.5pt;
-    color: #7d7265;
-  }
-
-  .mascot-grid-4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6px;
-  }
-
-  .mascot-item {
-    background: #ffffff;
-    border: 1px solid #efe5d8;
-    border-radius: 8px;
-    padding: 8px 4px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .mascot-svg-box {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 4px;
-  }
-
-  .mascot-svg-box svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .mascot-tag {
-    font-size: 7pt;
-    font-weight: bold;
-    color: #3b4d42;
   }
 
   /* 體驗式情境規劃 */
@@ -437,7 +369,7 @@
     line-height: 1.55;
   }
 
-  /* 引路人卡片：右上角配置原民會官方 Logo (-07.jpg) */
+  /* 莉梅姐引路人專題卡片 */
   .limay-editorial-card {
     background: #fdfdfb;
     border: 1px solid #dcd7cc;
@@ -494,7 +426,6 @@
     margin-top: 2px;
   }
 
-  /* 原民會官方標章 (-07.jpg) */
   .limay-cip-logo {
     height: 38px;
     width: auto;
@@ -521,7 +452,7 @@
     margin-bottom: 12px;
   }
 
-  /* 原住民族文化紋樣 */
+  /* 台灣原住民族文化紋樣展示 */
   .indigenous-pattern-box {
     background: #1f2a24;
     border-radius: 10px;
@@ -611,7 +542,7 @@
     line-height: 1.5;
   }
 
-  /* 永續承諾 */
+  /* 永續承諾區塊 */
   .sustain-box {
     background: #fdfdfd;
     border: 1px dashed #cedbd2;
@@ -633,7 +564,7 @@
     padding-left: 16px;
   }
 
-  /* 主辦單位卡片 */
+  /* 主辦單位與履約保證卡 */
   .operator-box {
     background: #f8faf8;
     border: 1px solid var(--border-color);
@@ -676,7 +607,6 @@
     padding-left: 18px;
   }
 
-  /* 最底部推薦認證列：配置「部行山海間」官方 Logo (-02.png) */
   .endorsement-row {
     display: flex;
     align-items: center;
@@ -774,7 +704,7 @@
 
   <div class="container">
     
-    <!-- 頁首主視覺：置頂改為原住民族委員會官方 Logo (-07.jpg) -->
+    <!-- 頁首主視覺 -->
     <div class="main-hero">
       <div class="campaign-hero-box">
         <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
@@ -831,7 +761,7 @@
         </div>
       </div>
 
-      <!-- 行程核心四大亮點：獨立使用主題專屬 Icon，不修改原民會元素 -->
+      <!-- 行程核心四大亮點：換入原民會 06, 05, 04, 03 官方元素圖檔 -->
       <div class="section-title">
         <span>✨</span>
         <span id="hl-head">行程核心四大亮點</span>
@@ -839,152 +769,43 @@
 
       <div class="highlights-grid">
         <div class="highlight-card">
-          <div class="hl-icon-wrap">
-            <!-- 美食彩繪餐桌 Icon -->
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/>
-              <path d="M12 6a6 6 0 0 0-6 6c0 2.5 1.5 4 3 4s2-1 3-1 1.5 1 3 1 3-1.5 3-4a6 6 0 0 0-6-6z"/>
-            </svg>
+          <!-- 亮點 1：素材 06.png -->
+          <div class="mascot-box">
+            <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-06.png" 
+                 alt="會說故事的彩繪餐桌">
           </div>
           <h3 id="hl-t1">會說故事的彩繪餐桌</h3>
           <p id="hl-d1">將在地紅藜與稻糧拼繪成專屬大地畫布，品嚐融入農耕故事與野菜智慧的產地風味宴。</p>
         </div>
 
         <div class="highlight-card">
-          <div class="hl-icon-wrap">
-            <!-- 山林講堂 / 獵人弓箭 Icon -->
-            <svg viewBox="0 0 24 24">
-              <path d="M14 2l8 8-8 8"/>
-              <path d="M22 10H2"/>
-              <path d="M6 6l-4 4 4 4"/>
-            </svg>
+          <!-- 亮點 2：素材 05.png -->
+          <div class="mascot-box">
+            <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-05.png" 
+                 alt="無圍牆的山林講堂">
           </div>
           <h3 id="hl-t2">無圍牆的山林講堂</h3>
           <p id="hl-d2">跟隨在地獵人敬拜山神、走讀獵徑，親身感受震撼人心的傳統八部合音與原鄉射箭射矛體驗。</p>
         </div>
 
         <div class="highlight-card">
-          <div class="hl-icon-wrap">
-            <!-- 雙名湯 / 溫泉水紋 Icon -->
-            <svg viewBox="0 0 24 24">
-              <path d="M4 19h16"/>
-              <path d="M7 15c1-1 2-1 3 0s2 1 3 0 2-1 3 0"/>
-              <path d="M8 7c0-2 2-3 2-5"/>
-              <path d="M12 7c0-2 2-3 2-5"/>
-              <path d="M16 7c0-2 2-3 2-5"/>
-            </svg>
+          <!-- 亮點 3：素材 04.png -->
+          <div class="mascot-box">
+            <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-04.png" 
+                 alt="縱谷山海雙名湯">
           </div>
           <h3 id="hl-t3">縱谷山海雙名湯</h3>
           <p id="hl-d3">嚴選百年歷史弱鹼性野溪溫泉與台東指標美人湯，在深度的文化探索後享受極致溫泉療癒。</p>
         </div>
 
         <div class="highlight-card">
-          <div class="hl-icon-wrap">
-            <!-- 綠色鐵道 / 列車 Icon -->
-            <svg viewBox="0 0 24 24">
-              <rect x="4" y="3" width="16" height="16" rx="2"/>
-              <path d="M4 11h16"/>
-              <path d="M12 3v8"/>
-              <circle cx="8" cy="15" r="1"/>
-              <circle cx="16" cy="15" r="1"/>
-              <path d="M8 19l-3 3"/>
-              <path d="M16 19l3 3"/>
-            </svg>
+          <!-- 亮點 4：素材 03.png -->
+          <div class="mascot-box">
+            <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-03.png" 
+                 alt="低碳足跡鐵道漫旅">
           </div>
           <h3 id="hl-t4">低碳足跡鐵道漫旅</h3>
           <p id="hl-d4">全程以台鐵城際電聯車替代長途拉車，搭配在地永續接駁，降低碳排，悠遊縱谷山海。</p>
-        </div>
-      </div>
-
-      <!-- 原民會四大守護元素專屬展示區塊 -->
-      <div class="mascot-showcase-box">
-        <div class="mascot-header">
-          <h4 id="mascot-sec-title">☀️ 原民文化慢旅・四大守護元素</h4>
-          <p id="mascot-sec-sub">原住民族委員會品牌意象｜部落生活美學精神</p>
-        </div>
-        <div class="mascot-grid-4">
-          <!-- 元素 1: 阿粨美食與豐收 -->
-          <div class="mascot-item">
-            <div class="mascot-svg-box">
-              <svg viewBox="0 0 160 170" fill="none">
-                <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-                <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
-                <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-                <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-                <circle cx="68" cy="60" r="4" fill="#2c2523"/>
-                <circle cx="92" cy="60" r="4" fill="#2c2523"/>
-                <path d="M74 74 Q80 80 86 74" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-                <rect x="58" y="102" width="44" height="42" rx="6" fill="#8c261e"/>
-                <rect x="66" y="102" width="28" height="38" fill="#ffffff"/>
-                <ellipse cx="118" cy="118" rx="14" ry="20" fill="#2d6a4f" transform="rotate(30 118 118)"/>
-                <line x1="108" y1="112" x2="128" y2="124" stroke="#d8f3dc" stroke-width="2"/>
-              </svg>
-            </div>
-            <span class="mascot-tag" id="mascot-t1">部落食藝</span>
-          </div>
-
-          <!-- 元素 2: 傳統服飾文化 -->
-          <div class="mascot-item">
-            <div class="mascot-svg-box">
-              <svg viewBox="0 0 160 170" fill="none">
-                <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-                <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#d9481f"/>
-                <polygon points="75,10 85,10 80,0" fill="#1a1a1a"/>
-                <polygon points="105,18 115,22 112,12" fill="#8c261e"/>
-                <polygon points="125,36 132,45 134,35" fill="#2d6a4f"/>
-                <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-                <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-                <ellipse cx="69" cy="60" rx="4" ry="5" fill="#2c2523"/>
-                <ellipse cx="91" cy="60" rx="4" ry="5" fill="#2c2523"/>
-                <path d="M74 74 Q80 80 86 74" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-                <rect x="52" y="104" width="56" height="42" rx="6" fill="#ffffff" stroke="#8c261e" stroke-width="3"/>
-                <line x1="52" y1="116" x2="108" y2="116" stroke="#8c261e" stroke-width="4"/>
-                <line x1="52" y1="126" x2="108" y2="126" stroke="#1a1a1a" stroke-width="3"/>
-              </svg>
-            </div>
-            <span class="mascot-tag" id="mascot-t2">傳統盛裝</span>
-          </div>
-
-          <!-- 元素 3: 山野溫泉療癒 -->
-          <div class="mascot-item">
-            <div class="mascot-svg-box">
-              <svg viewBox="0 0 160 170" fill="none">
-                <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-                <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
-                <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-                <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-                <ellipse cx="69" cy="60" rx="3.5" ry="5" fill="#2c2523"/>
-                <ellipse cx="91" cy="60" rx="3.5" ry="5" fill="#2c2523"/>
-                <path d="M74 72 Q80 77 86 72" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-                <rect x="54" y="94" width="52" height="42" rx="14" fill="#a8dadc" stroke="#457b9d" stroke-width="3"/>
-                <path d="M64 108 Q70 102 76 108 T88 108" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-                <path d="M66 120 Q72 114 78 120 T90 120" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-              </svg>
-            </div>
-            <span class="mascot-tag" id="mascot-t3">溫泉舒活</span>
-          </div>
-
-          <!-- 元素 4: 漫遊行旅走讀 -->
-          <div class="mascot-item">
-            <div class="mascot-svg-box">
-              <svg viewBox="0 0 160 170" fill="none">
-                <circle cx="80" cy="65" r="48" fill="#fdb813"/>
-                <path d="M80 8 L87 28 L108 15 L101 35 L122 30 L111 48 L132 54 L117 68 L134 80 L115 86 L126 102 L106 98 L111 118 L93 107 L85 125 L75 107 L57 118 L62 98 L42 102 L53 86 L34 80 L51 68 L36 54 L57 48 L46 30 L67 35 L60 15 L81 28 Z" fill="#ea5a21"/>
-                <circle cx="80" cy="65" r="38" fill="#ffffff"/>
-                <circle cx="80" cy="65" r="35" fill="none" stroke="#ea5a21" stroke-width="4"/>
-                <circle cx="68" cy="60" r="4" fill="#2c2523"/>
-                <circle cx="92" cy="60" r="4" fill="#2c2523"/>
-                <path d="M74 73 Q80 78 86 73" stroke="#2c2523" stroke-width="3" stroke-linecap="round"/>
-                <rect x="42" y="92" width="46" height="38" rx="2" fill="#faedcd" stroke="#b08968" stroke-width="2"/>
-                <circle cx="56" cy="106" r="3" fill="#e63946"/>
-                <circle cx="74" cy="116" r="3" fill="#e63946"/>
-                <line x1="56" y1="106" x2="74" y2="116" stroke="#e63946" stroke-width="2" stroke-dasharray="2 2"/>
-                <rect x="100" y="98" width="34" height="46" rx="5" fill="#457b9d"/>
-                <line x1="100" y1="116" x2="134" y2="116" stroke="#e63946" stroke-width="3"/>
-              </svg>
-            </div>
-            <span class="mascot-tag" id="mascot-t4">綠意行旅</span>
-          </div>
         </div>
       </div>
 
@@ -1009,7 +830,7 @@
         </div>
       </div>
 
-      <!-- 引路人專題卡片：右上角配置原民會官方 Logo (-07.jpg)，英文名稱修正為 Mei -->
+      <!-- 莉梅姐引路人專題卡片 -->
       <div class="limay-editorial-card">
         <div class="editorial-tag-line" id="editorial-tag">SPECIAL EDITORIAL・慢旅引路人</div>
         
@@ -1023,7 +844,7 @@
               <div class="sub-title" id="limay-role">專屬旅遊顧問 ✕ 慢旅引路人 35年</div>
             </div>
           </div>
-          <!-- 右上角配置 原住民族委員會官方 Logo (-07.jpg) -->
+          <!-- 右上角配置 原民會官方 Logo (-07.jpg) -->
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
                alt="原民會官方標章" 
                class="limay-cip-logo">
@@ -1120,7 +941,7 @@
         </ul>
       </div>
 
-      <!-- 主辦單位與履約保證卡：最下方配置「部行山海間」官方 Logo (-02.png) -->
+      <!-- 主辦單位與履約保證卡 -->
       <div class="operator-box">
         <div class="operator-meta">
           <h4 id="op-title">主辦・執行｜安捷國際旅行社有限公司</h4>
@@ -1184,14 +1005,8 @@
         hlD2: "跟隨在地獵人敬拜山神、走讀獵徑，親身感受震撼人心的傳統八部合音與原鄉射箭射矛體驗。",
         hlT3: "縱谷山海雙名湯",
         hlD3: "嚴選百年歷史弱鹼性野溪溫泉與台東指標美人湯，在深度的文化探索後享受極致溫泉療癒。",
-        hlT4: "低碳足跡鐵道慢旅",
+        hlT4: "低碳足跡鐵道漫旅",
         hlD4: "全程以台鐵城際電聯車替代長途拉車，搭配在地永續接駁，降低碳排，悠遊縱谷山海。",
-        mascotSecTitle: "☀️ 原民文化慢旅・四大守護元素",
-        mascotSecSub: "原住民族委員會品牌意象｜部落生活美學精神",
-        mascotT1: "部落食藝",
-        mascotT2: "傳統盛裝",
-        mascotT3: "溫泉舒活",
-        mascotT4: "綠意行旅",
         expHead: "3 日慢旅體驗精華",
         expD1Title: "Day 1：綠色鐵道啟程 ✕ 彩繪米手作 ✕ 百年弱鹼溪湯",
         expD1Desc: "台北搭乘舒適新自強號南下，在車上回味經典懷舊便當。下午抵達縱谷，手作體驗傳統彩繪米與農耕美學，品嚐時令野菜盛宴，晚間下榻百年歷史弱鹼性名湯，徹底舒緩身心。",
@@ -1250,12 +1065,6 @@
         hlD3: "日本統治時代より愛される百年の安通温泉（弱アルカリ泉）と知本温泉の重曹泉。異なる名湯を心ゆくまでお愉しみください。",
         hlT4: "環境に優しい低炭素鉄道旅",
         hlD4: "山道の揺れを解消する最新特急電車を採用。CO2排出を大幅に抑え、快適性と持続可能性を両立したスロートラベルです。",
-        mascotSecTitle: "☀️ 先住民族文化の4大シンボル",
-        mascotSecSub: "台湾 原住民族委員会オフィシャルモチーフ",
-        mascotT1: "伝統食文化",
-        mascotT2: "伝統正装",
-        mascotT3: "名湯癒やし",
-        mascotT4: "環境旅情",
         expHead: "3日間の体験ストーリー",
         expD1Title: "Day 1：特急電車の旅 ✕ 伝統お米アート ✕ 百年の弱アルカリ泉",
         expD1Desc: "台北駅から最新鋭特急で東海岸へ。懐かしの車内弁当を味わいながら車窓を満喫。午後は大地の実りを愛でるアート体験と体に優しい山菜料理をいただき、百年の名湯で移動の疲れを解きほぐします。",
@@ -1299,7 +1108,6 @@
       document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
       document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
 
-      // 只有日文版顯示致日本旅人的信
       const letterBox = document.getElementById('tokyo-expo-box');
       if (letterBox) {
         letterBox.style.display = (lang === 'ja') ? 'block' : 'none';
@@ -1331,13 +1139,6 @@
       document.getElementById('hl-d3').textContent = data.hlD3;
       document.getElementById('hl-t4').textContent = data.hlT4;
       document.getElementById('hl-d4').textContent = data.hlD4;
-
-      document.getElementById('mascot-sec-title').textContent = data.mascotSecTitle;
-      document.getElementById('mascot-sec-sub').textContent = data.mascotSecSub;
-      document.getElementById('mascot-t1').textContent = data.mascotT1;
-      document.getElementById('mascot-t2').textContent = data.mascotT2;
-      document.getElementById('mascot-t3').textContent = data.mascotT3;
-      document.getElementById('mascot-t4').textContent = data.mascotT4;
 
       document.getElementById('exp-head').textContent = data.expHead;
       document.getElementById('exp-d1-title').textContent = data.expD1Title;
