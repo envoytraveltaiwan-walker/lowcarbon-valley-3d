@@ -129,7 +129,7 @@
     box-shadow: 0 0 25px rgba(0,0,0,0.05);
   }
 
-  /* 頁首主視覺：部行山海間 行程 Logo 橫幅置頂 */
+  /* 頁首主視覺：部行山海間 Logo 橫幅置頂 */
   .main-hero {
     position: relative;
     padding: 16px 16px 14px;
@@ -139,7 +139,7 @@
 
   .campaign-hero-img {
     width: 100%;
-    max-width: 480px;
+    max-width: 500px;
     height: auto;
     aspect-ratio: 16 / 8.8;
     object-fit: contain;
@@ -356,7 +356,7 @@
     line-height: 1.55;
   }
 
-  /* 莉梅姐引路人專題卡片：徹底修復破損插圖 */
+  /* 莉梅姐引路人專題卡片 */
   .limay-editorial-card {
     background: #fdfdfb;
     border: 1px solid #dcd7cc;
@@ -413,9 +413,9 @@
     margin-top: 2px;
   }
 
-  /* 引路人右上角：正式原住民族委員會官方標章 */
+  /* 引路人右上角：正式原民會官方 Logo (-07.jpg) */
   .limay-cip-logo {
-    height: 40px;
+    height: 38px;
     width: auto;
     max-width: 140px;
     object-fit: contain;
@@ -476,8 +476,9 @@
     color: #e2ede7;
   }
 
-  /* 旅展特別信函卡片 */
+  /* 旅展特別信函卡片（預設隱藏，日文模式才開啟） */
   .tokyo-expo-letter {
+    display: none;
     background: #faf6f0;
     border: 1px solid #ebd9c3;
     border-radius: 12px;
@@ -690,7 +691,7 @@
 
   <div class="container">
     
-    <!-- 頁首主視覺：部行山海間 行程 Logo 橫幅置頂 -->
+    <!-- 頁首主視覺：部行山海間 Logo 橫幅置頂 -->
     <div class="main-hero">
       <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
            alt="部行山海間 官方Logo" 
@@ -745,7 +746,7 @@
         </div>
       </div>
 
-      <!-- 行程核心四大亮點：嚴格遵守官方規範之精緻文化 Icon -->
+      <!-- 行程核心四大亮點 -->
       <div class="section-title">
         <span>✨</span>
         <span id="hl-head">行程核心四大亮點</span>
@@ -798,7 +799,7 @@
         </div>
       </div>
 
-      <!-- 莉梅姐引路人專題卡片：徹底移除破損插圖 -->
+      <!-- 莉梅姐引路人專題卡片：右上角配置原民會官方 Logo (-07.jpg) -->
       <div class="limay-editorial-card">
         <div class="editorial-tag-line" id="editorial-tag">SPECIAL EDITORIAL・慢旅引路人</div>
         
@@ -812,9 +813,9 @@
               <div class="sub-title" id="limay-role">專屬旅遊顧問 ✕ 慢旅引路人 35年</div>
             </div>
           </div>
-          <!-- 右上角配置官方 原住民族委員會 07.jpg -->
+          <!-- 右上角配置官方 原住民族委員會標章 (-07.jpg) -->
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
-               alt="原民會官方標章" 
+               alt="原住民族委員會官方標章" 
                class="limay-cip-logo">
         </div>
 
@@ -842,12 +843,12 @@
         </div>
       </div>
 
-      <!-- 東京旅展特別信函卡片 -->
+      <!-- 日文版專屬信函（中文版預設 display: none） -->
       <div class="tokyo-expo-letter" id="tokyo-expo-box">
-        <h4 id="letter-title">致日本旅人的信（東京旅展特別獻禮）</h4>
-        <p id="letter-content">
-          台灣擁有許多旅遊書上未曾記載的豐饒生活與溫暖笑容。跨越語言與文化的藩籬，我們以迎接家人的心情，為您準備了最安心舒適的慢旅。期待與在東京會場結緣的每一位朋友，未來在台灣靜謐的森林中一同沏茶相聚。<br>
-          <span style="display:block; text-align:right; margin-top:8px; font-weight:bold;">旅之引路人 莉梅姐 敬上</span>
+        <h4>日本の旅人の皆様へ（東京旅展特別メッセージ）</h4>
+        <p>
+          台湾には、まだガイドブックに載っていない豊かな暮らしと、温かい笑顔があふれています。言葉や文化の壁を越え、家族を迎えるように安心してお任せいただける旅をご用意しております。東京の会場でご縁をいただいた皆様と、いつか台湾の静かな森でお茶を酌み交わせる日を、心より楽しみにしております。<br>
+          <span style="display:block; text-align:right; margin-top:8px; font-weight:bold;">旅の案内人 莉梅姐（メイ姉さん）より</span>
         </p>
       </div>
 
@@ -926,8 +927,9 @@
         </div>
         <div class="endorsement-row">
           <span id="endorse-text">☀️【推薦・公認】原住民族委員會認證合作夥伴</span>
+          <!-- 底部配置官方 原住民族委員會標章 (-07.jpg) -->
           <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
-               alt="原民會標章" 
+               alt="原民會官方標章" 
                class="endorsement-img">
         </div>
       </div>
@@ -989,8 +991,6 @@
         patternTitle: "<span>◆</span> INDIGENOUS HERITAGE｜大地與祖靈的幾何圖騰",
         patternDesc: "台灣原住民族將對自然的崇敬與祖靈的教誨刻入幾何紋樣中。在莉梅姐帶領的旅程中，並非單純的觀光，而是引領您親身走入織物與山林建築背後深邃的精神世界。",
         patternBadges: "<span>◇ 泰雅族（祖靈之眼）</span><span>◇ 布農族（山林祭儀）</span><span>◇ 阿美族（大地織錦）</span>",
-        letterTitle: "致日本旅人的信（東京旅展特別獻禮）",
-        letterContent: "台灣擁有許多旅遊書上未曾記載的豐饒生活與溫暖笑容。跨越語言與文化的藩籬，我們以迎接家人的心情，為您準備了最安心舒適的慢旅。期待與在東京會場結緣的每一位朋友，未來在台灣靜謐的森林中一同沏茶相聚。<br><span style='display:block; text-align:right; margin-top:8px; font-weight:bold;'>旅之引路人 莉梅姐 敬上</span>",
         faqTitle: "常見問題 Q&A",
         faqQ1: "只有我一個人，可以報名參加嗎？",
         faqA1: "完全沒問題！我們支持一人即可報名。只要全團總報名人數達到 6 人即可成團。若您單人參加，可選擇補單人房差，或由我們為您協助安排同性別團友配房。",
@@ -1049,8 +1049,6 @@
         patternTitle: "<span>◆</span> INDIGENOUS HERITAGE｜大地と祖霊が宿る紋様",
         patternDesc: "台湾の山々に暮らす先住民族は、自然への敬意と祖霊の教えを幾何学の文様に刻み込んできました。莉梅姐の案内する旅では、単なる観光ではなく、これらの織物や建築に込められた精神世界に触れる特別な体験をお届けします。",
         patternBadges: "<span>◇ タイヤル族（祖霊の瞳）</span><span>◇ ブヌン族（森の掟）</span><span>◇ アミ族（大地の織物）</span>",
-        letterTitle: "日本の旅人の皆様へ（東京旅展特別メッセージ）",
-        letterContent: "台湾には、まだガイドブックに載っていない豊かな暮らしと、温かい笑顔があふれています。言葉や文化の壁を越え、家族を迎えるように安心してお任せいただける旅をご用意しております。東京の会場でご縁をいただいた皆様と、いつか台湾の静かな森でお茶を酌み交わせる日を、心より楽しみにしております。<br><span style='display:block; text-align:right; margin-top:8px; font-weight:bold;'>旅の案内人 莉梅姐（メイ姉さん）より</span>",
         faqTitle: "よくあるご質問（FAQ）",
         faqQ1: "1名での参加は可能ですか？相部屋の希望は？",
         faqA1: "はい、1名様よりエントリーいただけます。全体で6名様に達した時点で催行確定となります。シングルルーム（追加代金）のご利用、または同性のお客様との相部屋調整も承ります。",
@@ -1078,6 +1076,12 @@
 
       document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
       document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
+
+      // 控制信函顯示：僅日文版顯示
+      const letterBox = document.getElementById('tokyo-expo-box');
+      if (letterBox) {
+        letterBox.style.display = (lang === 'ja') ? 'block' : 'none';
+      }
 
       document.getElementById('hero-badge-1').textContent = data.heroBadge1;
       document.getElementById('hero-badge-2').textContent = data.heroBadge2;
@@ -1124,9 +1128,6 @@
       document.getElementById('pattern-desc').textContent = data.patternDesc;
       document.getElementById('pattern-badges').innerHTML = data.patternBadges;
 
-      document.getElementById('letter-title').textContent = data.letterTitle;
-      document.getElementById('letter-content').innerHTML = data.letterContent;
-
       document.getElementById('faq-title').textContent = data.faqTitle;
       document.getElementById('faq-q1').textContent = data.faqQ1;
       document.getElementById('faq-a1').textContent = data.faqA1;
@@ -1151,6 +1152,11 @@
 
       trackEvent('switch_language', 'Language', lang);
     }
+
+    // 預設語言初始化
+    document.addEventListener("DOMContentLoaded", function() {
+      setLanguage('zh');
+    });
   </script>
 </body>
 </html>
