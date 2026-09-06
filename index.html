@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>部行山海間｜低碳縱谷・雙湯慢旅 3日遊 - 安捷國際旅行社 ENVOY TRAVEL</title>
+<title>【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊 - 安捷國際旅行社 ENVOY TRAVEL</title>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPP4CT61HC"></script>
@@ -49,7 +49,7 @@
     padding-bottom: 85px;
   }
 
-  /* 固定頂部導覽列 */
+  /* 固定頂部導覽列：採用透明高清 Logo */
   .fixed-nav {
     position: sticky;
     top: 0;
@@ -58,7 +58,7 @@
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
-    padding: 10px 18px;
+    padding: 8px 16px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -67,35 +67,10 @@
     margin: 0 auto;
   }
 
-  .nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .nav-logo svg {
-    height: 28px;
+  .nav-logo-img {
+    height: 32px;
     width: auto;
-  }
-
-  .nav-logo-text {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nav-logo-text .en {
-    font-size: 13px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: var(--primary-color);
-    line-height: 1.1;
-  }
-
-  .nav-logo-text .tw {
-    font-size: 8.5px;
-    letter-spacing: 0.5px;
-    color: var(--secondary-color);
-    font-weight: 600;
+    object-fit: contain;
   }
 
   /* 語言切換按鈕組 */
@@ -111,7 +86,7 @@
     border: none;
     background: transparent;
     padding: 4px 10px;
-    font-size: 10.5px;
+    font-size: 10px;
     font-weight: bold;
     color: var(--text-light);
     border-radius: 16px;
@@ -137,7 +112,7 @@
     box-shadow: 0 0 25px rgba(0,0,0,0.05);
   }
 
-  /* 主視覺區塊 */
+  /* 頁首主視覺區塊：部行山海間官方 LOGO 置頂 */
   .main-hero {
     position: relative;
     padding: 16px 16px 14px;
@@ -179,7 +154,7 @@
   }
 
   .hero-h1 {
-    font-size: 20px;
+    font-size: 19px;
     color: #212c24;
     margin: 0 0 6px;
     font-weight: 800;
@@ -187,7 +162,7 @@
   }
 
   .hero-sub {
-    font-size: 13px;
+    font-size: 12.5px;
     color: var(--secondary-color);
     font-weight: 600;
     margin-bottom: 10px;
@@ -242,7 +217,7 @@
     padding: 0 16px 20px;
   }
 
-  /* 出團規約卡 */
+  /* 出團門檻卡片 */
   .info-bar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -265,21 +240,15 @@
   .info-box-item .title { font-size: 8.5pt; font-weight: bold; color: var(--primary-color); }
   .info-box-item .sub { font-size: 7pt; color: #6b7770; }
 
-  /* 15秒亮點：阿美織羅 ✕ 布農永康 ✕ 雙名湯 ✕ 低碳鐵道 */
+  /* 核心四大亮點 */
   .section-title {
     font-size: 11.5pt;
     color: var(--primary-color);
     font-weight: 700;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 16px 0 10px;
-  }
-
-  .section-title-left {
-    display: flex;
-    align-items: center;
     gap: 6px;
+    margin: 18px 0 12px;
   }
 
   .highlights-grid {
@@ -312,74 +281,80 @@
     margin: 0;
     font-size: 8pt;
     color: #555;
+    line-height: 1.45;
+  }
+
+  /* 行程規劃表表格 */
+  .itinerary-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+  }
+
+  .itinerary-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8pt;
+    text-align: left;
+    background: #fff;
+  }
+
+  .itinerary-table th {
+    background-color: #233a2e;
+    color: #ffffff;
+    padding: 8px 6px;
+    font-weight: 600;
+    border-right: 1px solid #365042;
+    text-align: center;
+  }
+
+  .itinerary-table th:last-child {
+    border-right: none;
+  }
+
+  .itinerary-table td {
+    padding: 8px 6px;
+    border-bottom: 1px solid #eef2ef;
+    border-right: 1px solid #eef2ef;
+    vertical-align: top;
     line-height: 1.4;
   }
 
-  /* 部落文化與地理背景卡片（永康布農 ✕ 織羅阿美） */
-  .culture-card {
-    background: #fdfbf7;
-    border: 1px solid #ebd9c3;
-    border-radius: 12px;
-    padding: 16px;
-    margin-bottom: 18px;
-    position: relative;
+  .itinerary-table td:last-child {
+    border-right: none;
   }
 
-  .culture-header-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 8px;
+  .itinerary-table tr:nth-child(even) {
+    background-color: #f9fbf9;
   }
 
-  .culture-header {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    color: var(--accent-gold);
+  .itinerary-table .col-time {
     font-weight: bold;
-    font-size: 11pt;
+    color: var(--primary-color);
+    white-space: nowrap;
+    text-align: center;
+    width: 12%;
   }
 
-  .cip-emblem {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
+  .itinerary-tag {
+    display: inline-block;
+    background: #e6eee8;
+    color: #264e36;
+    font-size: 7pt;
+    padding: 1px 4px;
+    border-radius: 4px;
+    margin-top: 3px;
   }
 
-  .culture-banner-img {
-    width: 100%;
-    border-radius: 8px;
-    margin: 8px 0 10px;
-    max-height: 140px;
-    object-fit: cover;
-  }
-
-  .culture-body {
-    font-size: 9.5pt;
-    color: #4a453e;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-
-  .culture-highlight-tag {
-    background: #f3ede2;
-    border-radius: 8px;
-    padding: 8px 10px;
-    font-size: 8.5pt;
-    color: #63523f;
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-  }
-
-  /* 莉梅姐帶路人卡片 */
+  /* 莉梅姐帶路人卡片：置入原民會 LOGO 認證 */
   .limay-card {
     background: linear-gradient(135deg, #f0f5f2 0%, #e8f0eb 100%);
     border: 1px solid #b8d0c0;
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 20px;
+    position: relative;
   }
 
   .limay-header {
@@ -387,6 +362,7 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 10px;
+    position: relative;
   }
 
   .limay-avatar {
@@ -396,6 +372,10 @@
     object-fit: cover;
     border: 2px solid var(--primary-color);
     flex-shrink: 0;
+  }
+
+  .limay-title {
+    flex: 1;
   }
 
   .limay-title h3 {
@@ -412,6 +392,14 @@
     padding: 2px 8px;
     border-radius: 10px;
     margin-top: 2px;
+  }
+
+  /* 引路人卡片右側的原民會 LOGO */
+  .limay-cip-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
   }
 
   .feature-list {
@@ -436,7 +424,7 @@
     font-weight: bold;
   }
 
-  /* 主辦單位／原民會認證 */
+  /* 主辦單位與履約保證卡 */
   .operator-box {
     background: #f8faf8;
     border: 1px solid var(--border-color);
@@ -471,7 +459,6 @@
     padding: 10px;
     font-size: 8.5pt;
     color: #3b4d42;
-    margin-bottom: 12px;
   }
 
   .b2b-subcard ul {
@@ -479,27 +466,7 @@
     padding-left: 18px;
   }
 
-  .endorsement-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    border-top: 1px solid #e2ebe4;
-  }
-
-  .endorsement-row span {
-    font-size: 8pt;
-    color: #4a5c51;
-    font-weight: bold;
-  }
-
-  .endorsement-img {
-    height: 34px;
-    width: auto;
-    object-fit: contain;
-  }
-
-  /* 常見問題 QA */
+  /* 常見問題 FAQ */
   .faq-card {
     margin-bottom: 16px;
   }
@@ -528,6 +495,28 @@
     padding-left: 18px;
     margin: 0;
     line-height: 1.5;
+  }
+
+  /* 永續承諾區塊 */
+  .sustain-box {
+    background: #fdfdfd;
+    border: 1px dashed #cedbd2;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 8pt;
+    color: #4e5e55;
+  }
+
+  .sustain-box h5 {
+    margin: 0 0 6px 0;
+    color: var(--primary-color);
+    font-size: 8.5pt;
+  }
+
+  .sustain-box ul {
+    margin: 0;
+    padding-left: 16px;
   }
 
   /* 底部固定雙按鈕導購列 */
@@ -585,17 +574,11 @@
 
   <!-- 固定上方 Logo 與語言切換 -->
   <header class="fixed-nav">
-    <div class="nav-logo">
-      <svg viewBox="0 0 24 24" fill="none" stroke="#2e4a3b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 2L12 22"/>
-        <path d="M5 9l7-7 7 7"/>
-        <path d="M19 15l-7 7-7-7"/>
-      </svg>
-      <div class="nav-logo-text">
-        <span class="en">ENVOY</span>
-        <span class="tw">安捷國際旅行社</span>
-      </div>
-    </div>
+    <a href="#" style="display: flex; align-items: center; text-decoration: none;">
+      <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/ENVOY_Logo_Transparent_HQ.png" 
+           alt="ENVOY 安捷國際旅行社" 
+           class="nav-logo-img">
+    </a>
 
     <!-- 語言切換按鈕組 -->
     <div class="lang-switch-box">
@@ -610,7 +593,7 @@
 
   <div class="container">
     
-    <!-- Hero 頂部主視覺 -->
+    <!-- 頁首主視覺：部行山海間 Logo 橫幅置頂 -->
     <div class="main-hero">
       <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-02.png" 
            alt="部行山海間 主視覺" 
@@ -618,30 +601,30 @@
 
       <!-- 標籤組 -->
       <div class="badge-row">
-        <span class="badge-pill badge-burgundy" id="hero-badge-1">3天2夜・平日低碳慢遊</span>
-        <span class="badge-pill badge-dark" id="hero-badge-2">台鐵新自強號城際直送</span>
+        <span class="badge-pill badge-burgundy" id="hero-badge-1">低碳永續行</span>
+        <span class="badge-pill badge-dark" id="hero-badge-2">會說故事的彩繪餐桌</span>
       </div>
 
       <h1 class="hero-h1" id="hero-title">【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊</h1>
-      <div class="hero-sub" id="hero-sub">搭鐵道 ✕ 探獵人山林講堂 ✕ 享雙溫泉名湯</div>
+      <div class="hero-sub" id="hero-sub">搭乘永續綠色鐵道 ✕ 走進永康獵人山林講堂 ✕ 五感沉浸部落饗宴</div>
       <p class="hero-desc" id="hero-desc">
-        搭乘新自強號揮別長途拉車，走進阿美族織羅部落與布農族永康部落。在山林獵徑中聆聽祈福之音與八部合音，浸潤安通百年名湯與知本美人湯，品味零距離產地野食盛宴。
+        搭乘台鐵新自強號城際列車替代長途拉車，深入花蓮織羅阿美族與台東永康布農族原鄉。沉浸百年安通弱鹼溪湯與知本美人名湯，體驗零距離產地野菜與獵人野食盛宴。
       </p>
     </div>
 
     <!-- 視覺情境照 3 欄 -->
     <div class="photo-row">
       <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-03.png" alt="彩繪米手作">
-        <div class="photo-caption" id="caption-1">織羅彩繪米農耕手作</div>
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-03.png" alt="織羅彩繪米">
+        <div class="photo-caption" id="caption-1">織羅彩繪米體驗</div>
       </div>
       <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-04.png" alt="永康獵人野食">
-        <div class="photo-caption" id="caption-2">永康部落柴燒野食</div>
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-04.png" alt="永康柴燒野食">
+        <div class="photo-caption" id="caption-2">永康獵人野炊饗宴</div>
       </div>
       <div class="photo-card">
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-05.png" alt="名湯溫泉">
-        <div class="photo-caption" id="caption-3">縱谷百年雙泉名湯</div>
+        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-05.png" alt="縱谷溫泉名宿">
+        <div class="photo-caption" id="caption-3">縱谷安通✕知本名湯</div>
       </div>
     </div>
 
@@ -651,81 +634,142 @@
       <div class="info-bar">
         <div class="info-box-item">
           <span class="icon">👤</span>
-          <span class="title" id="info-t1">1人即可報名</span>
-          <span class="sub" id="info-s1">享受自在獨處慢旅</span>
+          <span class="title" id="info-t1">一人即可報名</span>
+          <span class="sub" id="info-s1">報名門檻</span>
         </div>
         <div class="info-box-item">
           <span class="icon">🚌</span>
-          <span class="title" id="info-t2">6人即刻成團</span>
-          <span class="sub" id="info-s2">平日成行高質感同行</span>
+          <span class="title" id="info-t2">6 人即刻成團</span>
+          <span class="sub" id="info-s2">成團條件</span>
         </div>
         <div class="info-box-item">
           <span class="icon">✨</span>
-          <span class="title" id="info-t3">20人精緻滿團</span>
-          <span class="sub" id="info-s3">保留舒適空間不擁擠</span>
+          <span class="title" id="info-t3">20 人滿團封頂</span>
+          <span class="sub" id="info-s3">精緻小團上限</span>
         </div>
       </div>
 
-      <!-- 15秒超快看懂：核心四大亮點（無巨木群，精確對應永康與織羅） -->
+      <!-- 行程核心四大亮點 -->
       <div class="section-title">
-        <div class="section-title-left">
-          <span>⚡</span>
-          <span id="hl-head">15秒掌握行程精華</span>
-        </div>
+        <span>✨</span>
+        <span id="hl-head">行程核心四大亮點</span>
       </div>
 
       <div class="highlights-grid">
         <div class="highlight-card">
           <div class="icon">🌾</div>
-          <h3 id="hl-t1">【會說故事】織羅彩繪米</h3>
-          <p id="hl-d1">在阿美族織羅部落，把在地紅藜與稻糧拼成大地畫布，品嚐部落阿嬤野菜農耕智慧。</p>
+          <h3 id="hl-t1">會說故事的彩繪餐桌</h3>
+          <p id="hl-d1">在阿美族織羅部落，將在地紅藜與稻糧拼繪成大地畫布，品嚐融入農耕故事與野菜智慧的部落風味餐。</p>
         </div>
         <div class="highlight-card">
           <div class="icon">🏹</div>
-          <h3 id="hl-t2">【無圍牆】永康獵人講堂</h3>
-          <p id="hl-d2">走進布農族永康部落，跟隨獵人循跡巡禮、射箭擲矛，體驗震撼人心的八部合音與報戰功。</p>
+          <h3 id="hl-t2">無圍牆的山林講堂</h3>
+          <p id="hl-d2">走進永康部落「烏尼囊山林講堂」，跟隨布農族獵人敬拜山神、獵徑巡禮，學習山林智慧與獵人哲學。</p>
         </div>
         <div class="highlight-card">
           <div class="icon">♨️</div>
-          <h3 id="hl-t3">【縱谷雙名湯】安通 ✕ 知本</h3>
-          <p id="hl-d3">嚴選百年歷史安通弱鹼溪湯與知本金聯世紀美人湯，深度文化探索後享受極致溫泉療癒。</p>
+          <h3 id="hl-t3">縱谷山海雙名湯</h3>
+          <p id="hl-d3">嚴選百年歷史安通野溪名湯與知本金聯世紀美人湯，在深度文化探索後享受極致溫泉療癒。</p>
         </div>
         <div class="highlight-card">
           <div class="icon">🚆</div>
-          <h3 id="hl-t4">【低碳足跡】綠色鐵道漫旅</h3>
-          <p id="hl-d4">全程搭乘台鐵城際電聯車替代長途拉車，降低碳排放，舒適平穩慢遊縱谷山海景致。</p>
+          <h3 id="hl-t4">低碳足跡鐵道慢旅</h3>
+          <p id="hl-d4">全程以台鐵城際列車替代長途拉車，搭配在地永續接駁，降低碳排放，漫旅縱谷山海景致。</p>
         </div>
       </div>
 
-      <!-- 部落文化與地理背景卡片：織羅阿美 ✕ 永康布農 -->
-      <div class="culture-card">
-        <div class="culture-header-wrap">
-          <div class="culture-header">
-            <span>◆</span>
-            <span id="culture-title">花東縱谷的里山智慧：織羅阿美 ✕ 永康布農</span>
-          </div>
-          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
-               alt="原民會圖騰" 
-               class="cip-emblem">
-        </div>
-        <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-06.png" 
-             alt="花東縱谷山林" 
-             class="culture-banner-img">
-        <div class="culture-body" id="culture-body">
-          座落在花蓮與台東縱谷平原間，蘊藏著台灣最動人的南島族群智慧。花蓮玉里的<b>阿美族織羅部落</b>以敬畏天地的傳統農法聞名，將大自然餽贈的五穀紅藜化為彩繪圖騰；而台東延平鄉的<b>布農族永康部落</b>（烏尼囊工作坊），族人依循敬拜山神與獵人哲學生活，在獸徑廊道中傳唱八部合音（Pasibutbut），將大地的豐饒豪邁端上「獵人野食餐桌」。
-        </div>
-        <div class="culture-highlight-tag" id="culture-foot">
-          <span>✨</span>
-          <span id="culture-foot-text"><b>永續地好承諾：</b>全程搭乘台鐵電聯車降低碳排，部落餐點全數採用地產「零距離食材」（Farm to Table），體驗收益直接回饋部落傳承。</span>
-        </div>
-      </div>
-
-      <!-- 莉梅姐帶路人卡片 -->
+      <!-- 詳細行程規劃表 -->
       <div class="section-title">
-        <div class="section-title-left">
-          <span>💡</span>
-          <span id="limay-sec-title">帶路人：莉梅姐 ✕ 本團特色</span>
-        </div>
+        <span>🗓️</span>
+        <span id="itinerary-head">詳細行程規劃表</span>
+      </div>
+
+      <div class="itinerary-table-wrap">
+        <table class="itinerary-table" id="itinerary-table">
+          <thead>
+            <tr>
+              <th>時段</th>
+              <th>Day 1：織羅米繪與百年溫泉</th>
+              <th>Day 2：獵人山林與知本名湯</th>
+              <th>Day 3：雙湯舒活與綠色歸途</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-time">上午</td>
+              <td>
+                台北車站東 3 門集合<br>搭乘火車前往瑞穗<br>
+                <span class="itinerary-tag">低碳鐵道</span>
+              </td>
+              <td>
+                早餐後前往<b>永康部落</b><br>跟隨獵人敬拜山神、獵徑巡禮<br>
+                <span class="itinerary-tag">無圍牆山林講堂</span>
+              </td>
+              <td>
+                早餐後自由活動<br>飯店溫泉泡湯舒適體驗<br>享受知本美人湯
+              </td>
+            </tr>
+            <tr>
+              <td class="col-time">中午</td>
+              <td>
+                車上享用火車便當<br>(體驗懷舊鐵道飲食文化)
+              </td>
+              <td>
+                享用原住民風味餐<br>柴燒野炊與布農烤肉
+              </td>
+              <td>
+                午餐自理<br>(建議體驗知本在地小吃)
+              </td>
+            </tr>
+            <tr>
+              <td class="col-time">下午</td>
+              <td>
+                前往<b>織羅部落</b><br>部落導覽與彩繪米 DIY<br>
+                <span class="itinerary-tag">會說故事的彩繪餐桌</span>
+              </td>
+              <td>
+                進行<b>永康部落文化體驗</b><br>(入山祭拜、打糯米、八部合音)
+              </td>
+              <td>
+                下午搭乘火車返回台北車站<br>
+                <span class="itinerary-tag">低碳鐵道</span>
+              </td>
+            </tr>
+            <tr>
+              <td class="col-time">傍晚/晚餐</td>
+              <td>
+                享用織羅部落風味餐<br>在地野菜與紅藜主題盛宴
+              </td>
+              <td>
+                前往知本<br>享用知本在地精選晚餐
+              </td>
+              <td>
+                抵達台北車站<br>行程圓滿結束
+              </td>
+            </tr>
+            <tr>
+              <td class="col-time">住宿安排</td>
+              <td>
+                住宿：<b>安通溫泉</b><br>百年弱鹼性名湯
+              </td>
+              <td>
+                住宿：<b>知本金聯世紀酒店</b><br>台東指標性溫泉飯店
+              </td>
+              <td>
+                —— (賦歸) ——
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size: 7.5pt; color: #7a8a80; margin: -10px 0 16px 2px;" id="itinerary-note">
+        * 為維護部落文化體驗品質與尊嚴，部分私房導覽路線與特色私廚菜單細節將於成團後提供專屬電子手冊。
+      </p>
+
+      <!-- 莉梅姐帶路人卡片：右側置入原民會 LOGO -->
+      <div class="section-title">
+        <span>📞</span>
+        <span id="limay-sec-title">您的花東慢旅帶路人</span>
       </div>
 
       <div class="limay-card">
@@ -734,49 +778,28 @@
                alt="莉梅姐" 
                class="limay-avatar">
           <div class="limay-title">
-            <h3 id="limay-name">帶路人：莉梅姐（Li-May）</h3>
-            <span class="limay-badge" id="limay-exp">35年旅遊資歷 ✕ 在地老饕帶路</span>
+            <h3 id="limay-name">專屬旅遊顧問：莉梅姐（Li-May）</h3>
+            <span class="limay-badge" id="limay-exp">35年資歷 ✕ 精品旅遊專家</span>
           </div>
+          <!-- 引路人卡片右側：原民會官方 LOGO -->
+          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
+               alt="原住民族委員會認證標章" 
+               class="limay-cip-logo">
         </div>
         <blockquote style="margin: 4px 0 10px 0; color: #3b5249; font-style: italic; font-size: 8.5pt;" id="limay-quote">
           「最好的旅行，不只是看風景，而是走進在地人的生活，用舌尖與心靈細細品味。」
         </blockquote>
         <ul class="feature-list" id="limay-points">
-          <li><b>饕客級在地風味</b>：親自挑選永康部落柴燒野炊、阿美族野菜宴與台東私房晚餐。</li>
-          <li><b>像家人般的照料</b>：以「照顧家人的心」把關交通、住宿與安全，單人參團也能溫暖自在。</li>
-          <li><b>私房細節電子手冊</b>：成團後提供專屬電子手冊，鎖定部落文化導覽細節與私廚口袋名單！</li>
+          <li><b>關於莉梅</b>：深耕旅遊業 35 年，專研質感精品團與客製化慢旅。曾居住台東並開設餐廳，對花東的山海秘境、在地食材與原鄉文化瞭如指掌。</li>
+          <li><b>無微不至的照顧</b>：秉持「照顧家人的心」帶團，從交通、住宿到餐桌上的每一個細節都為您嚴格把關！</li>
+          <li><b>成團專屬指南</b>：成團後提供專屬電子手冊，鎖定部落文化導覽細節與私廚口袋名單！</li>
         </ul>
       </div>
 
-      <!-- 主辦單位與履約保證（含原民會標章） -->
-      <div class="operator-box">
-        <div class="operator-meta">
-          <h4 id="op-title">主辦・執行｜安捷國際旅行社</h4>
-          <p>交通部觀光署認可 甲種旅行業（交觀甲字第5920號）｜統編：16169138</p>
-        </div>
-        <div class="operator-intro" id="op-desc">
-          深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。
-        </div>
-        <div class="b2b-subcard">
-          <ul id="op-bullets">
-            <li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li>
-            <li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>
-          </ul>
-        </div>
-        <div class="endorsement-row">
-          <span id="endorse-text">☀️【推薦・公認】原住民族委員會認證合作夥伴</span>
-          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-07.jpg" 
-               alt="原住民族委員會認證標章" 
-               class="endorsement-img">
-        </div>
-      </div>
-
-      <!-- 常見問題 FAQ（精確對應原圖 QA） -->
+      <!-- 常見問題 FAQ -->
       <div class="section-title">
-        <div class="section-title-left">
-          <span>❓</span>
-          <span id="faq-title">常見問答 FAQ</span>
-        </div>
+        <span>❓</span>
+        <span id="faq-title">常見問題 Q&A</span>
       </div>
 
       <div class="faq-card">
@@ -816,8 +839,35 @@
             <span id="faq-q4">這趟行程的低碳理念是如何落實的？</span>
           </div>
           <p class="faq-a" id="faq-a4">
-            我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，部落餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，以實際行動支持原鄉在地經濟。
+            我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，部落餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，也以實際行動支持原鄉在地經濟。
           </p>
+        </div>
+      </div>
+
+      <!-- 永續承諾區塊 -->
+      <div class="sustain-box" id="sustain-box">
+        <h5>🌱 本行程之「低碳永續與在地共好」承諾：</h5>
+        <ul>
+          <li><b>低碳交通</b>：往返全程採用台鐵電氣化列車，顯著降低長途移動之碳足跡。</li>
+          <li><b>在地食材</b>：部落風味餐皆採用當地自產野菜與米糧，降低食材運輸碳排放。</li>
+          <li><b>文化永續</b>：體驗收益部分回饋部落基金，用於文化傳承與山林環境保育。</li>
+        </ul>
+      </div>
+
+      <!-- 主辦單位與履約保證卡 -->
+      <div class="operator-box">
+        <div class="operator-meta">
+          <h4 id="op-title">主辦・執行｜安捷國際旅行社</h4>
+          <p>交通部觀光署認可 甲種旅行業（交觀甲字第5920號）｜統編：16169138</p>
+        </div>
+        <div class="operator-intro" id="op-desc">
+          深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。
+        </div>
+        <div class="b2b-subcard">
+          <ul id="op-bullets">
+            <li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li>
+            <li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>
+          </ul>
         </div>
       </div>
 
@@ -840,42 +890,37 @@
   <script>
     const i18n = {
       zh: {
-        heroBadge1: "3天2夜・平日低碳慢遊",
-        heroBadge2: "台鐵新自強號城際直送",
+        heroBadge1: "低碳永續行",
+        heroBadge2: "會說故事的彩繪餐桌",
         heroTitle: "【低碳縱谷・雙湯慢旅】花東原鄉 3 日遊",
-        heroSub: "搭鐵道 ✕ 探獵人山林講堂 ✕ 享雙溫泉名湯",
-        heroDesc: "搭乘新自強號揮別長途拉車，走進阿美族織羅部落與布農族永康部落。在山林獵徑中聆聽祈福之音與八部合音，浸潤安通百年名湯與知本美人湯，品味零距離產地野食盛宴。",
-        cap1: "織羅彩繪米農耕手作",
-        cap2: "永康部落柴燒野食",
-        cap3: "縱谷百年雙泉名湯",
-        infoT1: "1人即可報名",
-        infoS1: "享受自在獨處慢旅",
-        infoT2: "6人即刻成團",
-        infoS2: "平日成行高質感同行",
-        infoT3: "20人精緻滿團",
-        infoS3: "保留舒適空間不擁擠",
-        hlHead: "15秒掌握行程精華",
-        hlT1: "【會說故事】織羅彩繪米",
-        hlD1: "在阿美族織羅部落，把在地紅藜與稻糧拼成大地畫布，品嚐部落阿嬤野菜農耕智慧。",
-        hlT2: "【無圍牆】永康獵人講堂",
-        hlD2: "走進布農族永康部落，跟隨獵人循跡巡禮、射箭擲矛，體驗震撼人心的八部合音與報戰功。",
-        hlT3: "【縱谷雙名湯】安通 ✕ 知本",
-        hlD3: "嚴選百年歷史安通弱鹼溪湯與知本金聯世紀美人湯，深度文化探索後享受極致溫泉療癒。",
-        hlT4: "【低碳足跡】綠色鐵道漫旅",
-        hlD4: "全程搭乘台鐵城際電聯車替代長途拉車，降低碳排放，舒適平穩慢遊縱谷山海景致。",
-        cultureTitle: "花東縱谷的里山智慧：織羅阿美 ✕ 永康布農",
-        cultureBody: "座落在花蓮與台東縱谷平原間，蘊藏著台灣最動人的南島族群智慧。花蓮玉里的<b>阿美族織羅部落</b>以敬畏天地的傳統農法聞名，將大自然餽贈的五穀紅藜化為彩繪圖騰；而台東延平鄉的<b>布農族永康部落</b>（烏尼囊工作坊），族人依循敬拜山神與獵人哲學生活，在獸徑廊道中傳唱八部合音（Pasibutbut），將大地的豐饒豪邁端上「獵人野食餐桌」。",
-        cultureFootText: "<b>永續地好承諾：</b>全程搭乘台鐵電聯車降低碳排，部落餐點全數採用地產「零距離食材」（Farm to Table），體驗收益直接回饋部落傳承。",
-        limaySecTitle: "帶路人：莉梅姐 ✕ 本團特色",
-        limayName: "帶路人：莉梅姐（Li-May）",
-        limayExp: "35年旅遊資歷 ✕ 在地老饕帶路",
+        heroSub: "搭乘永續綠色鐵道 ✕ 走進永康獵人山林講堂 ✕ 五感沉浸部落饗宴",
+        heroDesc: "搭乘台鐵新自強號城際列車替代長途拉車，深入花蓮織羅阿美族與台東永康布農族原鄉。沉浸百年安通弱鹼溪湯與知本美人名湯，體驗零距離產地野菜與獵人野食盛宴。",
+        cap1: "織羅彩繪米體驗",
+        cap2: "永康獵人野炊饗宴",
+        cap3: "縱谷安通✕知本名湯",
+        infoT1: "一人即可報名",
+        infoS1: "報名門檻",
+        infoT2: "6 人即刻成團",
+        infoS2: "成團條件",
+        infoT3: "20 人滿團封頂",
+        infoS3: "精緻小團上限",
+        hlHead: "行程核心四大亮點",
+        hlT1: "會說故事的彩繪餐桌",
+        hlD1: "在阿美族織羅部落，將在地紅藜與稻糧拼繪成大地畫布，品嚐融入農耕故事與野菜智慧的部落風味餐。",
+        hlT2: "無圍牆的山林講堂",
+        hlD2: "走進永康部落「烏尼囊山林講堂」，跟隨布農族獵人敬拜山神、獵徑巡禮，學習山林智慧與獵人哲學。",
+        hlT3: "縱谷山海雙名湯",
+        hlD3: "嚴選百年歷史安通野溪名湯與知本金聯世紀美人湯，在深度文化探索後享受極致溫泉療癒。",
+        hlT4: "低碳足跡鐵道慢旅",
+        hlD4: "全程以台鐵城際列車替代長途拉車，搭配在地永續接駁，降低碳排放，漫旅縱谷山海景致。",
+        itineraryHead: "詳細行程規劃表",
+        itineraryNote: "* 為維護部落文化體驗品質與尊嚴，部分私房導覽路線與特色私廚菜單細節將於成團後提供專屬電子手冊。",
+        limaySecTitle: "您的花東慢旅帶路人",
+        limayName: "專屬旅遊顧問：莉梅姐（Li-May）",
+        limayExp: "35年資歷 ✕ 精品旅遊專家",
         limayQuote: "「最好的旅行，不只是看風景，而是走進在地人的生活，用舌尖與心靈細細品味。」",
-        limayPoints: "<li><b>饕客級在地風味</b>：親自挑選永康部落柴燒野炊、阿美族野菜宴與台東私房晚餐。</li><li><b>像家人般的照料</b>：以「照顧家人的心」把關交通、住宿與安全，單人參團也能溫暖自在。</li><li><b>私房細節電子手冊</b>：成團後提供專屬電子手冊，鎖定部落文化導覽細節與私廚口袋名單！</li>",
-        opTitle: "主辦・執行｜安捷國際旅行社",
-        opDesc: "深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。",
-        opBullets: "<li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li><li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>",
-        endorseText: "☀️【推薦・公認】原住民族委員會認證合作夥伴",
-        faqTitle: "常見問答 FAQ",
+        limayPoints: "<li><b>關於莉梅</b>：深耕旅遊業 35 年，專研質感精品團與客製化慢旅。曾居住台東並開設餐廳，對花東的山海秘境、在地食材與原鄉文化瞭如指掌。</li><li><b>無微不至的照顧</b>：秉持「照顧家人的心」帶團，從交通、住宿到餐桌上的每一個細節都為您嚴格把關！</li><li><b>成團專屬指南</b>：成團後提供專屬電子手冊，鎖定部落文化導覽細節與私廚口袋名單！</li>",
+        faqTitle: "常見問題 Q&A",
         faqQ1: "只有我一個人，可以報名參加嗎？",
         faqA1: "完全沒問題！我們支持一人即可報名。只要全團總報名人數達到 6 人即可成團。若您單人參加，可選擇補單人房差，或由我們為您協助安排同性別團友配房。",
         faqQ2: "什麼時候會確認是否成團？團體人數上限是多少？",
@@ -883,55 +928,56 @@
         faqQ3: "永康部落的體驗需要很強的體力嗎？穿著有什麼建議？",
         faqA3: "永康部落獵徑巡跡為原始森林步道，整體難度適中，不含攀爬高難度巨木路段。建議穿著輕便防滑的運動鞋/登山鞋與長褲，並隨身攜帶防蚊液與雨具。",
         faqQ4: "這趟行程的低碳理念是如何落實的？",
-        faqA4: "我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，部落餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，以實際行動支持原鄉在地經濟。",
+        faqA4: "我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，部落餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，也以實際行動支持原鄉在地經濟。",
+        opTitle: "主辦・執行｜安捷國際旅行社",
+        opDesc: "深耕旅遊業 35 年，安捷旅行社深耕台灣山海與原住民族文化，為原住民族委員會認證之合作夥伴。專注提供高品質、安全舒適的精緻小團慢旅與日本旅行社在地地上手配（Land Operator）。",
+        opBullets: "<li><b>【B2B 協業與客製包團】</b>：行程深度策劃、同業躉售、企業悠活踩線團</li><li><b>【個人與家庭慢旅】</b>：6位起即刻成團，提供完整交通、名湯住宿與在地深度文化導覽</li>",
         ctaB2B: "✉️ B2B 合作洽詢",
         ctaLine: "💬 個人行程諮詢"
       },
       ja: {
-        heroBadge1: "2泊3日・平日限定低炭素リトリート",
-        heroBadge2: "台湾鉄道・最新特急直通送迎",
-        heroTitle: "【低炭素な縦谷・二大名湯の旅】花東原郷 3日間",
-        heroSub: "鉄道の旅 ✕ ブヌン族の森の学び舎 ✕ 二大名湯を愉しむ",
-        heroDesc: "最新鋭の特急電車で長距離移動の揺れを解消。アミ族の織羅集落とブヌン族の永康集落へ。狩人の小道で祈りの歌と八部合音に耳を傾け、安通・知本の名湯と地産ジビエ料理に癒される3日間。",
-        cap1: "織羅集落のお米アート体験",
+        heroBadge1: "低炭素サステナブル旅",
+        heroBadge2: "物語を紡ぐ彩り米の食卓",
+        heroTitle: "【低炭素な縦谷・二名湯の旅】花東原郷 3日間",
+        heroSub: "環境に優しい鉄道旅 ✕ 永康ブヌン族の森の学び舎 ✕ 五感で味わう集落饗宴",
+        heroDesc: "台湾鉄道の新特急で長距離移動の揺れを解消。アミ族の織羅集落とブヌン族の永康集落へ。百年の安通弱アルカリ泉と知本美肌の湯、そして地産ジビエとオーガニック山菜の食卓を愉しむ3日間。",
+        cap1: "織羅集落の米アート体験",
         cap2: "永康集落の薪火野外料理",
-        cap3: "百年歴史の安通✕知本名湯",
+        cap3: "縦谷安通✕知本の名湯",
         infoT1: "1名様より申込可能",
-        infoS1: "気ままな一人旅も大歓迎",
+        infoS1: "参加条件",
         infoT2: "6名様で催行確定",
-        infoS2: "平日催行の上質な少人数旅",
-        infoT3: "最大20名様の限定枠",
-        infoS3: "ゆとりのある快適な旅路",
-        hlHead: "15秒でわかる旅のハイライト",
-        hlT1: "【物語を紡ぐ】織羅の彩り米",
-        hlD1: "アミ族・織羅集落にて、赤キヌアとお米を使って大地のアートを制作。身体に優しい山菜料理を堪能。",
-        hlT2: "【壁のない学び舎】永康の狩人体験",
-        hlD2: "ブヌン族・永康集落へ。山林を巡り弓矢や槍投げを体験し、心震える「八部合音」と戦功の歌を体感。",
-        hlT3: "【極上の二大名湯】安通 ✕ 知本",
-        hlD3: "百年の歴史を誇る安通温泉（弱アルカリ泉）と知本金聯世紀ホテルの美肌の湯で、心身を深く解きほぐします。",
-        hlT4: "【低炭素な旅】緑の鉄道トリップ",
-        hlD4: "台湾鉄道の特急「新自強号」で快適に縦谷へ。CO2を65%以上削減し、車窓からの絶景を優雅に楽しみます。",
-        cultureTitle: "花東縦谷の里山文化：織羅のアミ族 ✕ 永康のブヌン族",
-        cultureBody: "花蓮と台東にまたがる花東縦谷は、豊かな自然と先住民族の知恵が息づく場所です。花蓮玉里の<b>アミ族・織羅集落</b>はお米や赤キヌアを慈しむ伝統農法を受け継ぎ、台東延平郷の<b>ブヌン族・永康集落</b>（ウニナン工房）では、山林を敬う狩人の哲学とともに、祈りの歌「八部合音（Pasibutbut）」や豪快な「狩人の野外食卓」を体験いただけます。",
-        cultureFootText: "<b>サステナブルな旅の約束：</b>特急電車による低炭素移動、地産地消の「フードマイレージ・ゼロ食材」、そして体験費の一部は集落の文化継承へと還元されます。",
-        limaySecTitle: "案内人：李梅（リメイ）✕ ツアーのこだわり",
-        limayName: "案内人：李梅（Li-May）",
-        limayExp: "観光業35年の実績 ✕ 地元を愛する美食の達人",
+        infoS2: "催行条件",
+        infoT3: "最大20名様限定",
+        infoS3: "少人数上限",
+        hlHead: "旅の4大ハイライト",
+        hlT1: "物語を紡ぐ彩り米の食卓",
+        hlD1: "アミ族・織羅集落にて、赤キヌアとお米で大地のアートを制作。農耕の知恵と身体に優しい山菜料理を堪能。",
+        hlT2: "壁のない森の学び舎",
+        hlD2: "永康集落のウニナン山林講堂へ。ブヌン族の狩人とともに山神に祈りを捧げ、森の知恵と哲学を学びます。",
+        hlT3: "縦谷の山海二大名湯",
+        hlD3: "百年の歴史を誇る安通温泉の弱アルカリ泉と知本金聯世紀ホテルの美肌湯で、心身を深く癒やします。",
+        hlT4: "低炭素フットプリント鉄道旅",
+        hlD4: "台湾鉄道の特急列車で快適移動。CO2排出を大幅に削減し、車窓から縦谷の雄大な自然を満喫。",
+        itineraryHead: "詳細行程スケジュール",
+        itineraryNote: "* 集落の文化と質を保つため、一部の私房ルートや特製メニューは催行確定後に特製電子手帳にてご案内します。",
+        limaySecTitle: "花東スロートラベル案内人",
+        limayName: "専任トラベルアドバイザー：李梅（Li-May）",
+        limayExp: "業界歴35年 ✕ プレミアム旅行の達人",
         limayQuote: "「最高の旅とは、ただ風景を眺めるだけでなく、土地の人々の暮らしに入り込み、五感で味わうことです。」",
-        limayPoints: "<li><b>厳選された地元料理</b>：永康集落の薪火野外料理、アミ族の伝統野菜膳、台東の隠れ家ディナーを厳選。</li><li><b>家族のような温もり</b>：少人数ならではの行き届いた配慮。お一人様のご参加も安心して寛げます。</li><li><b>特製デジタルしおり</b>：ご参加の方には、集落の文化解説や李梅おすすめの隠れ家スポットが詰まった電子手帳を進呈。</li>",
-        opTitle: "主催・運行｜アンジェ国際旅行社（ENVOY TRAVEL）",
-        opDesc: "創業35年・台湾の自然と先住民族文化を繋ぐ少人数専門の旅行社です。原住民族委員会の認定パートナーとして、日本の旅行会社様への現地手配（ランドオペレーター）から個人のお客様のプライベート旅まで承ります。",
-        opBullets: "<li><b>【B2B 協業相談】</b>：旅程アレンジ・卸値見積もり・視察ツアー手配</li><li><b>【個人・グループ】</b>：6名様以上の貸切チャーター・日本語ガイド対応</li>",
-        endorseText: "☀️【推薦・公認】台湾 原住民族委員会",
-        faqTitle: "よくあるご質問（FAQ）",
+        limayPoints: "<li><b>李梅について</b>：旅行業界で35年の実績を持ち、上質な少人数旅を専門に手掛ける。台東在住経験とレストラン経営の経験から、花東の食と原郷文化に精通。</li><li><b>家族のような安心感</b>：移動から宿泊、食事の細部に至るまで、家族をもてなす心で丁寧にケアします。</li><li><b>特製デジタルしおり</b>：ご参加の方には、集落文化の背景や李梅おすすめの隠れ家スポットを網羅した電子手帳を進呈。</li>",
+        faqTitle: "よくあるご質問 Q&A",
         faqQ1: "1名での参加は可能ですか？",
-        faqA1: "はい、大歓迎です！1名様よりお申し込みいただけます。ツアー全体で6名様に達した時点で催行確定となります。お一人部屋（追加代金）でのんびりお過ごしいただくか、同性のお客様との相部屋調整も可能です。",
+        faqA1: "はい、大歓迎です！1名様よりお申し込みいただけます。ツアー全体で6名様に達した時点で催行確定となります。お一人部屋（追加代金）をご選択いただくか、同性のお客様との相部屋調整も可能です。",
         faqQ2: "催行の決定時期と定員は何名ですか？",
         faqA2: "本ツアーは質の高い体験をお届けするため、最大20名様の限定枠としております。6名様に達し次第、専任の李梅より速やかにご連絡を差し上げ、手配を進めてまいります。",
         faqQ3: "永康集落の散策には体力が必要ですか？服装のアドバイスは？",
         faqA3: "永康集落の狩人の小道は自然の森を歩きますが、急峻な木登りや危険なルートはなく、適度な散策コースです。滑りにくいスニーカーや登山靴、長ズボンでのご参加をおすすめします。",
         faqQ4: "ツアーの低炭素（エコ）な取り組みについて教えてください。",
         faqA4: "長距離バス移動の代わりに台湾鉄道の特急「新自強号」を利用し、交通によるCO2排出を65%以上削減しています。また、食事はすべて集落周辺で採れた「地産地消食材」を使用し、環境負荷を抑えながら地域経済に貢献します。",
+        opTitle: "主催・運行｜アンジェ国際旅行社（ENVOY TRAVEL）",
+        opDesc: "創業35年・台湾の自然と先住民族文化を繋ぐ少人数専門の旅行社です。原住民族委員会の認定パートナーとして、日本の旅行会社様への現地手配（ランドオペレーター）から個人のお客様のプライベート旅まで承ります。",
+        opBullets: "<li><b>【B2B 協業相談】</b>：旅程アレンジ・卸値見積もり・視察ツアー手配</li><li><b>【個人・グループ】</b>：6名様以上の貸切チャーター・日本語ガイド対応</li>",
         ctaB2B: "✉️ B2B お問い合わせ",
         ctaLine: "💬 個人旅行のご相談"
       }
@@ -971,20 +1017,14 @@
       document.getElementById('hl-t4').textContent = data.hlT4;
       document.getElementById('hl-d4').textContent = data.hlD4;
 
-      document.getElementById('culture-title').textContent = data.cultureTitle;
-      document.getElementById('culture-body').innerHTML = data.cultureBody;
-      document.getElementById('culture-foot-text').innerHTML = data.cultureFootText;
+      document.getElementById('itinerary-head').textContent = data.itineraryHead;
+      document.getElementById('itinerary-note').textContent = data.itineraryNote;
 
       document.getElementById('limay-sec-title').textContent = data.limaySecTitle;
       document.getElementById('limay-name').textContent = data.limayName;
       document.getElementById('limay-exp').textContent = data.limayExp;
       document.getElementById('limay-quote').textContent = data.limayQuote;
       document.getElementById('limay-points').innerHTML = data.limayPoints;
-
-      document.getElementById('op-title').textContent = data.opTitle;
-      document.getElementById('op-desc').textContent = data.opDesc;
-      document.getElementById('op-bullets').innerHTML = data.opBullets;
-      document.getElementById('endorse-text').textContent = data.endorseText;
 
       document.getElementById('faq-title').textContent = data.faqTitle;
       document.getElementById('faq-q1').textContent = data.faqQ1;
@@ -995,6 +1035,10 @@
       document.getElementById('faq-a3').textContent = data.faqA3;
       document.getElementById('faq-q4').textContent = data.faqQ4;
       document.getElementById('faq-a4').textContent = data.faqA4;
+
+      document.getElementById('op-title').textContent = data.opTitle;
+      document.getElementById('op-desc').textContent = data.opDesc;
+      document.getElementById('op-bullets').innerHTML = data.opBullets;
 
       document.getElementById('cta-b2b').textContent = data.ctaB2B;
       document.getElementById('cta-line').textContent = data.ctaLine;
