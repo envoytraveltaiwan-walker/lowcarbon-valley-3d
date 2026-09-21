@@ -23,7 +23,7 @@
     }
   </script>
 
-  <!-- 引入 Google Fonts: Noto Serif JP, Noto Serif TC, Montserrat -->
+  <!-- Google Fonts: Noto Serif JP, Noto Serif TC, Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;600&family=Noto+Serif+JP:wght@300;400;600;700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -110,7 +110,7 @@
       gap: 8px;
     }
 
-    /* 導航輔助小按鈕（返回上一頁 & 主頁） */
+    /* 導航輔助按鈕（返回上一頁 & 主頁） */
     .nav-ctrl-btn {
       display: inline-flex;
       align-items: center;
@@ -189,7 +189,7 @@
       box-shadow: 0 2px 6px rgba(19, 36, 56, 0.25);
     }
 
-    /* 原民會官方橫額 */
+    /* 原民會官方主視覺橫幅（修正後：完全不裁切文字） */
     .cip-banner-box {
       padding: 16px 20px 0;
       background: #EAE5DC;
@@ -197,8 +197,9 @@
     }
     .cip-banner-img {
       width: 100%;
-      max-height: 280px;
-      object-fit: cover;
+      height: auto;
+      max-height: none;
+      object-fit: contain;
       border-radius: 12px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.06);
       display: block;
@@ -465,7 +466,7 @@
     }
     .charter-card strong { color: #A62122; }
 
-    /* FAQ 區域（桌機自適應切換為雙欄） */
+    /* FAQ 區域 */
     .faq-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -483,7 +484,7 @@
       background: #FFF;
       border: 1px solid var(--c-border);
       border-radius: 10px;
-      padding: 16px 18px;
+      padding: 16px;
     }
 
     .faq-q {
@@ -499,7 +500,7 @@
     .faq-q span { color: var(--c-gold-dark); }
     .faq-a { font-size: 12.5px; color: #555; line-height: 1.75; }
 
-    /* 官方認證統一頁尾（原民會 Logo 完整性安全防護規格） */
+    /* 官方認證統一頁尾 */
     .footer-official-badge {
       padding: 34px 20px 24px;
       background-color: #EDE8DF;
@@ -534,7 +535,6 @@
       flex-wrap: wrap;
     }
 
-    /* 原民會官方 Logo 專用不跑版樣式 */
     .footer-official-badge .cip-logo-img {
       height: 32px;
       width: auto;
@@ -618,19 +618,16 @@
     <!-- 導航列 -->
     <nav class="site-nav">
       <div class="nav-left">
-        <!-- 1. 返回上一頁 -->
         <a href="javascript:void(0);" onclick="smartGoBack()" class="nav-ctrl-btn" id="btn-back" title="上一頁">
           <i class="fa-solid fa-chevron-left"></i>
           <span id="btn-back-text">戻る</span>
         </a>
 
-        <!-- 2. 回到東京旅展首頁 -->
         <a href="https://envoytraveltaiwan-walker.github.io/tokyo-expo/" class="nav-ctrl-btn" id="btn-home" title="東京旅展主頁">
           <i class="fa-solid fa-house"></i>
           <span id="btn-home-text">主頁</span>
         </a>
 
-        <!-- 品牌識別 -->
         <a href="https://envoytraveltaiwan-walker.github.io/tokyo-expo/" class="brand-group">
           <svg class="brand-svg" viewBox="0 0 100 140">
             <path d="M50 6 C51 15 52.5 21 55.5 25 C60 25.8 66 26 73 26.5 C66 28 60 29.2 56 31 C53.8 35 52 41 50 47 C48 41 46.2 35 44 31 C40 29.2 34 28 27 26.5 C34 26 40 25.8 44.5 25 C47.5 21 49 15 50 6 Z" fill="#C5A059"/>
@@ -646,7 +643,6 @@
         </a>
       </div>
 
-      <!-- 語言切換 -->
       <div class="lang-switcher">
         <button class="lang-btn active" id="btn-ja" onclick="setLanguage('ja')">日本語</button>
         <button class="lang-btn" id="btn-zh" onclick="setLanguage('zh')">繁中</button>
@@ -773,7 +769,6 @@
           </div>
         </div>
 
-        <!-- チャーター・催行確定案内 -->
         <div class="charter-card" id="charter-box">
           <strong>✦ 6〜20名様限定催行！</strong><br>
           お一人様のエントリーも大歓迎。6名様以上のグループなら、出発日を自由に選べる専用車貸切チャーターが可能です！LINEまたはメールにてご希望時期や人数をお気軽にご相談ください。
@@ -815,7 +810,7 @@
       </div>
     </section>
 
-    <!-- 公式認証フッター（原民會公式 Logo 完整無變形呈現） -->
+    <!-- 公式認証フッター -->
     <footer class="footer-official-badge">
       <p class="company-name" id="ft-comp-name">
         台湾・安捷國際旅行社有限公司 ENVOY TRAVEL
@@ -851,7 +846,6 @@
   </div>
 
   <script>
-    // 返回上一頁或回旅展主頁
     function smartGoBack() {
       if (document.referrer && document.referrer.indexOf(window.location.host) !== -1) {
         window.history.back();
@@ -910,7 +904,7 @@
         ftLicInfo: "交通部観光署 登録旅行業 甲種 5920 号 ｜ 統一番号：16169138",
         ftEndorseText: "【推薦・公認】台湾 原住民族委員会 認定パートナーシップ企業",
         ctaEmail: "✉ メールでお問合せ",
-        ctaLine: "💬 LINEで相談・予約"
+        ctaLine: "💬 LINEで相談する"
       },
       zh: {
         backText: "返回",
@@ -945,7 +939,7 @@
         expD2Desc: "走進無圍牆的山林學堂，由獵人引領敬拜山神、循跡探訪獸徑廊道，體驗射箭、擲矛與祈福儀式；中午大啖產地直送柴燒野炊。下午聆聽震撼天際的八部合音，傍晚入住台東指標溫泉名宿。",
         expD3Title: "Day 3：晨間溫泉舒活 ✕ 在地慢食漫步 ✕ 綠色鐵道賦歸",
         expD3Desc: "早晨在晨光中盡情享受溫泉美人湯與飯店豐盛早餐。午後悠閒漫步在地風光、品嚐特色小吃，隨後搭乘台鐵列車平穩北返，帶著充盈的自然靈氣與溫暖回憶圓滿結束旅程。",
-        charterText: "<strong>✦ 6〜20人即可成團！</strong><br>支持一人報名湊團；達 6 人即可自選出發日期獨立包專車！請透過 LINE 或 Email 提供您「想出發的梯次或日期區間」與「參加人數」，專屬團隊將迅速為您調配成行。",
+        charterText: "<strong>✦ 6〜20人即可成團！</strong><br>支持一人報名湊團；達 6 人即可自選出發日期獨立包專車！請透過 LINE 或 Email 提供您「想出發的日期區間」與「參加人數」，專屬團隊將迅速為您調配成行。",
         faqTitle: "常見問題 Q&A",
         faqQ1: "只有我一個人，可以報名參加嗎？",
         faqA1: "完全沒問題！我們支持一人即可報名。只要全團總報名人數達到 6 人即可成團。若您單人參加，可選擇補單人房差，或由我們為您協助安排同性別團友配房。",
