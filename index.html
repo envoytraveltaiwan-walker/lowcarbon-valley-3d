@@ -453,109 +453,6 @@
       line-height: 1.85;
     }
 
-    /* 達人引路卡（支援 RWD 橫向圖文排版） */
-    .expert-card {
-      background: #FFF;
-      border-radius: 14px;
-      border: 1px solid var(--c-border);
-      padding: 24px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
-      margin-bottom: 20px;
-    }
-
-    .expert-inner {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    @media (min-width: 768px) {
-      .expert-inner {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 24px;
-      }
-    }
-
-    .expert-left {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-shrink: 0;
-    }
-
-    @media (min-width: 768px) {
-      .expert-left {
-        flex-direction: column;
-        text-align: center;
-        width: 180px;
-      }
-    }
-
-    .expert-img {
-      width: 74px;
-      height: 74px;
-      border-radius: 50%;
-      border: 3px solid var(--c-gold);
-      object-fit: cover;
-    }
-
-    .expert-title-box h4 {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--c-navy);
-    }
-
-    .expert-tag {
-      font-size: 11.5px;
-      color: var(--c-gold-dark);
-      font-weight: 600;
-      margin-top: 2px;
-    }
-
-    .expert-story { flex: 1; }
-
-    .expert-story p {
-      font-size: 13px;
-      line-height: 1.9;
-      color: #444;
-      margin-bottom: 12px;
-    }
-
-    .indigenous-pattern-box {
-      background: var(--c-navy);
-      border-radius: 10px;
-      padding: 16px;
-      color: #ffffff;
-      margin-top: 14px;
-    }
-
-    .pattern-title {
-      font-size: 12.5px;
-      color: var(--c-gold);
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .pattern-desc {
-      font-size: 11.5px;
-      color: #d0ded6;
-      line-height: 1.75;
-      margin-bottom: 10px;
-    }
-
-    .pattern-badges {
-      display: flex;
-      justify-content: space-around;
-      border-top: 1px dashed rgba(197, 160, 89, 0.4);
-      padding-top: 10px;
-      font-size: 11px;
-      color: #FAF8F5;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-
-    /* 包團與永續承諾卡 */
     .charter-card {
       background: #F2EFE9;
       border: 1.5px dashed var(--c-gold);
@@ -568,30 +465,7 @@
     }
     .charter-card strong { color: #A62122; }
 
-    .sustain-box {
-      background: #FAF8F5;
-      border: 1.5px dashed #A3B899;
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin-top: 16px;
-      font-size: 12.5px;
-      color: #444;
-    }
-
-    .sustain-box h5 {
-      margin: 0 0 8px 0;
-      color: var(--c-forest);
-      font-size: 13.5px;
-      font-weight: 700;
-    }
-
-    .sustain-box ul {
-      margin: 0;
-      padding-left: 20px;
-      line-height: 1.85;
-    }
-
-    /* FAQ 網格（桌機版自適應兩欄） */
+    /* FAQ 區域（桌機自適應切換為雙欄） */
     .faq-grid {
       display: grid;
       grid-template-columns: 1fr;
@@ -609,7 +483,7 @@
       background: #FFF;
       border: 1px solid var(--c-border);
       border-radius: 10px;
-      padding: 16px;
+      padding: 16px 18px;
     }
 
     .faq-q {
@@ -625,13 +499,13 @@
     .faq-q span { color: var(--c-gold-dark); }
     .faq-a { font-size: 12.5px; color: #555; line-height: 1.75; }
 
-    /* 官方認證統一頁尾 */
+    /* 官方認證統一頁尾（原民會 Logo 完整性安全防護規格） */
     .footer-official-badge {
-      padding: 32px 20px 24px;
+      padding: 34px 20px 24px;
       background-color: #EDE8DF;
       border-top: 1px solid rgba(197, 160, 89, 0.28);
       text-align: center;
-      color: #555;
+      color: #555555;
       line-height: 1.85;
     }
 
@@ -645,29 +519,39 @@
 
     .footer-official-badge .license-info {
       font-size: 12px;
-      color: #666;
+      color: #666666;
       letter-spacing: 0.03em;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .footer-official-badge .endorsement-box {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      margin: 12px 0;
+      gap: 12px;
+      margin: 14px auto;
+      max-width: 620px;
+      flex-wrap: wrap;
     }
 
+    /* 原民會官方 Logo 專用不跑版樣式 */
     .footer-official-badge .cip-logo-img {
-      height: 24px;
+      height: 32px;
       width: auto;
+      max-width: 100%;
       object-fit: contain;
+      display: inline-block;
+      vertical-align: middle;
+      flex-shrink: 0;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.05));
     }
 
     .footer-official-badge .endorsement-text {
       font-size: 12px;
       font-weight: 600;
       color: #8C6B2D;
+      display: inline-block;
+      vertical-align: middle;
     }
 
     .footer-official-badge .copyright-text {
@@ -675,6 +559,7 @@
       font-family: var(--font-en);
       color: #8E8E8E;
       letter-spacing: 0.05em;
+      margin-top: 4px;
     }
 
     /* 底部固定 CTA */
@@ -707,6 +592,7 @@
       font-weight: 700;
       letter-spacing: 0.05em;
       transition: opacity 0.2s;
+      white-space: nowrap;
     }
     .bar-btn:hover { opacity: 0.9; }
 
@@ -719,6 +605,7 @@
       .brand-name-sub { display: none; }
       .nav-ctrl-btn span { display: none; }
       .nav-ctrl-btn { padding: 6px 10px; }
+      .footer-official-badge .cip-logo-img { height: 26px; }
     }
   </style>
 </head>
@@ -737,7 +624,7 @@
           <span id="btn-back-text">戻る</span>
         </a>
 
-        <!-- 2. 回到東京旅展主頁 -->
+        <!-- 2. 回到東京旅展首頁 -->
         <a href="https://envoytraveltaiwan-walker.github.io/tokyo-expo/" class="nav-ctrl-btn" id="btn-home" title="東京旅展主頁">
           <i class="fa-solid fa-house"></i>
           <span id="btn-home-text">主頁</span>
@@ -894,64 +781,6 @@
       </div>
     </section>
 
-    <!-- 旅の案内人（莉梅姐） -->
-    <section class="section-block" style="background:#F4EFE6;">
-      <div class="content-container">
-        <div class="sec-header-row">
-          <div>
-            <span class="sec-chapter">CURATOR</span>
-            <h2 class="sec-title" id="editorial-tag">旅の案内人</h2>
-          </div>
-          <img src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E7%B4%A0%E6%9D%90_2026%E6%97%A5%E6%9C%AC%E6%97%85%E5%B1%95(%E5%8E%9F%E6%B0%91%E6%9C%83)_%E7%B5%A6%E6%A5%AD%E8%80%85-05.png" 
-               alt="吉祥物" 
-               class="mascot-icon">
-        </div>
-
-        <div class="expert-card">
-          <div class="expert-inner">
-            <div class="expert-left">
-              <img class="expert-img" src="https://raw.githubusercontent.com/envoytraveltaiwan-walker/lowcarbon-valley-3d/main/%E8%8E%89%E6%A2%85%E5%A7%90.png" alt="莉梅姐">
-              <div class="expert-title-box">
-                <h4 id="limay-name">莉梅姐（メイ姉さん）</h4>
-                <div class="expert-tag" id="limay-role">専属トラベルコンサルタント ✕ 旅の案内人 35年</div>
-              </div>
-            </div>
-            <div class="expert-story">
-              <p id="limay-quote" style="font-style:italic; color:var(--c-gold-dark); margin-bottom:10px;">
-                「風の匂い、古木が語りかける呼吸。35年歩み続けたからこそ出会えた、誰も知らない美しき台湾原郷へご案内します。」
-              </p>
-              <p id="limay-desc">
-                台湾で親しみを込めて「莉梅姐（Mei）」と呼ばれる彼女は、35年間にわたり台湾の山河と世界の古道を歩き続けてきた旅のスペシャリスト。大型バスでは立ち入れない秘境の集落や、百年続く巨木の森。暮らす人々と目を合わせ、同じお茶を分け合う、心をかよわせる旅をお届けします。
-              </p>
-            </div>
-          </div>
-
-          <div class="indigenous-pattern-box">
-            <div class="pattern-title" id="pattern-title">
-              ◆ INDIGENOUS HERITAGE｜大地と祖霊が宿る紋様
-            </div>
-            <p class="pattern-desc" id="pattern-desc">
-              台湾の山々に暮らす先住民族は、自然への敬意と祖霊の教えを幾何学の文様に刻み込んできました。莉梅姐の案内する旅では、単なる観光ではなく、これらの織物や建築に込められた精神世界に触れる特別な体験をお届けします。
-            </p>
-            <div class="pattern-badges" id="pattern-badges">
-              <span>◇ タイヤル族（祖霊の瞳）</span>
-              <span>◇ ブヌン族（森の掟）</span>
-              <span>◇ アミ族（大地的織物）</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="sustain-box">
-          <h5 id="sustain-title">🌱 本ツアーの「低炭素・サステナブルツーリズム」の約束：</h5>
-          <ul id="sustain-bullets">
-            <li><b>環境配慮の鉄道移動</b>：長距離移動に台湾鉄道の特急を利用し、CO2排出を大幅に削減。</li>
-            <li><b>地産地消の食文化</b>：集落周辺で採れる新鮮なオーガニック山菜と米穀類を使用。</li>
-            <li><b>地域文化への還元</b>：ツアー収益の一部は、先住民族の伝統文化保護と森林保全基金へ還元されます。</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
     <!-- よくあるご質問 FAQ -->
     <section class="section-block" style="background:#FFF;">
       <div class="content-container">
@@ -986,7 +815,7 @@
       </div>
     </section>
 
-    <!-- 公式認証フッター -->
+    <!-- 公式認証フッター（原民會公式 Logo 完整無變形呈現） -->
     <footer class="footer-official-badge">
       <p class="company-name" id="ft-comp-name">
         台湾・安捷國際旅行社有限公司 ENVOY TRAVEL
@@ -1068,16 +897,6 @@
         expD3Title: "Day 3：朝の温泉リトリート ✕ 土地のスローフード ✕ 快適な帰路",
         expD3Desc: "澄んだ空気の中で朝風呂と朝食をゆったり堪能。チェックアウト後は穏やかな街並みの散策と地元名物を愉しみ、午後特急列車にて台北へ。心洗われる余韻とともに旅を締めくくります。",
         charterText: "<strong>✦ 6〜20名様限定催行！</strong><br>お一人様のエントリーも大歓迎。6名様以上のグループなら、出発日を自由に選べる専用車貸切チャーターが可能です！LINEまたはメールにてご希望時期や人数をお気軽にご相談ください。",
-        editorialTag: "旅の案内人",
-        limayName: "莉梅姐（メイ姉さん）",
-        limayRole: "専属トラベルコンサルタント ✕ 旅の案内人 35年",
-        limayQuote: "「風の匂い、古木が語りかける呼吸。35年歩み続けたからこそ出会えた、誰も知らない美しき台湾原郷へご案内します。」",
-        limayDesc: "台湾で親しみを込めて「莉梅姐（Mei）」と呼ばれる彼女は、35年間にわたり台湾の山河と世界の古道を歩き続けてきた旅のスペシャリスト。大型バスでは立ち入れない秘境の集落や、百年続く巨木の森。暮らす人々と目を合わせ、同じお茶を分け合う、心をかよわせる旅をお届けします。",
-        patternTitle: "◆ INDIGENOUS HERITAGE｜大地と祖霊が宿る紋様",
-        patternDesc: "台湾の山々に暮らす先住民族は、自然への敬意と祖霊の教えを幾何学の文様に刻み込んできました。莉梅姐の案内する旅では、単なる観光ではなく、これらの織物や建築に込められた精神世界に触れる特別な体験をお届けします。",
-        patternBadges: "<span>◇ タイヤル族（祖霊の瞳）</span><span>◇ ブヌン族（森の掟）</span><span>◇ アミ族（大地の織物）</span>",
-        sustainTitle: "🌱 本ツアーの「低炭素・サステナブルツーリズム」の約束：",
-        sustainBullets: "<li><b>環境配慮の鉄道移動</b>：長距離移動に台湾鉄道の特急を利用し、CO2排出を大幅に削減。</li><li><b>地産地消の食文化</b>：集落周辺で採れる新鮮なオーガニック山菜と米穀類を使用。</li><li><b>地域文化への還元</b>：ツアー収益の一部は、先住民族の伝統文化保護と森林保全基金へ還元されます。</li>",
         faqTitle: "よくあるご質問（FAQ）",
         faqQ1: "1名での参加は可能ですか？相部屋の希望は？",
         faqA1: "はい、1名様よりエントリーいただけます。全体で6名様に達した時点で催行確定となります。シングルルーム（追加代金）のご利用、または同性のお客様との相部屋調整も承ります。",
@@ -1091,7 +910,7 @@
         ftLicInfo: "交通部観光署 登録旅行業 甲種 5920 号 ｜ 統一番号：16169138",
         ftEndorseText: "【推薦・公認】台湾 原住民族委員会 認定パートナーシップ企業",
         ctaEmail: "✉ メールでお問合せ",
-        ctaLine: "💬 LINEで相談する"
+        ctaLine: "💬 LINEで相談・予約"
       },
       zh: {
         backText: "返回",
@@ -1126,17 +945,7 @@
         expD2Desc: "走進無圍牆的山林學堂，由獵人引領敬拜山神、循跡探訪獸徑廊道，體驗射箭、擲矛與祈福儀式；中午大啖產地直送柴燒野炊。下午聆聽震撼天際的八部合音，傍晚入住台東指標溫泉名宿。",
         expD3Title: "Day 3：晨間溫泉舒活 ✕ 在地慢食漫步 ✕ 綠色鐵道賦歸",
         expD3Desc: "早晨在晨光中盡情享受溫泉美人湯與飯店豐盛早餐。午後悠閒漫步在地風光、品嚐特色小吃，隨後搭乘台鐵列車平穩北返，帶著充盈的自然靈氣與溫暖回憶圓滿結束旅程。",
-        charterText: "<strong>✦ 6〜20人即可成團！</strong><br>支持一人報名湊團；達 6 人即可自選出發日期獨立包專車！請透過 LINE 或 Email 提供您「想出發的日期區間」與「參加人數」，專屬團隊將迅速為您調配成行。",
-        editorialTag: "慢旅引路人",
-        limayName: "莉梅姐（Mei）",
-        limayRole: "專屬旅遊顧問 ✕ 慢旅引路人 35年",
-        limayQuote: "「風的氣息、古木低語的呼吸。正因為持續行走了35年，才能帶您遇見誰也不曾知曉的台灣原鄉深邃之美。」",
-        limayDesc: "在台灣被親切稱為「莉梅姐」的她，35年間走遍台灣的山河與原鄉古道。對她而言，旅行不單是名勝打卡，而是觸摸大地經年累月孕育的生命氣息。以對待家人般的細膩關照，帶領旅人走進大型巴士無法抵達的秘境，品味最地道的山珍與柴燒料理。",
-        patternTitle: "◆ INDIGENOUS HERITAGE｜大地與祖靈的幾何圖騰",
-        patternDesc: "台灣原住民族將對自然的崇敬與祖靈的教誨刻入幾何紋樣中。在莉梅姐帶領的旅程中，並非單純的觀光，而是引領您親身走入織物與山林建築背後深邃的精神世界。",
-        patternBadges: "<span>◇ 泰雅族（祖靈之眼）</span><span>◇ 布農族（山林祭儀）</span><span>◇ 阿美族（大地織錦）</span>",
-        sustainTitle: "🌱 本行程之「低碳永續與在地共好」承諾：",
-        sustainBullets: "<li><b>低碳交通</b>：往返全程採用台鐵城際電聯車（新自強號），顯著降低長途移動之碳足跡。</li><li><b>在地食材</b>：特色餐點皆採用當地自產野菜與米糧，降低食材運輸碳排放。</li><li><b>文化永續</b>：體驗收益部分回饋原鄉發展基金，用於文化傳承與山林環境保育。</li>",
+        charterText: "<strong>✦ 6〜20人即可成團！</strong><br>支持一人報名湊團；達 6 人即可自選出發日期獨立包專車！請透過 LINE 或 Email 提供您「想出發的梯次或日期區間」與「參加人數」，專屬團隊將迅速為您調配成行。",
         faqTitle: "常見問題 Q&A",
         faqQ1: "只有我一個人，可以報名參加嗎？",
         faqA1: "完全沒問題！我們支持一人即可報名。只要全團總報名人數達到 6 人即可成團。若您單人參加，可選擇補單人房差，或由我們為您協助安排同性別團友配房。",
@@ -1147,10 +956,10 @@
         faqQ4: "這趟行程的低碳理念是如何落實的？",
         faqA4Ans: "我們選用台鐵城際電聯車（新自強號）替代長途遊覽車拉車，可減少超過 65% 的交通碳排放；此外，餐點全數採用在地自產的「零距離食材」（Farm to Table），在減少食物里程碳足跡的同時，也以實際行動支持原鄉在地經濟。",
         ftCompName: "安捷國際旅行社有限公司 ENVOY TRAVEL",
-        ftLicInfo: "交通部觀光署 註冊旅行業 甲種 5920 號 ｜ 統編：16169138",
+        ftLicInfo: "交通部觀光署 登録旅行業 甲種 5920 號 ｜ 統編：16169138",
         ftEndorseText: "【官方推薦】行政院原住民族委員會認證合作夥伴",
-        ctaEmail: "✉ Email 專屬洽詢",
-        ctaLine: "💬 加 LINE 專人諮詢"
+        btnMail: "✉ Email 專屬洽詢",
+        btnLine: "💬 加 LINE 專人諮詢"
       }
     };
 
@@ -1207,19 +1016,6 @@
       document.getElementById('exp-d3-desc').textContent = data.expD3Desc;
 
       document.getElementById('charter-box').innerHTML = data.charterText;
-
-      document.getElementById('editorial-tag').textContent = data.editorialTag;
-      document.getElementById('limay-name').textContent = data.limayName;
-      document.getElementById('limay-role').textContent = data.limayRole;
-      document.getElementById('limay-quote').textContent = data.limayQuote;
-      document.getElementById('limay-desc').textContent = data.limayDesc;
-
-      document.getElementById('pattern-title').textContent = data.patternTitle;
-      document.getElementById('pattern-desc').textContent = data.patternDesc;
-      document.getElementById('pattern-badges').innerHTML = data.patternBadges;
-
-      document.getElementById('sustain-title').textContent = data.sustainTitle;
-      document.getElementById('sustain-bullets').innerHTML = data.sustainBullets;
 
       document.getElementById('faq-title').textContent = data.faqTitle;
       document.getElementById('faq-q1').textContent = data.faqQ1;
